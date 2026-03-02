@@ -1,0 +1,40 @@
+/*
+ * Decompiled with CFR 0.152.
+ */
+package com.seedfinding.mcbiome.layer;
+
+import com.seedfinding.mcbiome.layer.BiomeLayer;
+import com.seedfinding.mcbiome.layer.cache.BoolLayerCache;
+import com.seedfinding.mccore.version.MCVersion;
+
+public abstract class BoolBiomeLayer
+extends BiomeLayer {
+    private final BoolLayerCache layerCache = new BoolLayerCache(1024);
+
+    public BoolBiomeLayer(MCVersion version, BiomeLayer ... parents) {
+        super(version, parents);
+    }
+
+    public BoolBiomeLayer(MCVersion version) {
+        super(version);
+    }
+
+    public BoolBiomeLayer(MCVersion version, long worldSeed, long salt, BiomeLayer ... parents) {
+        super(version, worldSeed, salt, parents);
+    }
+
+    public BoolBiomeLayer(MCVersion version, long worldSeed, long salt) {
+        super(version, worldSeed, salt);
+    }
+
+    public boolean get(int x, int y, int z) {
+        return this.layerCache.get(x, y, z, this::sample);
+    }
+
+    public abstract boolean sample(int var1, int var2, int var3);
+
+    public boolean[] sample(int x, int y, int z, int xSize, int ySize, int zSize) {
+        throw new UnsupportedOperationException();
+    }
+}
+

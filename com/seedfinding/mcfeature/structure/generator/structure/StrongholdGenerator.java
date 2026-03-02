@@ -1,0 +1,264 @@
+/*
+ * Decompiled with CFR 0.152.
+ */
+package com.seedfinding.mcfeature.structure.generator.structure;
+
+import com.seedfinding.mccore.rand.ChunkRand;
+import com.seedfinding.mccore.util.block.BlockBox;
+import com.seedfinding.mccore.util.block.BlockDirection;
+import com.seedfinding.mccore.util.data.Pair;
+import com.seedfinding.mccore.util.pos.BPos;
+import com.seedfinding.mccore.version.MCVersion;
+import com.seedfinding.mcfeature.structure.Stronghold;
+import com.seedfinding.mcfeature.structure.generator.Generator;
+import com.seedfinding.mcfeature.structure.generator.piece.stronghold.ChestCorridor;
+import com.seedfinding.mcfeature.structure.generator.piece.stronghold.Corridor;
+import com.seedfinding.mcfeature.structure.generator.piece.stronghold.FiveWayCrossing;
+import com.seedfinding.mcfeature.structure.generator.piece.stronghold.LeftTurn;
+import com.seedfinding.mcfeature.structure.generator.piece.stronghold.Library;
+import com.seedfinding.mcfeature.structure.generator.piece.stronghold.PieceWeight;
+import com.seedfinding.mcfeature.structure.generator.piece.stronghold.PortalRoom;
+import com.seedfinding.mcfeature.structure.generator.piece.stronghold.PrisonHall;
+import com.seedfinding.mcfeature.structure.generator.piece.stronghold.RightTurn;
+import com.seedfinding.mcfeature.structure.generator.piece.stronghold.SmallCorridor;
+import com.seedfinding.mcfeature.structure.generator.piece.stronghold.SpiralStaircase;
+import com.seedfinding.mcfeature.structure.generator.piece.stronghold.SquareRoom;
+import com.seedfinding.mcfeature.structure.generator.piece.stronghold.Stairs;
+import com.seedfinding.mcfeature.structure.generator.piece.stronghold.Start;
+import com.seedfinding.mcseed.rand.JRand;
+import com.seedfinding.mcterrain.TerrainGenerator;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Iterator;
+import java.util.List;
+import java.util.function.Predicate;
+
+public class StrongholdGenerator
+extends Generator {
+    public final List<Stronghold.Piece> pieceList = new ArrayList<Stronghold.Piece>();
+    public Class<? extends Stronghold.Piece> currentPiece = null;
+    public BlockBox strongholdBox = null;
+    protected List<PieceWeight<Stronghold.Piece>> pieceWeights = null;
+    protected int totalWeight;
+    protected Predicate<Stronghold.Piece> loopPredicate;
+    protected boolean halted;
+    private boolean[] eyes = null;
+
+    public StrongholdGenerator(MCVersion version) {
+        super(version);
+    }
+
+    public static long getStrongholdSalt(MCVersion version) {
+        return version.isOlderThan(MCVersion.v1_16) ? 20003L : 50000L;
+    }
+
+    private static Stronghold.Piece classToPiece(Class<? extends Stronghold.Piece> pieceClass, List<Stronghold.Piece> pieceList, JRand rand, int x, int y, int z, BlockDirection facing, int pieceId) {
+        Stronghold.Piece piece = null;
+        if (pieceClass == Corridor.class) {
+            piece = Corridor.createPiece(pieceList, rand, x, y, z, facing, pieceId);
+        } else if (pieceClass == PrisonHall.class) {
+            piece = PrisonHall.createPiece(pieceList, rand, x, y, z, facing, pieceId);
+        } else if (pieceClass == LeftTurn.class) {
+            piece = LeftTurn.createPiece(pieceList, rand, x, y, z, facing, pieceId);
+        } else if (pieceClass == RightTurn.class) {
+            piece = RightTurn.createPiece(pieceList, rand, x, y, z, facing, pieceId);
+        } else if (pieceClass == SquareRoom.class) {
+            piece = SquareRoom.createPiece(pieceList, rand, x, y, z, facing, pieceId);
+        } else if (pieceClass == Stairs.class) {
+            piece = Stairs.createPiece(pieceList, rand, x, y, z, facing, pieceId);
+        } else if (pieceClass == SpiralStaircase.class) {
+            piece = SpiralStaircase.createPiece(pieceList, rand, x, y, z, facing, pieceId);
+        } else if (pieceClass == FiveWayCrossing.class) {
+            piece = FiveWayCrossing.createPiece(pieceList, rand, x, y, z, facing, pieceId);
+        } else if (pieceClass == ChestCorridor.class) {
+            piece = ChestCorridor.createPiece(pieceList, rand, x, y, z, facing, pieceId);
+        } else if (pieceClass == Library.class) {
+            piece = Library.createPiece(pieceList, rand, x, y, z, facing, pieceId);
+        } else if (pieceClass == PortalRoom.class) {
+            piece = PortalRoom.createPiece(pieceList, x, y, z, facing, pieceId);
+        }
+        return piece;
+    }
+
+    @Override
+    public boolean generate(TerrainGenerator generator, int chunkX, int chunkZ, ChunkRand rand) {
+        if (generator == null) {
+            return false;
+        }
+        return this.generateRecursively(generator.getWorldSeed(), chunkX, chunkZ, rand, piece -> true);
+    }
+
+    @Override
+    public List<Pair<Generator.ILootType, BPos>> getLootPos() {
+        return this.getChestsPos();
+    }
+
+    @Override
+    public List<Pair<Generator.ILootType, BPos>> getChestsPos() {
+        return null;
+    }
+
+    public boolean populateStructure(long worldSeed, int chunkX, int chunkZ, ChunkRand rand) {
+        return this.populateStructure(worldSeed, chunkX, chunkZ, rand, piece -> true, true);
+    }
+
+    /*
+     * WARNING - Removed try catching itself - possible behaviour change.
+     */
+    public boolean populateStructure(long worldSeed, int chunkX, int chunkZ, ChunkRand rand, Predicate<Stronghold.Piece> shouldContinue, boolean portalOnly) {
+        boolean halted = this.generateRecursively(worldSeed, chunkX, chunkZ, rand, shouldContinue);
+        if (halted) {
+            return true;
+        }
+        int posX = chunkX << 4;
+        int posZ = chunkZ << 4;
+        long decoratorSeed = rand.setPopulationSeed(worldSeed, posX, posZ, this.getVersion());
+        decoratorSeed = this.getVersion().isOlderThan(MCVersion.v1_13) ? decoratorSeed : decoratorSeed + StrongholdGenerator.getStrongholdSalt(this.getVersion());
+        rand.setSeed(decoratorSeed);
+        BlockBox mainBox = new BlockBox(posX, posZ, posX + 15, posZ + 15);
+        List<Stronghold.Piece> list = this.pieceList;
+        synchronized (list) {
+            if (!this.pieceList.isEmpty()) {
+                BlockBox box = this.pieceList.get(0).getBoundingBox();
+                BPos pos = new BPos(box.getCenter());
+                Iterator<Stronghold.Piece> iterator = this.pieceList.iterator();
+                while (iterator.hasNext()) {
+                    Stronghold.Piece piece = iterator.next();
+                    if (piece.getBoundingBox().intersects(mainBox) && !piece.process(rand, pos)) {
+                        iterator.remove();
+                    }
+                    if (!(piece instanceof PortalRoom)) continue;
+                    this.eyes = ((PortalRoom)piece).getEyes();
+                    if (!portalOnly) continue;
+                    break;
+                }
+            }
+        }
+        return false;
+    }
+
+    public boolean[] getEyes() {
+        return this.eyes;
+    }
+
+    private boolean generateRecursively(long worldSeed, int chunkX, int chunkZ, ChunkRand rand, Predicate<Stronghold.Piece> shouldContinue) {
+        Start startPiece;
+        this.halted = false;
+        this.loopPredicate = shouldContinue;
+        int attemptCount = 0;
+        do {
+            this.totalWeight = 0;
+            this.currentPiece = null;
+            this.pieceWeights = this.getPieceWeights();
+            rand.setCarverSeed(worldSeed + (long)attemptCount++, chunkX, chunkZ, this.getVersion());
+            if (this.getVersion().isOlderThan(MCVersion.v1_14)) {
+                rand.nextInt();
+            }
+            if (!shouldContinue.test(startPiece = new Start(rand, (chunkX << 4) + 2, (chunkZ << 4) + 2))) {
+                return true;
+            }
+            this.pieceList.add(startPiece);
+            startPiece.populatePieces(this, startPiece, this.pieceList, rand);
+            List pieces = startPiece.children;
+            while (!pieces.isEmpty() && !this.halted) {
+                int i = rand.nextInt(pieces.size());
+                Stronghold.Piece piece2 = (Stronghold.Piece)pieces.remove(i);
+                piece2.populatePieces(this, startPiece, this.pieceList, rand);
+            }
+        } while ((this.pieceList.isEmpty() || startPiece.portalRoom == null) && !this.halted);
+        if (!this.halted) {
+            this.strongholdBox = BlockBox.empty();
+            this.pieceList.forEach(piece -> this.strongholdBox.encompass(piece.getBoundingBox()));
+        }
+        return this.halted;
+    }
+
+    private List<PieceWeight<Stronghold.Piece>> getPieceWeights() {
+        return new ArrayList<PieceWeight<Stronghold.Piece>>(Arrays.asList(new PieceWeight<Corridor>(Corridor.class, 40, 0), new PieceWeight<PrisonHall>(PrisonHall.class, 5, 5), new PieceWeight<LeftTurn>(LeftTurn.class, 20, 0), new PieceWeight<RightTurn>(RightTurn.class, 20, 0), new PieceWeight<SquareRoom>(SquareRoom.class, 10, 6), new PieceWeight<Stairs>(Stairs.class, 5, 5), new PieceWeight<SpiralStaircase>(SpiralStaircase.class, 5, 5), new PieceWeight<FiveWayCrossing>(FiveWayCrossing.class, 5, 4), new PieceWeight<ChestCorridor>(ChestCorridor.class, 5, 4), new PieceWeight<Stronghold.Piece>(Library.class, 10, 2){
+
+            @Override
+            public boolean canSpawnMoreStructuresOfType(int placedPieces) {
+                return super.canSpawnMoreStructuresOfType(placedPieces) && placedPieces > 4;
+            }
+        }, new PieceWeight<Stronghold.Piece>(PortalRoom.class, 20, 1){
+
+            @Override
+            public boolean canSpawnMoreStructuresOfType(int placedPieces) {
+                return super.canSpawnMoreStructuresOfType(placedPieces) && placedPieces > 5;
+            }
+        }));
+    }
+
+    public Stronghold.Piece generateAndAddPiece(Start startPiece, List<Stronghold.Piece> pieces, JRand rand, int x, int y, int z, BlockDirection facing, int pieceId) {
+        if (pieceId > 50) {
+            return null;
+        }
+        if (Math.abs(x - startPiece.getBoundingBox().minX) <= 112 && Math.abs(z - startPiece.getBoundingBox().minZ) <= 112) {
+            Stronghold.Piece piece = this.getNextStructurePiece(startPiece, pieces, rand, x, y, z, facing, pieceId + 1);
+            if (piece != null) {
+                pieces.add(piece);
+                if (!this.loopPredicate.test(piece)) {
+                    this.halted = true;
+                }
+                startPiece.children.add(piece);
+            }
+            return piece;
+        }
+        return null;
+    }
+
+    private Stronghold.Piece getNextStructurePiece(Start startPiece, List<Stronghold.Piece> pieceList, JRand rand, int x, int y, int z, BlockDirection facing, int pieceId) {
+        if (!this.canAddStructurePieces()) {
+            return null;
+        }
+        if (this.currentPiece != null) {
+            Stronghold.Piece piece = StrongholdGenerator.classToPiece(this.currentPiece, pieceList, rand, x, y, z, facing, pieceId);
+            this.currentPiece = null;
+            if (piece != null) {
+                return piece;
+            }
+        }
+        int int_5 = 0;
+        block0: while (int_5 < 5) {
+            ++int_5;
+            int int_6 = rand.nextInt(this.totalWeight);
+            Iterator<PieceWeight<Stronghold.Piece>> pieceWeightsIterator = this.pieceWeights.iterator();
+            while (pieceWeightsIterator.hasNext()) {
+                PieceWeight<Stronghold.Piece> pieceWeight = pieceWeightsIterator.next();
+                if ((int_6 -= pieceWeight.pieceWeight) >= 0) continue;
+                if (!pieceWeight.canSpawnMoreStructuresOfType(pieceId) || pieceWeight == startPiece.pieceWeight) continue block0;
+                Stronghold.Piece piece = StrongholdGenerator.classToPiece(pieceWeight.pieceClass, pieceList, rand, x, y, z, facing, pieceId);
+                if (piece == null) continue;
+                ++pieceWeight.instancesSpawned;
+                startPiece.pieceWeight = pieceWeight;
+                if (!pieceWeight.canSpawnMoreStructures()) {
+                    pieceWeightsIterator.remove();
+                }
+                return piece;
+            }
+        }
+        BlockBox boundingBox = SmallCorridor.createBox(pieceList, rand, x, y, z, facing);
+        if (boundingBox != null && boundingBox.minY > 1) {
+            return new SmallCorridor(pieceId, boundingBox, facing);
+        }
+        return null;
+    }
+
+    private boolean canAddStructurePieces() {
+        boolean flag = false;
+        this.totalWeight = 0;
+        for (PieceWeight<Stronghold.Piece> pieceWeight : this.pieceWeights) {
+            if (pieceWeight.instancesLimit > 0 && pieceWeight.instancesSpawned < pieceWeight.instancesLimit) {
+                flag = true;
+            }
+            this.totalWeight += pieceWeight.pieceWeight;
+        }
+        return flag;
+    }
+
+    @Override
+    public Generator.ILootType[] getLootTypes() {
+        return new Generator.ILootType[0];
+    }
+}
+

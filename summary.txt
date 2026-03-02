@@ -1,0 +1,161 @@
+Summary for meteor-miku-1.21.8-9.0.0.jar
+Decompiled with CFR 0.152
+
+
+com.github.mikumiku.addon.IIIIiIIiiI
+----------------------------
+
+iiIIiIIiii(java.lang.String )
+  Unable to fully structure code
+
+
+com.github.mikumiku.addon.IIIIiiIIiI
+----------------------------
+
+ALLATORIxDEMO(meteordevelopment.meteorclient.events.world.TickEvent$Pre )
+  Unable to fully structure code
+
+
+com.github.mikumiku.addon.IIIIiiiiIi
+----------------------------
+
+ALLATORIxDEMO(net.minecraft.class_2248 )
+  Unable to fully structure code
+
+
+com.github.mikumiku.addon.IIiIIiIIiI
+----------------------------
+
+IIIIiIIiII(net.minecraft.class_2338 )
+  Unable to fully structure code
+
+
+com.github.mikumiku.addon.IIiiiIIIII
+----------------------------
+
+iIIIIIIIIi()
+  Exception : org.benf.cfr.reader.util.ConfusedCFRException: Tried to end blocks [0[DOLOOP]], but top level block is 1[WHILELOOP]
+
+
+com.github.mikumiku.addon.IiIIiIIIII
+----------------------------
+
+ALLATORIxDEMO(meteordevelopment.meteorclient.events.world.TickEvent$Post )
+  Unable to fully structure code
+
+
+com.github.mikumiku.addon.IiIIiiIIII
+----------------------------
+
+ALLATORIxDEMO(int[] boolean )
+  Unable to fully structure code
+
+
+com.github.mikumiku.addon.IiIiiiiIii
+----------------------------
+
+ALLATORIxDEMO(int boolean )
+  Unable to fully structure code
+
+
+com.github.mikumiku.addon.IiiIiIiiii
+----------------------------
+
+iiiIiIiiIi()
+  Unable to fully structure code
+iiiIiIiiIi(net.minecraft.class_2338 )
+  Unable to fully structure code
+
+
+com.github.mikumiku.addon.IiiIiiIiIi
+----------------------------
+
+ALLATORIxDEMO()
+  Unable to fully structure code
+
+
+com.github.mikumiku.addon.iIIiIiiiii
+----------------------------
+
+ALLATORIxDEMO(meteordevelopment.meteorclient.events.world.TickEvent$Pre )
+  Unable to fully structure code
+
+
+com.github.mikumiku.addon.iIIiiiIiii
+----------------------------
+
+ALLATORIxDEMO(meteordevelopment.meteorclient.events.world.TickEvent$Pre )
+  Could not resolve type clashes
+  Unable to fully structure code
+
+
+com.github.mikumiku.addon.iIIiiiiIIi
+----------------------------
+
+ALLATORIxDEMO(meteordevelopment.meteorclient.events.world.TickEvent$Pre )
+  Unable to fully structure code
+
+
+com.github.mikumiku.addon.iIiIiIIIII
+----------------------------
+
+ALLATORIxDEMO(net.minecraft.class_2338 )
+  Unable to fully structure code
+
+
+com.github.mikumiku.addon.iIiIiIiiIi
+----------------------------
+
+ALLATORIxDEMO(java.lang.String )
+  Unable to fully structure code
+
+
+com.github.mikumiku.addon.iIiIiiIIIi
+----------------------------
+
+ALLATORIxDEMO(net.minecraft.class_3965 boolean )
+  Unable to fully structure code
+
+
+com.github.mikumiku.addon.iIiiiIIiII
+----------------------------
+
+iiIIiIIiii()
+  Exception : org.benf.cfr.reader.util.ConfusedCFRException: Tried to end blocks [0[UNCONDITIONALDOLOOP]], but top level block is 1[WHILELOOP]
+
+
+com.github.mikumiku.addon.iiIiIIIIii
+----------------------------
+
+ALLATORIxDEMO(net.minecraft.class_2338 boolean boolean boolean )
+  Unable to fully structure code
+
+
+com.github.mikumiku.addon.iiIiiIiiII
+----------------------------
+
+ALLATORIxDEMO(meteordevelopment.meteorclient.events.packets.PacketEvent$Receive )
+  Unable to fully structure code
+
+
+com.github.mikumiku.addon.iiiIIIiIII
+----------------------------
+
+IIiIiIiiii()
+  Unable to fully structure code
+IIIIiIIiII()
+  Unable to fully structure code
+
+
+com.github.mikumiku.addon.iiiIIiiiII
+----------------------------
+
+ALLATORIxDEMO(meteordevelopment.meteorclient.events.world.TickEvent$Pre )
+  Unable to fully structure code
+
+
+com.github.mikumiku.addon.iiiIiIIiIi
+----------------------------
+
+ALLATORIxDEMO(net.minecraft.class_1916 )
+  Exception : org.benf.cfr.reader.util.ConfusedCFRException: Tried to end blocks [3[UNCONDITIONALDOLOOP]], but top level block is 4[WHILELOOP]

@@ -1,0 +1,80 @@
+/*
+ * Decompiled with CFR 0.152.
+ */
+package com.seedfinding.mcbiome.biome.surface.builder;
+
+import com.seedfinding.mcbiome.biome.Biome;
+import com.seedfinding.mcbiome.biome.surface.SurfaceConfig;
+import com.seedfinding.mcbiome.biome.surface.builder.SurfaceBuilder;
+import com.seedfinding.mcbiome.source.BiomeSource;
+import com.seedfinding.mccore.block.Block;
+import com.seedfinding.mccore.block.Blocks;
+import com.seedfinding.mccore.rand.ChunkRand;
+
+public class DefaultSurfaceBuilder
+extends SurfaceBuilder {
+    public DefaultSurfaceBuilder(SurfaceConfig surfaceConfig) {
+        super(surfaceConfig);
+    }
+
+    @Override
+    public Block[] applyToColumn(BiomeSource source, ChunkRand rand, Block[] column, Biome biome, int x, int z, int maxY, int minY, double noise, int seaLevel, Block defaultBlock, Block defaultFluid) {
+        Block topBlock = this.getSurfaceConfig().getTopBlock();
+        Block underBlock = this.getSurfaceConfig().getUnderBlock();
+        int state = -1;
+        int elevation = (int)(noise / 3.0 + 3.0 + rand.nextDouble() * 0.25);
+        Object[] extras = this.generateExtras(rand, seaLevel);
+        for (int y = maxY; y >= minY; --y) {
+            Block block = this.getBaseBlock(source, y, column, rand, seaLevel);
+            if (Block.IS_AIR.test(source.getVersion(), block)) {
+                state = -1;
+            } else if (block == defaultBlock) {
+                if (state == -1) {
+                    if (elevation <= 0) {
+                        topBlock = Blocks.AIR;
+                        underBlock = defaultBlock;
+                    } else if (y >= seaLevel - 4 && y <= seaLevel + 1) {
+                        topBlock = this.getSurfaceConfig().getTopBlock();
+                        underBlock = this.getSurfaceConfig().getUnderBlock();
+                    }
+                    if (y < seaLevel && (topBlock == null || Block.IS_AIR.test(source.getVersion(), topBlock))) {
+                        topBlock = biome.getTemperatureAt(x, y, z) < 0.15f ? Blocks.ICE : defaultFluid;
+                    }
+                    state = elevation;
+                    if (y >= seaLevel - 1) {
+                        block = topBlock;
+                    } else if (y < seaLevel - 7 - elevation) {
+                        topBlock = Blocks.AIR;
+                        underBlock = defaultBlock;
+                        block = this.getSurfaceConfig().getUnderwaterBlock();
+                    } else {
+                        block = underBlock;
+                    }
+                } else if (state > 0) {
+                    block = underBlock;
+                    if (--state == 0 && underBlock == Blocks.SAND && elevation > 1) {
+                        state = rand.nextInt(4) + Math.max(0, y - 63);
+                        underBlock = underBlock == Blocks.RED_SAND ? Blocks.RED_SANDSTONE : Blocks.SANDSTONE;
+                    }
+                }
+            } else {
+                block = this.applyExtraConditions(y, block, extras);
+            }
+            column[y] = block;
+        }
+        return column;
+    }
+
+    public Block applyExtraConditions(int y, Block block, Object[] extras) {
+        return block;
+    }
+
+    public Object[] generateExtras(ChunkRand rand, int seaLevel) {
+        return new Object[0];
+    }
+
+    public Block getBaseBlock(BiomeSource source, int y, Block[] column, ChunkRand rand, int seaLevel) {
+        return column[y];
+    }
+}
+
