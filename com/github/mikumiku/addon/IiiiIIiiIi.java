@@ -12,18 +12,18 @@
  *  meteordevelopment.meteorclient.settings.SettingGroup
  *  meteordevelopment.meteorclient.settings.StringSetting$Builder
  *  meteordevelopment.orbit.EventHandler
- *  net.minecraft.class_1657
- *  net.minecraft.class_1713
- *  net.minecraft.class_1799
- *  net.minecraft.class_1802
- *  net.minecraft.class_2199
- *  net.minecraft.class_2338
- *  net.minecraft.class_2596
- *  net.minecraft.class_2645
- *  net.minecraft.class_2649
- *  net.minecraft.class_2855
- *  net.minecraft.class_2885
- *  net.minecraft.class_310
+ *  net.minecraft.entity.player.PlayerEntity
+ *  net.minecraft.screen.slot.SlotActionType
+ *  net.minecraft.item.ItemStack
+ *  net.minecraft.item.Items
+ *  net.minecraft.block.AnvilBlock
+ *  net.minecraft.util.math.BlockPos
+ *  net.minecraft.network.packet.Packet
+ *  net.minecraft.network.packet.s2c.play.CloseScreenS2CPacket
+ *  net.minecraft.network.packet.s2c.play.InventoryS2CPacket
+ *  net.minecraft.network.packet.c2s.play.RenameItemC2SPacket
+ *  net.minecraft.network.packet.c2s.play.PlayerInteractBlockC2SPacket
+ *  net.minecraft.client.MinecraftClient
  */
 package com.github.mikumiku.addon;
 
@@ -43,18 +43,18 @@ import meteordevelopment.meteorclient.settings.Setting;
 import meteordevelopment.meteorclient.settings.SettingGroup;
 import meteordevelopment.meteorclient.settings.StringSetting;
 import meteordevelopment.orbit.EventHandler;
-import net.minecraft.class_1657;
-import net.minecraft.class_1713;
-import net.minecraft.class_1799;
-import net.minecraft.class_1802;
-import net.minecraft.class_2199;
-import net.minecraft.class_2338;
-import net.minecraft.class_2596;
-import net.minecraft.class_2645;
-import net.minecraft.class_2649;
-import net.minecraft.class_2855;
-import net.minecraft.class_2885;
-import net.minecraft.class_310;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.screen.slot.SlotActionType;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
+import net.minecraft.block.AnvilBlock;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.network.packet.Packet;
+import net.minecraft.network.packet.s2c.play.CloseScreenS2CPacket;
+import net.minecraft.network.packet.s2c.play.InventoryS2CPacket;
+import net.minecraft.network.packet.c2s.play.RenameItemC2SPacket;
+import net.minecraft.network.packet.c2s.play.PlayerInteractBlockC2SPacket;
+import net.minecraft.client.MinecraftClient;
 
 public class IiiiIIiiIi
 extends iIiIiIIIii {

@@ -23,26 +23,26 @@
  *  meteordevelopment.meteorclient.utils.render.color.SettingColor
  *  meteordevelopment.meteorclient.utils.world.CardinalDirection
  *  meteordevelopment.orbit.EventHandler
- *  net.minecraft.class_1268
- *  net.minecraft.class_1297
- *  net.minecraft.class_1309
- *  net.minecraft.class_1511
- *  net.minecraft.class_1792
- *  net.minecraft.class_1799
- *  net.minecraft.class_2246
- *  net.minecraft.class_2248
- *  net.minecraft.class_2338
- *  net.minecraft.class_2338$class_2339
- *  net.minecraft.class_238
- *  net.minecraft.class_2382
- *  net.minecraft.class_243
- *  net.minecraft.class_2596
- *  net.minecraft.class_2680
- *  net.minecraft.class_2824
- *  net.minecraft.class_2879
- *  net.minecraft.class_304
- *  net.minecraft.class_3191
- *  net.minecraft.class_5892
+ *  net.minecraft.util.Hand
+ *  net.minecraft.entity.Entity
+ *  net.minecraft.entity.LivingEntity
+ *  net.minecraft.entity.decoration.EndCrystalEntity
+ *  net.minecraft.item.Item
+ *  net.minecraft.item.ItemStack
+ *  net.minecraft.block.Blocks
+ *  net.minecraft.block.Block
+ *  net.minecraft.util.math.BlockPos
+ *  net.minecraft.util.math.BlockPos$Mutable
+ *  net.minecraft.util.math.Box
+ *  net.minecraft.util.math.Vec3i
+ *  net.minecraft.util.math.Vec3d
+ *  net.minecraft.network.packet.Packet
+ *  net.minecraft.block.BlockState
+ *  net.minecraft.network.packet.c2s.play.PlayerInteractEntityC2SPacket
+ *  net.minecraft.network.packet.c2s.play.HandSwingC2SPacket
+ *  net.minecraft.client.option.KeyBinding
+ *  net.minecraft.entity.player.BlockBreakingInfo
+ *  net.minecraft.network.packet.s2c.play.DeathMessageS2CPacket
  */
 package com.github.mikumiku.addon;
 
@@ -81,25 +81,25 @@ import meteordevelopment.meteorclient.utils.render.color.Color;
 import meteordevelopment.meteorclient.utils.render.color.SettingColor;
 import meteordevelopment.meteorclient.utils.world.CardinalDirection;
 import meteordevelopment.orbit.EventHandler;
-import net.minecraft.class_1268;
-import net.minecraft.class_1297;
-import net.minecraft.class_1309;
-import net.minecraft.class_1511;
-import net.minecraft.class_1792;
-import net.minecraft.class_1799;
-import net.minecraft.class_2246;
-import net.minecraft.class_2248;
-import net.minecraft.class_2338;
-import net.minecraft.class_238;
-import net.minecraft.class_2382;
-import net.minecraft.class_243;
-import net.minecraft.class_2596;
-import net.minecraft.class_2680;
-import net.minecraft.class_2824;
-import net.minecraft.class_2879;
-import net.minecraft.class_304;
-import net.minecraft.class_3191;
-import net.minecraft.class_5892;
+import net.minecraft.util.Hand;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.decoration.EndCrystalEntity;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.block.Blocks;
+import net.minecraft.block.Block;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Box;
+import net.minecraft.util.math.Vec3i;
+import net.minecraft.util.math.Vec3d;
+import net.minecraft.network.packet.Packet;
+import net.minecraft.block.BlockState;
+import net.minecraft.network.packet.c2s.play.PlayerInteractEntityC2SPacket;
+import net.minecraft.network.packet.c2s.play.HandSwingC2SPacket;
+import net.minecraft.client.option.KeyBinding;
+import net.minecraft.entity.player.BlockBreakingInfo;
+import net.minecraft.network.packet.s2c.play.DeathMessageS2CPacket;
 
 public class iIiiiIiiIi
 extends iIiIiIIIii {

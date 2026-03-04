@@ -11,9 +11,9 @@
  *  meteordevelopment.meteorclient.settings.Setting
  *  meteordevelopment.meteorclient.settings.SettingGroup
  *  meteordevelopment.orbit.EventHandler
- *  net.minecraft.class_2338
- *  net.minecraft.class_2350
- *  net.minecraft.class_310
+ *  net.minecraft.util.math.BlockPos
+ *  net.minecraft.util.math.Direction
+ *  net.minecraft.client.MinecraftClient
  */
 package com.github.mikumiku.addon;
 
@@ -30,9 +30,9 @@ import meteordevelopment.meteorclient.settings.IntSetting;
 import meteordevelopment.meteorclient.settings.Setting;
 import meteordevelopment.meteorclient.settings.SettingGroup;
 import meteordevelopment.orbit.EventHandler;
-import net.minecraft.class_2338;
-import net.minecraft.class_2350;
-import net.minecraft.class_310;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
+import net.minecraft.client.MinecraftClient;
 
 /*
  * Duplicate member names - consider using --renamedupmembers true

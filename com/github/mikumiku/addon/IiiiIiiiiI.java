@@ -12,8 +12,8 @@
  *  meteordevelopment.meteorclient.settings.SettingGroup
  *  meteordevelopment.meteorclient.utils.misc.input.Input
  *  meteordevelopment.orbit.EventHandler
- *  net.minecraft.class_304
- *  net.minecraft.class_310
+ *  net.minecraft.client.option.KeyBinding
+ *  net.minecraft.client.MinecraftClient
  */
 package com.github.mikumiku.addon;
 
@@ -33,8 +33,8 @@ import meteordevelopment.meteorclient.settings.Setting;
 import meteordevelopment.meteorclient.settings.SettingGroup;
 import meteordevelopment.meteorclient.utils.misc.input.Input;
 import meteordevelopment.orbit.EventHandler;
-import net.minecraft.class_304;
-import net.minecraft.class_310;
+import net.minecraft.client.option.KeyBinding;
+import net.minecraft.client.MinecraftClient;
 
 /*
  * Duplicate member names - consider using --renamedupmembers true

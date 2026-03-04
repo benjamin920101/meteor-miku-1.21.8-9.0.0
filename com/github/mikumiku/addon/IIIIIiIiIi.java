@@ -40,41 +40,41 @@
  *  meteordevelopment.meteorclient.utils.misc.MyPotion
  *  meteordevelopment.meteorclient.utils.render.color.SettingColor
  *  meteordevelopment.orbit.EventHandler
- *  net.minecraft.class_10938
- *  net.minecraft.class_10938$class_10939
- *  net.minecraft.class_1268
- *  net.minecraft.class_1291
- *  net.minecraft.class_1297
- *  net.minecraft.class_1299
- *  net.minecraft.class_1713
- *  net.minecraft.class_1792
- *  net.minecraft.class_1802
- *  net.minecraft.class_1887
- *  net.minecraft.class_2246
- *  net.minecraft.class_2248
- *  net.minecraft.class_2338
- *  net.minecraft.class_2350
- *  net.minecraft.class_2396
- *  net.minecraft.class_2398
- *  net.minecraft.class_243
- *  net.minecraft.class_2591
- *  net.minecraft.class_2596
- *  net.minecraft.class_2811
- *  net.minecraft.class_2813
- *  net.minecraft.class_2815
- *  net.minecraft.class_2828
- *  net.minecraft.class_2846
- *  net.minecraft.class_2846$class_2847
- *  net.minecraft.class_2848
- *  net.minecraft.class_2848$class_2849
- *  net.minecraft.class_2879
- *  net.minecraft.class_2885
- *  net.minecraft.class_310
- *  net.minecraft.class_3414
- *  net.minecraft.class_3417
- *  net.minecraft.class_3965
- *  net.minecraft.class_5321
- *  net.minecraft.class_8875
+ *  net.minecraft.screen.sync.ItemStackHash
+ *  net.minecraft.screen.sync.ItemStackHash$Impl
+ *  net.minecraft.util.Hand
+ *  net.minecraft.entity.effect.StatusEffect
+ *  net.minecraft.entity.Entity
+ *  net.minecraft.entity.EntityType
+ *  net.minecraft.screen.slot.SlotActionType
+ *  net.minecraft.item.Item
+ *  net.minecraft.item.Items
+ *  net.minecraft.enchantment.Enchantment
+ *  net.minecraft.block.Blocks
+ *  net.minecraft.block.Block
+ *  net.minecraft.util.math.BlockPos
+ *  net.minecraft.util.math.Direction
+ *  net.minecraft.particle.ParticleType
+ *  net.minecraft.particle.ParticleTypes
+ *  net.minecraft.util.math.Vec3d
+ *  net.minecraft.block.entity.BlockEntityType
+ *  net.minecraft.network.packet.Packet
+ *  net.minecraft.network.packet.c2s.play.ButtonClickC2SPacket
+ *  net.minecraft.network.packet.c2s.play.ClickSlotC2SPacket
+ *  net.minecraft.network.packet.c2s.play.CloseHandledScreenC2SPacket
+ *  net.minecraft.network.packet.c2s.play.PlayerMoveC2SPacket
+ *  net.minecraft.network.packet.c2s.play.PlayerActionC2SPacket
+ *  net.minecraft.network.packet.c2s.play.PlayerActionC2SPacket$Action
+ *  net.minecraft.network.packet.c2s.play.ClientCommandC2SPacket
+ *  net.minecraft.network.packet.c2s.play.ClientCommandC2SPacket$Mode
+ *  net.minecraft.network.packet.c2s.play.HandSwingC2SPacket
+ *  net.minecraft.network.packet.c2s.play.PlayerInteractBlockC2SPacket
+ *  net.minecraft.client.MinecraftClient
+ *  net.minecraft.sound.SoundEvent
+ *  net.minecraft.sound.SoundEvents
+ *  net.minecraft.util.hit.BlockHitResult
+ *  net.minecraft.registry.RegistryKey
+ *  net.minecraft.network.packet.c2s.play.SlotChangedStateC2SPacket
  *  org.joml.Vector3d
  */
 package com.github.mikumiku.addon;
@@ -134,38 +134,38 @@ import meteordevelopment.meteorclient.utils.misc.Keybind;
 import meteordevelopment.meteorclient.utils.misc.MyPotion;
 import meteordevelopment.meteorclient.utils.render.color.SettingColor;
 import meteordevelopment.orbit.EventHandler;
-import net.minecraft.class_10938;
-import net.minecraft.class_1268;
-import net.minecraft.class_1291;
-import net.minecraft.class_1297;
-import net.minecraft.class_1299;
-import net.minecraft.class_1713;
-import net.minecraft.class_1792;
-import net.minecraft.class_1802;
-import net.minecraft.class_1887;
-import net.minecraft.class_2246;
-import net.minecraft.class_2248;
-import net.minecraft.class_2338;
-import net.minecraft.class_2350;
-import net.minecraft.class_2396;
-import net.minecraft.class_2398;
-import net.minecraft.class_243;
-import net.minecraft.class_2591;
-import net.minecraft.class_2596;
-import net.minecraft.class_2811;
-import net.minecraft.class_2813;
-import net.minecraft.class_2815;
-import net.minecraft.class_2828;
-import net.minecraft.class_2846;
-import net.minecraft.class_2848;
-import net.minecraft.class_2879;
-import net.minecraft.class_2885;
-import net.minecraft.class_310;
-import net.minecraft.class_3414;
-import net.minecraft.class_3417;
-import net.minecraft.class_3965;
-import net.minecraft.class_5321;
-import net.minecraft.class_8875;
+import net.minecraft.screen.sync.ItemStackHash;
+import net.minecraft.util.Hand;
+import net.minecraft.entity.effect.StatusEffect;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityType;
+import net.minecraft.screen.slot.SlotActionType;
+import net.minecraft.item.Item;
+import net.minecraft.item.Items;
+import net.minecraft.enchantment.Enchantment;
+import net.minecraft.block.Blocks;
+import net.minecraft.block.Block;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
+import net.minecraft.particle.ParticleType;
+import net.minecraft.particle.ParticleTypes;
+import net.minecraft.util.math.Vec3d;
+import net.minecraft.block.entity.BlockEntityType;
+import net.minecraft.network.packet.Packet;
+import net.minecraft.network.packet.c2s.play.ButtonClickC2SPacket;
+import net.minecraft.network.packet.c2s.play.ClickSlotC2SPacket;
+import net.minecraft.network.packet.c2s.play.CloseHandledScreenC2SPacket;
+import net.minecraft.network.packet.c2s.play.PlayerMoveC2SPacket;
+import net.minecraft.network.packet.c2s.play.PlayerActionC2SPacket;
+import net.minecraft.network.packet.c2s.play.ClientCommandC2SPacket;
+import net.minecraft.network.packet.c2s.play.HandSwingC2SPacket;
+import net.minecraft.network.packet.c2s.play.PlayerInteractBlockC2SPacket;
+import net.minecraft.client.MinecraftClient;
+import net.minecraft.sound.SoundEvent;
+import net.minecraft.sound.SoundEvents;
+import net.minecraft.util.hit.BlockHitResult;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.network.packet.c2s.play.SlotChangedStateC2SPacket;
 import org.joml.Vector3d;
 
 /*

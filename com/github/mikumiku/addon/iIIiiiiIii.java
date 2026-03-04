@@ -15,24 +15,24 @@
  *  meteordevelopment.meteorclient.utils.player.Rotations
  *  meteordevelopment.meteorclient.utils.world.BlockUtils
  *  meteordevelopment.orbit.EventHandler
- *  net.minecraft.class_1268
- *  net.minecraft.class_1297
- *  net.minecraft.class_1533
- *  net.minecraft.class_1802
- *  net.minecraft.class_2338
- *  net.minecraft.class_2350
- *  net.minecraft.class_238
- *  net.minecraft.class_243
- *  net.minecraft.class_259
- *  net.minecraft.class_2596
- *  net.minecraft.class_2824
- *  net.minecraft.class_2846
- *  net.minecraft.class_2846$class_2847
- *  net.minecraft.class_2879
- *  net.minecraft.class_2886
- *  net.minecraft.class_3532
- *  net.minecraft.class_3736
- *  net.minecraft.class_3965
+ *  net.minecraft.util.Hand
+ *  net.minecraft.entity.Entity
+ *  net.minecraft.entity.decoration.ItemFrameEntity
+ *  net.minecraft.item.Items
+ *  net.minecraft.util.math.BlockPos
+ *  net.minecraft.util.math.Direction
+ *  net.minecraft.util.math.Box
+ *  net.minecraft.util.math.Vec3d
+ *  net.minecraft.util.shape.VoxelShapes
+ *  net.minecraft.network.packet.Packet
+ *  net.minecraft.network.packet.c2s.play.PlayerInteractEntityC2SPacket
+ *  net.minecraft.network.packet.c2s.play.PlayerActionC2SPacket
+ *  net.minecraft.network.packet.c2s.play.PlayerActionC2SPacket$Action
+ *  net.minecraft.network.packet.c2s.play.HandSwingC2SPacket
+ *  net.minecraft.network.packet.c2s.play.PlayerInteractItemC2SPacket
+ *  net.minecraft.util.math.MathHelper
+ *  net.minecraft.block.ScaffoldingBlock
+ *  net.minecraft.util.hit.BlockHitResult
  */
 package com.github.mikumiku.addon;
 
@@ -57,23 +57,23 @@ import meteordevelopment.meteorclient.utils.player.InvUtils;
 import meteordevelopment.meteorclient.utils.player.Rotations;
 import meteordevelopment.meteorclient.utils.world.BlockUtils;
 import meteordevelopment.orbit.EventHandler;
-import net.minecraft.class_1268;
-import net.minecraft.class_1297;
-import net.minecraft.class_1533;
-import net.minecraft.class_1802;
-import net.minecraft.class_2338;
-import net.minecraft.class_2350;
-import net.minecraft.class_238;
-import net.minecraft.class_243;
-import net.minecraft.class_259;
-import net.minecraft.class_2596;
-import net.minecraft.class_2824;
-import net.minecraft.class_2846;
-import net.minecraft.class_2879;
-import net.minecraft.class_2886;
-import net.minecraft.class_3532;
-import net.minecraft.class_3736;
-import net.minecraft.class_3965;
+import net.minecraft.util.Hand;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.decoration.ItemFrameEntity;
+import net.minecraft.item.Items;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
+import net.minecraft.util.math.Box;
+import net.minecraft.util.math.Vec3d;
+import net.minecraft.util.shape.VoxelShapes;
+import net.minecraft.network.packet.Packet;
+import net.minecraft.network.packet.c2s.play.PlayerInteractEntityC2SPacket;
+import net.minecraft.network.packet.c2s.play.PlayerActionC2SPacket;
+import net.minecraft.network.packet.c2s.play.HandSwingC2SPacket;
+import net.minecraft.network.packet.c2s.play.PlayerInteractItemC2SPacket;
+import net.minecraft.util.math.MathHelper;
+import net.minecraft.block.ScaffoldingBlock;
+import net.minecraft.util.hit.BlockHitResult;
 
 public class iIIiiiiIii
 extends iIiIiIIIii {

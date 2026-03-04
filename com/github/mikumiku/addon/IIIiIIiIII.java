@@ -4,11 +4,11 @@
  * Could not load the following classes:
  *  meteordevelopment.meteorclient.settings.IVisible
  *  meteordevelopment.meteorclient.settings.Setting
- *  net.minecraft.class_2338
- *  net.minecraft.class_2487
- *  net.minecraft.class_2495
- *  net.minecraft.class_2499
- *  net.minecraft.class_2520
+ *  net.minecraft.util.math.BlockPos
+ *  net.minecraft.nbt.NbtCompound
+ *  net.minecraft.nbt.NbtIntArray
+ *  net.minecraft.nbt.NbtList
+ *  net.minecraft.nbt.NbtElement
  */
 package com.github.mikumiku.addon;
 
@@ -22,11 +22,11 @@ import java.util.List;
 import java.util.function.Consumer;
 import meteordevelopment.meteorclient.settings.IVisible;
 import meteordevelopment.meteorclient.settings.Setting;
-import net.minecraft.class_2338;
-import net.minecraft.class_2487;
-import net.minecraft.class_2495;
-import net.minecraft.class_2499;
-import net.minecraft.class_2520;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.nbt.NbtCompound;
+import net.minecraft.nbt.NbtIntArray;
+import net.minecraft.nbt.NbtList;
+import net.minecraft.nbt.NbtElement;
 
 public class IIIiIIiIII
 extends Setting<List<class_2338>> {

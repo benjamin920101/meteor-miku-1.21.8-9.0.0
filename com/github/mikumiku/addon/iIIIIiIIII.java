@@ -7,9 +7,9 @@
  *  meteordevelopment.meteorclient.settings.Setting
  *  meteordevelopment.meteorclient.settings.SettingGroup
  *  meteordevelopment.orbit.EventHandler
- *  net.minecraft.class_1657
- *  net.minecraft.class_1792
- *  net.minecraft.class_1802
+ *  net.minecraft.entity.player.PlayerEntity
+ *  net.minecraft.item.Item
+ *  net.minecraft.item.Items
  */
 package com.github.mikumiku.addon;
 
@@ -24,9 +24,9 @@ import meteordevelopment.meteorclient.settings.BoolSetting;
 import meteordevelopment.meteorclient.settings.Setting;
 import meteordevelopment.meteorclient.settings.SettingGroup;
 import meteordevelopment.orbit.EventHandler;
-import net.minecraft.class_1657;
-import net.minecraft.class_1792;
-import net.minecraft.class_1802;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.Item;
+import net.minecraft.item.Items;
 
 public class iIIIIiIIII
 extends iIiIiIIIii {

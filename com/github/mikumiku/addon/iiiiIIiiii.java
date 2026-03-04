@@ -11,12 +11,12 @@
  *  meteordevelopment.meteorclient.settings.Setting
  *  meteordevelopment.meteorclient.settings.SettingGroup
  *  meteordevelopment.orbit.EventHandler
- *  net.minecraft.class_1297
- *  net.minecraft.class_1671
- *  net.minecraft.class_2596
- *  net.minecraft.class_2708
- *  net.minecraft.class_2716
- *  net.minecraft.class_6374
+ *  net.minecraft.entity.Entity
+ *  net.minecraft.entity.projectile.FireworkRocketEntity
+ *  net.minecraft.network.packet.Packet
+ *  net.minecraft.network.packet.s2c.play.PlayerPositionLookS2CPacket
+ *  net.minecraft.network.packet.s2c.play.EntitiesDestroyS2CPacket
+ *  net.minecraft.network.packet.c2s.common.CommonPongC2SPacket
  */
 package com.github.mikumiku.addon;
 
@@ -36,12 +36,12 @@ import meteordevelopment.meteorclient.settings.IntSetting;
 import meteordevelopment.meteorclient.settings.Setting;
 import meteordevelopment.meteorclient.settings.SettingGroup;
 import meteordevelopment.orbit.EventHandler;
-import net.minecraft.class_1297;
-import net.minecraft.class_1671;
-import net.minecraft.class_2596;
-import net.minecraft.class_2708;
-import net.minecraft.class_2716;
-import net.minecraft.class_6374;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.projectile.FireworkRocketEntity;
+import net.minecraft.network.packet.Packet;
+import net.minecraft.network.packet.s2c.play.PlayerPositionLookS2CPacket;
+import net.minecraft.network.packet.s2c.play.EntitiesDestroyS2CPacket;
+import net.minecraft.network.packet.c2s.common.CommonPongC2SPacket;
 
 public class iiiiIIiiii
 extends iIiIiIIIii {

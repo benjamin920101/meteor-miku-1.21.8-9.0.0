@@ -2,15 +2,15 @@
  * Decompiled with CFR 0.152.
  * 
  * Could not load the following classes:
- *  net.minecraft.class_2246
- *  net.minecraft.class_2248
+ *  net.minecraft.block.Blocks
+ *  net.minecraft.block.Block
  */
 package com.github.mikumiku.addon;
 
 import java.util.Arrays;
 import java.util.List;
-import net.minecraft.class_2246;
-import net.minecraft.class_2248;
+import net.minecraft.block.Blocks;
+import net.minecraft.block.Block;
 
 public interface IiiiiiIiiI {
     public static final List<class_2248> ALLATORIxDEMO;

@@ -2,7 +2,7 @@
  * Decompiled with CFR 0.152.
  * 
  * Could not load the following classes:
- *  net.minecraft.class_156
+ *  net.minecraft.util.Util
  */
 package com.github.mikumiku.addon;
 
@@ -47,7 +47,7 @@ import javax.swing.SwingUtilities;
 import javax.swing.Timer;
 import javax.swing.UIManager;
 import javax.swing.text.JTextComponent;
-import net.minecraft.class_156;
+import net.minecraft.util.Util;
 
 public class IiiiIiiIII {
     public IiiiIiiIII() {

@@ -2,10 +2,10 @@
  * Decompiled with CFR 0.152.
  * 
  * Could not load the following classes:
- *  net.minecraft.class_2487
- *  net.minecraft.class_2503
- *  net.minecraft.class_2519
- *  net.minecraft.class_2520
+ *  net.minecraft.nbt.NbtCompound
+ *  net.minecraft.nbt.NbtLong
+ *  net.minecraft.nbt.NbtString
+ *  net.minecraft.nbt.NbtElement
  */
 package com.github.mikumiku.addon;
 
@@ -14,10 +14,10 @@ import com.github.mikumiku.addon.iiIiiiIiii;
 import com.seedfinding.mccore.version.MCVersion;
 import java.util.Date;
 import java.util.Optional;
-import net.minecraft.class_2487;
-import net.minecraft.class_2503;
-import net.minecraft.class_2519;
-import net.minecraft.class_2520;
+import net.minecraft.nbt.NbtCompound;
+import net.minecraft.nbt.NbtLong;
+import net.minecraft.nbt.NbtString;
+import net.minecraft.nbt.NbtElement;
 
 public class IIiiiiIIII {
     public final Long iIiIiIIIII;

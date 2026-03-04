@@ -20,25 +20,25 @@
  *  meteordevelopment.meteorclient.utils.Utils
  *  meteordevelopment.meteorclient.utils.player.PlayerUtils
  *  meteordevelopment.orbit.EventHandler
- *  net.minecraft.class_1923
- *  net.minecraft.class_1959
- *  net.minecraft.class_2338
- *  net.minecraft.class_2338$class_2339
- *  net.minecraft.class_2350
- *  net.minecraft.class_2382
- *  net.minecraft.class_243
- *  net.minecraft.class_2791
- *  net.minecraft.class_2806
- *  net.minecraft.class_2826
- *  net.minecraft.class_2902$class_2903
- *  net.minecraft.class_2919
- *  net.minecraft.class_2919$class_6675
- *  net.minecraft.class_3532
- *  net.minecraft.class_5321
- *  net.minecraft.class_5819
- *  net.minecraft.class_638
- *  net.minecraft.class_6880
- *  net.minecraft.class_7522
+ *  net.minecraft.util.math.ChunkPos
+ *  net.minecraft.world.biome.Biome
+ *  net.minecraft.util.math.BlockPos
+ *  net.minecraft.util.math.BlockPos$Mutable
+ *  net.minecraft.util.math.Direction
+ *  net.minecraft.util.math.Vec3i
+ *  net.minecraft.util.math.Vec3d
+ *  net.minecraft.world.chunk.Chunk
+ *  net.minecraft.world.chunk.ChunkStatus
+ *  net.minecraft.world.chunk.ChunkSection
+ *  net.minecraft.world.Heightmap$Type
+ *  net.minecraft.util.math.random.ChunkRandom
+ *  net.minecraft.util.math.random.ChunkRandom$RandomProvider
+ *  net.minecraft.util.math.MathHelper
+ *  net.minecraft.registry.RegistryKey
+ *  net.minecraft.util.math.random.Random
+ *  net.minecraft.client.world.ClientWorld
+ *  net.minecraft.registry.entry.RegistryEntry
+ *  net.minecraft.world.chunk.ReadableContainer
  */
 package com.github.mikumiku.addon;
 
@@ -80,23 +80,23 @@ import meteordevelopment.meteorclient.settings.StringSetting;
 import meteordevelopment.meteorclient.utils.Utils;
 import meteordevelopment.meteorclient.utils.player.PlayerUtils;
 import meteordevelopment.orbit.EventHandler;
-import net.minecraft.class_1923;
-import net.minecraft.class_1959;
-import net.minecraft.class_2338;
-import net.minecraft.class_2350;
-import net.minecraft.class_2382;
-import net.minecraft.class_243;
-import net.minecraft.class_2791;
-import net.minecraft.class_2806;
-import net.minecraft.class_2826;
-import net.minecraft.class_2902;
-import net.minecraft.class_2919;
-import net.minecraft.class_3532;
-import net.minecraft.class_5321;
-import net.minecraft.class_5819;
-import net.minecraft.class_638;
-import net.minecraft.class_6880;
-import net.minecraft.class_7522;
+import net.minecraft.util.math.ChunkPos;
+import net.minecraft.world.biome.Biome;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
+import net.minecraft.util.math.Vec3i;
+import net.minecraft.util.math.Vec3d;
+import net.minecraft.world.chunk.Chunk;
+import net.minecraft.world.chunk.ChunkStatus;
+import net.minecraft.world.chunk.ChunkSection;
+import net.minecraft.world.Heightmap;
+import net.minecraft.util.math.random.ChunkRandom;
+import net.minecraft.util.math.MathHelper;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.util.math.random.Random;
+import net.minecraft.client.world.ClientWorld;
+import net.minecraft.registry.entry.RegistryEntry;
+import net.minecraft.world.chunk.ReadableContainer;
 
 public class IiiiIiiIIi
 extends iIiIiIIIii {

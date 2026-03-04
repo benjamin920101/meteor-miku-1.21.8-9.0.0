@@ -12,24 +12,24 @@
  *  meteordevelopment.meteorclient.settings.SettingGroup
  *  meteordevelopment.meteorclient.utils.player.FindItemResult
  *  meteordevelopment.orbit.EventHandler
- *  net.minecraft.class_1297
- *  net.minecraft.class_1309
- *  net.minecraft.class_1657
- *  net.minecraft.class_1743
- *  net.minecraft.class_1792
- *  net.minecraft.class_1799
- *  net.minecraft.class_2246
- *  net.minecraft.class_2338
- *  net.minecraft.class_243
- *  net.minecraft.class_2596
- *  net.minecraft.class_2848
- *  net.minecraft.class_2848$class_2849
- *  net.minecraft.class_310
- *  net.minecraft.class_5321
- *  net.minecraft.class_6880
- *  net.minecraft.class_9304
- *  net.minecraft.class_9334
- *  net.minecraft.class_9362
+ *  net.minecraft.entity.Entity
+ *  net.minecraft.entity.LivingEntity
+ *  net.minecraft.entity.player.PlayerEntity
+ *  net.minecraft.item.AxeItem
+ *  net.minecraft.item.Item
+ *  net.minecraft.item.ItemStack
+ *  net.minecraft.block.Blocks
+ *  net.minecraft.util.math.BlockPos
+ *  net.minecraft.util.math.Vec3d
+ *  net.minecraft.network.packet.Packet
+ *  net.minecraft.network.packet.c2s.play.ClientCommandC2SPacket
+ *  net.minecraft.network.packet.c2s.play.ClientCommandC2SPacket$Mode
+ *  net.minecraft.client.MinecraftClient
+ *  net.minecraft.registry.RegistryKey
+ *  net.minecraft.registry.entry.RegistryEntry
+ *  net.minecraft.component.type.ItemEnchantmentsComponent
+ *  net.minecraft.component.DataComponentTypes
+ *  net.minecraft.item.MaceItem
  */
 package com.github.mikumiku.addon;
 
@@ -51,23 +51,23 @@ import meteordevelopment.meteorclient.settings.Setting;
 import meteordevelopment.meteorclient.settings.SettingGroup;
 import meteordevelopment.meteorclient.utils.player.FindItemResult;
 import meteordevelopment.orbit.EventHandler;
-import net.minecraft.class_1297;
-import net.minecraft.class_1309;
-import net.minecraft.class_1657;
-import net.minecraft.class_1743;
-import net.minecraft.class_1792;
-import net.minecraft.class_1799;
-import net.minecraft.class_2246;
-import net.minecraft.class_2338;
-import net.minecraft.class_243;
-import net.minecraft.class_2596;
-import net.minecraft.class_2848;
-import net.minecraft.class_310;
-import net.minecraft.class_5321;
-import net.minecraft.class_6880;
-import net.minecraft.class_9304;
-import net.minecraft.class_9334;
-import net.minecraft.class_9362;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.AxeItem;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.block.Blocks;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Vec3d;
+import net.minecraft.network.packet.Packet;
+import net.minecraft.network.packet.c2s.play.ClientCommandC2SPacket;
+import net.minecraft.client.MinecraftClient;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.entry.RegistryEntry;
+import net.minecraft.component.type.ItemEnchantmentsComponent;
+import net.minecraft.component.DataComponentTypes;
+import net.minecraft.item.MaceItem;
 
 public class IiIIIiiIiI
 extends iIiIiIIIii {

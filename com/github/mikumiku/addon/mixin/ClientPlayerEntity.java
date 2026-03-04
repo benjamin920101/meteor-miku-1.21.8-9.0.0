@@ -4,11 +4,11 @@
  * Could not load the following classes:
  *  com.mojang.authlib.GameProfile
  *  meteordevelopment.meteorclient.MeteorClient
- *  net.minecraft.class_1313
- *  net.minecraft.class_243
- *  net.minecraft.class_638
- *  net.minecraft.class_742
- *  net.minecraft.class_746
+ *  net.minecraft.entity.MovementType
+ *  net.minecraft.util.math.Vec3d
+ *  net.minecraft.client.world.ClientWorld
+ *  net.minecraft.client.network.AbstractClientPlayerEntity
+ *  net.minecraft.client.network.ClientPlayerEntity
  *  org.spongepowered.asm.mixin.Mixin
  *  org.spongepowered.asm.mixin.Shadow
  *  org.spongepowered.asm.mixin.injection.At
@@ -20,11 +20,11 @@ package com.github.mikumiku.addon.mixin;
 import com.github.mikumiku.addon.mixinface.MoveEvent;
 import com.mojang.authlib.GameProfile;
 import meteordevelopment.meteorclient.MeteorClient;
-import net.minecraft.class_1313;
-import net.minecraft.class_243;
-import net.minecraft.class_638;
-import net.minecraft.class_742;
-import net.minecraft.class_746;
+import net.minecraft.entity.MovementType;
+import net.minecraft.util.math.Vec3d;
+import net.minecraft.client.world.ClientWorld;
+import net.minecraft.client.network.AbstractClientPlayerEntity;
+import net.minecraft.client.network.ClientPlayerEntity;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;

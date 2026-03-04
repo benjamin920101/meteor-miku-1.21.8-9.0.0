@@ -7,12 +7,12 @@
  *  meteordevelopment.meteorclient.systems.config.Config
  *  meteordevelopment.meteorclient.utils.Utils
  *  meteordevelopment.meteorclient.utils.player.ChatUtils
- *  net.minecraft.class_124
- *  net.minecraft.class_2487
- *  net.minecraft.class_2520
- *  net.minecraft.class_2561
- *  net.minecraft.class_5250
- *  net.minecraft.class_642
+ *  net.minecraft.util.Formatting
+ *  net.minecraft.nbt.NbtCompound
+ *  net.minecraft.nbt.NbtElement
+ *  net.minecraft.text.Text
+ *  net.minecraft.text.MutableText
+ *  net.minecraft.client.network.ServerInfo
  */
 package com.github.mikumiku.addon;
 
@@ -28,12 +28,12 @@ import meteordevelopment.meteorclient.systems.System;
 import meteordevelopment.meteorclient.systems.config.Config;
 import meteordevelopment.meteorclient.utils.Utils;
 import meteordevelopment.meteorclient.utils.player.ChatUtils;
-import net.minecraft.class_124;
-import net.minecraft.class_2487;
-import net.minecraft.class_2520;
-import net.minecraft.class_2561;
-import net.minecraft.class_5250;
-import net.minecraft.class_642;
+import net.minecraft.util.Formatting;
+import net.minecraft.nbt.NbtCompound;
+import net.minecraft.nbt.NbtElement;
+import net.minecraft.text.Text;
+import net.minecraft.text.MutableText;
+import net.minecraft.client.network.ServerInfo;
 
 /*
  * Duplicate member names - consider using --renamedupmembers true

@@ -16,17 +16,17 @@
  *  meteordevelopment.meteorclient.utils.render.color.Color
  *  meteordevelopment.meteorclient.utils.render.color.SettingColor
  *  meteordevelopment.orbit.EventHandler
- *  net.minecraft.class_1297
- *  net.minecraft.class_1299
- *  net.minecraft.class_1304
- *  net.minecraft.class_1542
- *  net.minecraft.class_1657
- *  net.minecraft.class_1792
- *  net.minecraft.class_1799
- *  net.minecraft.class_1802
- *  net.minecraft.class_3218
- *  net.minecraft.class_5321
- *  net.minecraft.class_7923
+ *  net.minecraft.entity.Entity
+ *  net.minecraft.entity.EntityType
+ *  net.minecraft.entity.EquipmentSlot
+ *  net.minecraft.entity.ItemEntity
+ *  net.minecraft.entity.player.PlayerEntity
+ *  net.minecraft.item.Item
+ *  net.minecraft.item.ItemStack
+ *  net.minecraft.item.Items
+ *  net.minecraft.server.world.ServerWorld
+ *  net.minecraft.registry.RegistryKey
+ *  net.minecraft.registry.Registries
  */
 package com.github.mikumiku.addon;
 
@@ -57,17 +57,17 @@ import meteordevelopment.meteorclient.utils.misc.Names;
 import meteordevelopment.meteorclient.utils.render.color.Color;
 import meteordevelopment.meteorclient.utils.render.color.SettingColor;
 import meteordevelopment.orbit.EventHandler;
-import net.minecraft.class_1297;
-import net.minecraft.class_1299;
-import net.minecraft.class_1304;
-import net.minecraft.class_1542;
-import net.minecraft.class_1657;
-import net.minecraft.class_1792;
-import net.minecraft.class_1799;
-import net.minecraft.class_1802;
-import net.minecraft.class_3218;
-import net.minecraft.class_5321;
-import net.minecraft.class_7923;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityType;
+import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.entity.ItemEntity;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
+import net.minecraft.server.world.ServerWorld;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.Registries;
 
 public class IIiiIIiiiI
 extends iIiIiIIIii {

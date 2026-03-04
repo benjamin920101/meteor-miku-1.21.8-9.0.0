@@ -18,12 +18,12 @@
  *  meteordevelopment.meteorclient.utils.render.color.SettingColor
  *  meteordevelopment.meteorclient.utils.world.BlockIterator
  *  meteordevelopment.orbit.EventHandler
- *  net.minecraft.class_1802
- *  net.minecraft.class_2246
- *  net.minecraft.class_2338
- *  net.minecraft.class_2338$class_2339
- *  net.minecraft.class_2350
- *  net.minecraft.class_3726
+ *  net.minecraft.item.Items
+ *  net.minecraft.block.Blocks
+ *  net.minecraft.util.math.BlockPos
+ *  net.minecraft.util.math.BlockPos$Mutable
+ *  net.minecraft.util.math.Direction
+ *  net.minecraft.block.ShapeContext
  */
 package com.github.mikumiku.addon;
 
@@ -56,11 +56,11 @@ import meteordevelopment.meteorclient.utils.render.color.Color;
 import meteordevelopment.meteorclient.utils.render.color.SettingColor;
 import meteordevelopment.meteorclient.utils.world.BlockIterator;
 import meteordevelopment.orbit.EventHandler;
-import net.minecraft.class_1802;
-import net.minecraft.class_2246;
-import net.minecraft.class_2338;
-import net.minecraft.class_2350;
-import net.minecraft.class_3726;
+import net.minecraft.item.Items;
+import net.minecraft.block.Blocks;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
+import net.minecraft.block.ShapeContext;
 
 public class IiIIiIIIII
 extends iIiIiIIIii {

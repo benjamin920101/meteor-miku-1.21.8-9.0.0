@@ -11,20 +11,20 @@
  *  meteordevelopment.meteorclient.utils.player.PlayerUtils
  *  meteordevelopment.meteorclient.utils.world.BlockUtils
  *  meteordevelopment.meteorclient.utils.world.Dimension
- *  net.minecraft.class_1792
- *  net.minecraft.class_1799
- *  net.minecraft.class_1802
- *  net.minecraft.class_2248
- *  net.minecraft.class_2338
- *  net.minecraft.class_2338$class_2339
- *  net.minecraft.class_2350
- *  net.minecraft.class_2382
- *  net.minecraft.class_243
- *  net.minecraft.class_310
- *  net.minecraft.class_4184
- *  net.minecraft.class_4587
- *  net.minecraft.class_7833
- *  net.minecraft.class_7923
+ *  net.minecraft.item.Item
+ *  net.minecraft.item.ItemStack
+ *  net.minecraft.item.Items
+ *  net.minecraft.block.Block
+ *  net.minecraft.util.math.BlockPos
+ *  net.minecraft.util.math.BlockPos$Mutable
+ *  net.minecraft.util.math.Direction
+ *  net.minecraft.util.math.Vec3i
+ *  net.minecraft.util.math.Vec3d
+ *  net.minecraft.client.MinecraftClient
+ *  net.minecraft.client.render.Camera
+ *  net.minecraft.client.util.math.MatrixStack
+ *  net.minecraft.util.math.RotationAxis
+ *  net.minecraft.registry.Registries
  *  org.joml.Quaternionfc
  *  org.lwjgl.opengl.GL11
  */
@@ -44,19 +44,19 @@ import lombok.Generated;
 import meteordevelopment.meteorclient.utils.player.PlayerUtils;
 import meteordevelopment.meteorclient.utils.world.BlockUtils;
 import meteordevelopment.meteorclient.utils.world.Dimension;
-import net.minecraft.class_1792;
-import net.minecraft.class_1799;
-import net.minecraft.class_1802;
-import net.minecraft.class_2248;
-import net.minecraft.class_2338;
-import net.minecraft.class_2350;
-import net.minecraft.class_2382;
-import net.minecraft.class_243;
-import net.minecraft.class_310;
-import net.minecraft.class_4184;
-import net.minecraft.class_4587;
-import net.minecraft.class_7833;
-import net.minecraft.class_7923;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
+import net.minecraft.block.Block;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
+import net.minecraft.util.math.Vec3i;
+import net.minecraft.util.math.Vec3d;
+import net.minecraft.client.MinecraftClient;
+import net.minecraft.client.render.Camera;
+import net.minecraft.client.util.math.MatrixStack;
+import net.minecraft.util.math.RotationAxis;
+import net.minecraft.registry.Registries;
 import org.joml.Quaternionfc;
 import org.lwjgl.opengl.GL11;
 

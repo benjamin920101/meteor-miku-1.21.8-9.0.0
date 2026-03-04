@@ -13,9 +13,9 @@
  *  meteordevelopment.meteorclient.gui.widgets.pressable.WPlus
  *  meteordevelopment.meteorclient.settings.IVisible
  *  meteordevelopment.meteorclient.settings.Setting
- *  net.minecraft.class_2487
- *  net.minecraft.class_2519
- *  net.minecraft.class_2520
+ *  net.minecraft.nbt.NbtCompound
+ *  net.minecraft.nbt.NbtString
+ *  net.minecraft.nbt.NbtElement
  */
 package com.github.mikumiku.addon;
 
@@ -38,9 +38,9 @@ import meteordevelopment.meteorclient.gui.widgets.pressable.WMinus;
 import meteordevelopment.meteorclient.gui.widgets.pressable.WPlus;
 import meteordevelopment.meteorclient.settings.IVisible;
 import meteordevelopment.meteorclient.settings.Setting;
-import net.minecraft.class_2487;
-import net.minecraft.class_2519;
-import net.minecraft.class_2520;
+import net.minecraft.nbt.NbtCompound;
+import net.minecraft.nbt.NbtString;
+import net.minecraft.nbt.NbtElement;
 
 public class iIiiiiiiii
 extends Setting<Map<String, String>> {

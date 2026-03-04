@@ -2,13 +2,13 @@
  * Decompiled with CFR 0.152.
  * 
  * Could not load the following classes:
- *  net.minecraft.class_1657
- *  net.minecraft.class_1713
+ *  net.minecraft.entity.player.PlayerEntity
+ *  net.minecraft.screen.slot.SlotActionType
  */
 package com.github.mikumiku.addon.mixinface;
 
-import net.minecraft.class_1657;
-import net.minecraft.class_1713;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.screen.slot.SlotActionType;
 
 public interface IClientPlayerInteractionManager {
     public float getCurrentBreakingProgress();

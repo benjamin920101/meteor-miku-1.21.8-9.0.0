@@ -11,14 +11,14 @@
  *  meteordevelopment.meteorclient.systems.modules.Module
  *  meteordevelopment.meteorclient.utils.Utils
  *  meteordevelopment.orbit.EventHandler
- *  net.minecraft.class_1297
- *  net.minecraft.class_1657
- *  net.minecraft.class_1684
- *  net.minecraft.class_243
- *  net.minecraft.class_2487
- *  net.minecraft.class_2520
- *  net.minecraft.class_2561
- *  net.minecraft.class_742
+ *  net.minecraft.entity.Entity
+ *  net.minecraft.entity.player.PlayerEntity
+ *  net.minecraft.entity.projectile.thrown.EnderPearlEntity
+ *  net.minecraft.util.math.Vec3d
+ *  net.minecraft.nbt.NbtCompound
+ *  net.minecraft.nbt.NbtElement
+ *  net.minecraft.text.Text
+ *  net.minecraft.client.network.AbstractClientPlayerEntity
  */
 package com.github.mikumiku.addon;
 
@@ -41,14 +41,14 @@ import meteordevelopment.meteorclient.settings.SettingGroup;
 import meteordevelopment.meteorclient.systems.modules.Module;
 import meteordevelopment.meteorclient.utils.Utils;
 import meteordevelopment.orbit.EventHandler;
-import net.minecraft.class_1297;
-import net.minecraft.class_1657;
-import net.minecraft.class_1684;
-import net.minecraft.class_243;
-import net.minecraft.class_2487;
-import net.minecraft.class_2520;
-import net.minecraft.class_2561;
-import net.minecraft.class_742;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.projectile.thrown.EnderPearlEntity;
+import net.minecraft.util.math.Vec3d;
+import net.minecraft.nbt.NbtCompound;
+import net.minecraft.nbt.NbtElement;
+import net.minecraft.text.Text;
+import net.minecraft.client.network.AbstractClientPlayerEntity;
 
 public class iIiIIiiiii
 extends iIiIiIIIii {

@@ -9,7 +9,7 @@
  *  meteordevelopment.meteorclient.settings.StringListSetting$Builder
  *  meteordevelopment.meteorclient.settings.StringSetting$Builder
  *  meteordevelopment.orbit.EventHandler
- *  net.minecraft.class_7439
+ *  net.minecraft.network.packet.s2c.play.GameMessageS2CPacket
  */
 package com.github.mikumiku.addon;
 
@@ -28,7 +28,7 @@ import meteordevelopment.meteorclient.settings.SettingGroup;
 import meteordevelopment.meteorclient.settings.StringListSetting;
 import meteordevelopment.meteorclient.settings.StringSetting;
 import meteordevelopment.orbit.EventHandler;
-import net.minecraft.class_7439;
+import net.minecraft.network.packet.s2c.play.GameMessageS2CPacket;
 
 public class iIIIiiiIII
 extends iIiIiIIIii {

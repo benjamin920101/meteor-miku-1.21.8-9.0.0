@@ -9,14 +9,14 @@
  *  meteordevelopment.meteorclient.settings.Setting
  *  meteordevelopment.meteorclient.settings.SettingGroup
  *  meteordevelopment.orbit.EventHandler
- *  net.minecraft.class_1268
- *  net.minecraft.class_1802
- *  net.minecraft.class_1835
- *  net.minecraft.class_2338
- *  net.minecraft.class_2350
- *  net.minecraft.class_2596
- *  net.minecraft.class_2846
- *  net.minecraft.class_2846$class_2847
+ *  net.minecraft.util.Hand
+ *  net.minecraft.item.Items
+ *  net.minecraft.item.TridentItem
+ *  net.minecraft.util.math.BlockPos
+ *  net.minecraft.util.math.Direction
+ *  net.minecraft.network.packet.Packet
+ *  net.minecraft.network.packet.c2s.play.PlayerActionC2SPacket
+ *  net.minecraft.network.packet.c2s.play.PlayerActionC2SPacket$Action
  */
 package com.github.mikumiku.addon;
 
@@ -32,13 +32,13 @@ import meteordevelopment.meteorclient.settings.IntSetting;
 import meteordevelopment.meteorclient.settings.Setting;
 import meteordevelopment.meteorclient.settings.SettingGroup;
 import meteordevelopment.orbit.EventHandler;
-import net.minecraft.class_1268;
-import net.minecraft.class_1802;
-import net.minecraft.class_1835;
-import net.minecraft.class_2338;
-import net.minecraft.class_2350;
-import net.minecraft.class_2596;
-import net.minecraft.class_2846;
+import net.minecraft.util.Hand;
+import net.minecraft.item.Items;
+import net.minecraft.item.TridentItem;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
+import net.minecraft.network.packet.Packet;
+import net.minecraft.network.packet.c2s.play.PlayerActionC2SPacket;
 
 public class iIiIIiiiIi
 extends iIiIiIIIii {

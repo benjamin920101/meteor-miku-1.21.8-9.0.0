@@ -2,15 +2,15 @@
  * Decompiled with CFR 0.152.
  * 
  * Could not load the following classes:
- *  net.minecraft.class_156
- *  net.minecraft.class_2561
- *  net.minecraft.class_310
- *  net.minecraft.class_332
- *  net.minecraft.class_342
- *  net.minecraft.class_364
- *  net.minecraft.class_4185
- *  net.minecraft.class_437
- *  net.minecraft.class_442
+ *  net.minecraft.util.Util
+ *  net.minecraft.text.Text
+ *  net.minecraft.client.MinecraftClient
+ *  net.minecraft.client.gui.DrawContext
+ *  net.minecraft.client.gui.widget.TextFieldWidget
+ *  net.minecraft.client.gui.Element
+ *  net.minecraft.client.gui.widget.ButtonWidget
+ *  net.minecraft.client.gui.screen.Screen
+ *  net.minecraft.client.gui.screen.TitleScreen
  */
 package com.github.mikumiku.addon;
 
@@ -18,15 +18,15 @@ import com.github.mikumiku.addon.IIiiiIIiIi;
 import com.github.mikumiku.addon.IiIIiIIiII;
 import com.github.mikumiku.addon.IiIIiIiIii;
 import java.util.Date;
-import net.minecraft.class_156;
-import net.minecraft.class_2561;
-import net.minecraft.class_310;
-import net.minecraft.class_332;
-import net.minecraft.class_342;
-import net.minecraft.class_364;
-import net.minecraft.class_4185;
-import net.minecraft.class_437;
-import net.minecraft.class_442;
+import net.minecraft.util.Util;
+import net.minecraft.text.Text;
+import net.minecraft.client.MinecraftClient;
+import net.minecraft.client.gui.DrawContext;
+import net.minecraft.client.gui.widget.TextFieldWidget;
+import net.minecraft.client.gui.Element;
+import net.minecraft.client.gui.widget.ButtonWidget;
+import net.minecraft.client.gui.screen.Screen;
+import net.minecraft.client.gui.screen.TitleScreen;
 
 public class IiIIIiIIiI
 extends class_437 {

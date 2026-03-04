@@ -25,29 +25,29 @@
  *  meteordevelopment.meteorclient.utils.player.Rotations
  *  meteordevelopment.meteorclient.utils.world.TickRate
  *  meteordevelopment.orbit.EventHandler
- *  net.minecraft.class_1268
- *  net.minecraft.class_1297
- *  net.minecraft.class_1299
- *  net.minecraft.class_1309
- *  net.minecraft.class_1429
- *  net.minecraft.class_1493
- *  net.minecraft.class_1560
- *  net.minecraft.class_1590
- *  net.minecraft.class_1657
- *  net.minecraft.class_1743
- *  net.minecraft.class_1792
- *  net.minecraft.class_1799
- *  net.minecraft.class_1835
- *  net.minecraft.class_1934
- *  net.minecraft.class_243
- *  net.minecraft.class_2596
- *  net.minecraft.class_2824
- *  net.minecraft.class_2848
- *  net.minecraft.class_2848$class_2849
- *  net.minecraft.class_2868
- *  net.minecraft.class_310
- *  net.minecraft.class_3532
- *  net.minecraft.class_9362
+ *  net.minecraft.util.Hand
+ *  net.minecraft.entity.Entity
+ *  net.minecraft.entity.EntityType
+ *  net.minecraft.entity.LivingEntity
+ *  net.minecraft.entity.passive.AnimalEntity
+ *  net.minecraft.entity.passive.WolfEntity
+ *  net.minecraft.entity.mob.EndermanEntity
+ *  net.minecraft.entity.mob.ZombifiedPiglinEntity
+ *  net.minecraft.entity.player.PlayerEntity
+ *  net.minecraft.item.AxeItem
+ *  net.minecraft.item.Item
+ *  net.minecraft.item.ItemStack
+ *  net.minecraft.item.TridentItem
+ *  net.minecraft.world.GameMode
+ *  net.minecraft.util.math.Vec3d
+ *  net.minecraft.network.packet.Packet
+ *  net.minecraft.network.packet.c2s.play.PlayerInteractEntityC2SPacket
+ *  net.minecraft.network.packet.c2s.play.ClientCommandC2SPacket
+ *  net.minecraft.network.packet.c2s.play.ClientCommandC2SPacket$Mode
+ *  net.minecraft.network.packet.c2s.play.UpdateSelectedSlotC2SPacket
+ *  net.minecraft.client.MinecraftClient
+ *  net.minecraft.util.math.MathHelper
+ *  net.minecraft.item.MaceItem
  */
 package com.github.mikumiku.addon;
 
@@ -89,28 +89,28 @@ import meteordevelopment.meteorclient.utils.player.PlayerUtils;
 import meteordevelopment.meteorclient.utils.player.Rotations;
 import meteordevelopment.meteorclient.utils.world.TickRate;
 import meteordevelopment.orbit.EventHandler;
-import net.minecraft.class_1268;
-import net.minecraft.class_1297;
-import net.minecraft.class_1299;
-import net.minecraft.class_1309;
-import net.minecraft.class_1429;
-import net.minecraft.class_1493;
-import net.minecraft.class_1560;
-import net.minecraft.class_1590;
-import net.minecraft.class_1657;
-import net.minecraft.class_1743;
-import net.minecraft.class_1792;
-import net.minecraft.class_1799;
-import net.minecraft.class_1835;
-import net.minecraft.class_1934;
-import net.minecraft.class_243;
-import net.minecraft.class_2596;
-import net.minecraft.class_2824;
-import net.minecraft.class_2848;
-import net.minecraft.class_2868;
-import net.minecraft.class_310;
-import net.minecraft.class_3532;
-import net.minecraft.class_9362;
+import net.minecraft.util.Hand;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityType;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.passive.AnimalEntity;
+import net.minecraft.entity.passive.WolfEntity;
+import net.minecraft.entity.mob.EndermanEntity;
+import net.minecraft.entity.mob.ZombifiedPiglinEntity;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.AxeItem;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.TridentItem;
+import net.minecraft.world.GameMode;
+import net.minecraft.util.math.Vec3d;
+import net.minecraft.network.packet.Packet;
+import net.minecraft.network.packet.c2s.play.PlayerInteractEntityC2SPacket;
+import net.minecraft.network.packet.c2s.play.ClientCommandC2SPacket;
+import net.minecraft.network.packet.c2s.play.UpdateSelectedSlotC2SPacket;
+import net.minecraft.client.MinecraftClient;
+import net.minecraft.util.math.MathHelper;
+import net.minecraft.item.MaceItem;
 
 public class iIIIIIIIIi
 extends iIiIiIIIii {

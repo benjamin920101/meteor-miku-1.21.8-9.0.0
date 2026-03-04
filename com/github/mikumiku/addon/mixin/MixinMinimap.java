@@ -2,10 +2,10 @@
  * Decompiled with CFR 0.152.
  * 
  * Could not load the following classes:
- *  net.minecraft.class_2338
- *  net.minecraft.class_2338$class_2339
- *  net.minecraft.class_332
- *  net.minecraft.class_4597$class_4598
+ *  net.minecraft.util.math.BlockPos
+ *  net.minecraft.util.math.BlockPos$Mutable
+ *  net.minecraft.client.gui.DrawContext
+ *  net.minecraft.client.render.VertexConsumerProvider$Immediate
  *  org.spongepowered.asm.mixin.Mixin
  *  org.spongepowered.asm.mixin.Pseudo
  *  org.spongepowered.asm.mixin.injection.At
@@ -17,9 +17,9 @@
 package com.github.mikumiku.addon.mixin;
 
 import com.github.mikumiku.addon.mixinface.MagicMix;
-import net.minecraft.class_2338;
-import net.minecraft.class_332;
-import net.minecraft.class_4597;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.client.gui.DrawContext;
+import net.minecraft.client.render.VertexConsumerProvider;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Pseudo;
 import org.spongepowered.asm.mixin.injection.At;

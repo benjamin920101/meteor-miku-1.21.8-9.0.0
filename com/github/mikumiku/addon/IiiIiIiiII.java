@@ -6,9 +6,9 @@
  *  meteordevelopment.meteorclient.settings.BlockSetting
  *  meteordevelopment.meteorclient.settings.IVisible
  *  meteordevelopment.meteorclient.settings.Setting
- *  net.minecraft.class_2248
- *  net.minecraft.class_2338
- *  net.minecraft.class_310
+ *  net.minecraft.block.Block
+ *  net.minecraft.util.math.BlockPos
+ *  net.minecraft.client.MinecraftClient
  */
 package com.github.mikumiku.addon;
 
@@ -31,9 +31,9 @@ import meteordevelopment.meteorclient.events.world.TickEvent;
 import meteordevelopment.meteorclient.settings.BlockSetting;
 import meteordevelopment.meteorclient.settings.IVisible;
 import meteordevelopment.meteorclient.settings.Setting;
-import net.minecraft.class_2248;
-import net.minecraft.class_2338;
-import net.minecraft.class_310;
+import net.minecraft.block.Block;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.client.MinecraftClient;
 
 public class IiiIiIiiII
 extends BlockSetting {

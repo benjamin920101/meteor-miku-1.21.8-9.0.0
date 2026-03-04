@@ -2,15 +2,15 @@
  * Decompiled with CFR 0.152.
  * 
  * Could not load the following classes:
- *  net.minecraft.class_1707
- *  net.minecraft.class_1799
- *  net.minecraft.class_2281
- *  net.minecraft.class_2338
- *  net.minecraft.class_2350
- *  net.minecraft.class_2680
- *  net.minecraft.class_2745
- *  net.minecraft.class_2769
- *  net.minecraft.class_310
+ *  net.minecraft.screen.GenericContainerScreenHandler
+ *  net.minecraft.item.ItemStack
+ *  net.minecraft.block.ChestBlock
+ *  net.minecraft.util.math.BlockPos
+ *  net.minecraft.util.math.Direction
+ *  net.minecraft.block.BlockState
+ *  net.minecraft.block.enums.ChestType
+ *  net.minecraft.state.property.Property
+ *  net.minecraft.client.MinecraftClient
  */
 package com.github.mikumiku.addon;
 
@@ -34,15 +34,15 @@ import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
-import net.minecraft.class_1707;
-import net.minecraft.class_1799;
-import net.minecraft.class_2281;
-import net.minecraft.class_2338;
-import net.minecraft.class_2350;
-import net.minecraft.class_2680;
-import net.minecraft.class_2745;
-import net.minecraft.class_2769;
-import net.minecraft.class_310;
+import net.minecraft.screen.GenericContainerScreenHandler;
+import net.minecraft.item.ItemStack;
+import net.minecraft.block.ChestBlock;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.enums.ChestType;
+import net.minecraft.state.property.Property;
+import net.minecraft.client.MinecraftClient;
 
 /*
  * Duplicate member names - consider using --renamedupmembers true

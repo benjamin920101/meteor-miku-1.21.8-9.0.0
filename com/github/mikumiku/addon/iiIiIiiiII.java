@@ -14,16 +14,16 @@
  *  meteordevelopment.meteorclient.settings.IVisible
  *  meteordevelopment.meteorclient.settings.ItemListSetting
  *  meteordevelopment.meteorclient.settings.Setting
- *  net.minecraft.class_1792
- *  net.minecraft.class_2378
- *  net.minecraft.class_2487
- *  net.minecraft.class_2499
- *  net.minecraft.class_2519
- *  net.minecraft.class_2520
- *  net.minecraft.class_2960
- *  net.minecraft.class_310
- *  net.minecraft.class_437
- *  net.minecraft.class_7923
+ *  net.minecraft.item.Item
+ *  net.minecraft.registry.Registry
+ *  net.minecraft.nbt.NbtCompound
+ *  net.minecraft.nbt.NbtList
+ *  net.minecraft.nbt.NbtString
+ *  net.minecraft.nbt.NbtElement
+ *  net.minecraft.util.Identifier
+ *  net.minecraft.client.MinecraftClient
+ *  net.minecraft.client.gui.screen.Screen
+ *  net.minecraft.registry.Registries
  */
 package com.github.mikumiku.addon;
 
@@ -52,16 +52,16 @@ import meteordevelopment.meteorclient.gui.widgets.pressable.WPlus;
 import meteordevelopment.meteorclient.settings.IVisible;
 import meteordevelopment.meteorclient.settings.ItemListSetting;
 import meteordevelopment.meteorclient.settings.Setting;
-import net.minecraft.class_1792;
-import net.minecraft.class_2378;
-import net.minecraft.class_2487;
-import net.minecraft.class_2499;
-import net.minecraft.class_2519;
-import net.minecraft.class_2520;
-import net.minecraft.class_2960;
-import net.minecraft.class_310;
-import net.minecraft.class_437;
-import net.minecraft.class_7923;
+import net.minecraft.item.Item;
+import net.minecraft.registry.Registry;
+import net.minecraft.nbt.NbtCompound;
+import net.minecraft.nbt.NbtList;
+import net.minecraft.nbt.NbtString;
+import net.minecraft.nbt.NbtElement;
+import net.minecraft.util.Identifier;
+import net.minecraft.client.MinecraftClient;
+import net.minecraft.client.gui.screen.Screen;
+import net.minecraft.registry.Registries;
 
 public class iiIiIiiiII
 extends Setting<Map<String, List<class_1792>>> {

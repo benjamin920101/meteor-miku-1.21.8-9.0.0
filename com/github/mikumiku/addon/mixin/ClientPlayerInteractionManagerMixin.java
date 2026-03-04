@@ -2,18 +2,18 @@
  * Decompiled with CFR 0.152.
  * 
  * Could not load the following classes:
- *  net.minecraft.class_1657
- *  net.minecraft.class_1713
- *  net.minecraft.class_636
+ *  net.minecraft.entity.player.PlayerEntity
+ *  net.minecraft.screen.slot.SlotActionType
+ *  net.minecraft.client.network.ClientPlayerInteractionManager
  *  org.spongepowered.asm.mixin.Mixin
  *  org.spongepowered.asm.mixin.Shadow
  */
 package com.github.mikumiku.addon.mixin;
 
 import com.github.mikumiku.addon.mixinface.IClientPlayerInteractionManager;
-import net.minecraft.class_1657;
-import net.minecraft.class_1713;
-import net.minecraft.class_636;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.screen.slot.SlotActionType;
+import net.minecraft.client.network.ClientPlayerInteractionManager;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 

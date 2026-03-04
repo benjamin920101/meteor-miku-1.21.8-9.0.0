@@ -13,8 +13,8 @@
  *  meteordevelopment.meteorclient.utils.player.PlayerUtils
  *  meteordevelopment.meteorclient.utils.world.Dimension
  *  meteordevelopment.orbit.EventHandler
- *  net.minecraft.class_2338
- *  net.minecraft.class_310
+ *  net.minecraft.util.math.BlockPos
+ *  net.minecraft.client.MinecraftClient
  *  org.slf4j.Logger
  *  org.slf4j.LoggerFactory
  */
@@ -67,8 +67,8 @@ import meteordevelopment.meteorclient.settings.SettingGroup;
 import meteordevelopment.meteorclient.settings.StringSetting;
 import meteordevelopment.meteorclient.utils.player.PlayerUtils;
 import meteordevelopment.orbit.EventHandler;
-import net.minecraft.class_2338;
-import net.minecraft.class_310;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.client.MinecraftClient;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

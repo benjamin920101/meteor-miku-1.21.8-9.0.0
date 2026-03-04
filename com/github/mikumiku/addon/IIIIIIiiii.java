@@ -11,11 +11,11 @@
  *  meteordevelopment.meteorclient.settings.SettingGroup
  *  meteordevelopment.meteorclient.systems.friends.Friends
  *  meteordevelopment.orbit.EventHandler
- *  net.minecraft.class_1109
- *  net.minecraft.class_1113
- *  net.minecraft.class_1297
- *  net.minecraft.class_1657
- *  net.minecraft.class_3414
+ *  net.minecraft.client.sound.PositionedSoundInstance
+ *  net.minecraft.client.sound.SoundInstance
+ *  net.minecraft.entity.Entity
+ *  net.minecraft.entity.player.PlayerEntity
+ *  net.minecraft.sound.SoundEvent
  */
 package com.github.mikumiku.addon;
 
@@ -37,11 +37,11 @@ import meteordevelopment.meteorclient.settings.Setting;
 import meteordevelopment.meteorclient.settings.SettingGroup;
 import meteordevelopment.meteorclient.systems.friends.Friends;
 import meteordevelopment.orbit.EventHandler;
-import net.minecraft.class_1109;
-import net.minecraft.class_1113;
-import net.minecraft.class_1297;
-import net.minecraft.class_1657;
-import net.minecraft.class_3414;
+import net.minecraft.client.sound.PositionedSoundInstance;
+import net.minecraft.client.sound.SoundInstance;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.sound.SoundEvent;
 
 public class IIIIIIiiii
 extends iIiIiIIIii {

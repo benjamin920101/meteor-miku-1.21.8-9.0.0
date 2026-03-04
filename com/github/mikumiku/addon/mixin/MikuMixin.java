@@ -2,8 +2,8 @@
  * Decompiled with CFR 0.152.
  * 
  * Could not load the following classes:
- *  net.minecraft.class_310
- *  net.minecraft.class_542
+ *  net.minecraft.client.MinecraftClient
+ *  net.minecraft.client.RunArgs
  *  org.spongepowered.asm.mixin.Mixin
  *  org.spongepowered.asm.mixin.injection.At
  *  org.spongepowered.asm.mixin.injection.Inject
@@ -11,8 +11,8 @@
  */
 package com.github.mikumiku.addon.mixin;
 
-import net.minecraft.class_310;
-import net.minecraft.class_542;
+import net.minecraft.client.MinecraftClient;
+import net.minecraft.client.RunArgs;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;

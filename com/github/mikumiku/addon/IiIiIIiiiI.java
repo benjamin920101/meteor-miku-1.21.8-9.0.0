@@ -12,11 +12,11 @@
  *  meteordevelopment.meteorclient.utils.Utils
  *  meteordevelopment.meteorclient.utils.misc.input.Input
  *  meteordevelopment.orbit.EventHandler
- *  net.minecraft.class_1268
- *  net.minecraft.class_2338
- *  net.minecraft.class_2596
- *  net.minecraft.class_2960
- *  net.minecraft.class_304
+ *  net.minecraft.util.Hand
+ *  net.minecraft.util.math.BlockPos
+ *  net.minecraft.network.packet.Packet
+ *  net.minecraft.util.Identifier
+ *  net.minecraft.client.option.KeyBinding
  */
 package com.github.mikumiku.addon;
 
@@ -40,11 +40,11 @@ import meteordevelopment.meteorclient.settings.SettingGroup;
 import meteordevelopment.meteorclient.utils.Utils;
 import meteordevelopment.meteorclient.utils.misc.input.Input;
 import meteordevelopment.orbit.EventHandler;
-import net.minecraft.class_1268;
-import net.minecraft.class_2338;
-import net.minecraft.class_2596;
-import net.minecraft.class_2960;
-import net.minecraft.class_304;
+import net.minecraft.util.Hand;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.network.packet.Packet;
+import net.minecraft.util.Identifier;
+import net.minecraft.client.option.KeyBinding;
 
 /*
  * Duplicate member names - consider using --renamedupmembers true

@@ -11,9 +11,9 @@
  *  meteordevelopment.meteorclient.settings.Setting
  *  meteordevelopment.meteorclient.settings.SettingGroup
  *  meteordevelopment.orbit.EventHandler
- *  net.minecraft.class_1294
- *  net.minecraft.class_1297
- *  net.minecraft.class_243
+ *  net.minecraft.entity.effect.StatusEffects
+ *  net.minecraft.entity.Entity
+ *  net.minecraft.util.math.Vec3d
  */
 package com.github.mikumiku.addon;
 
@@ -33,9 +33,9 @@ import meteordevelopment.meteorclient.settings.IntSetting;
 import meteordevelopment.meteorclient.settings.Setting;
 import meteordevelopment.meteorclient.settings.SettingGroup;
 import meteordevelopment.orbit.EventHandler;
-import net.minecraft.class_1294;
-import net.minecraft.class_1297;
-import net.minecraft.class_243;
+import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.entity.Entity;
+import net.minecraft.util.math.Vec3d;
 
 public class IiiIIiiIii
 extends iIiIiIIIii {

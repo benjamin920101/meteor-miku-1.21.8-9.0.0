@@ -8,8 +8,8 @@
  *  meteordevelopment.meteorclient.settings.Setting
  *  meteordevelopment.meteorclient.settings.SettingGroup
  *  meteordevelopment.orbit.EventHandler
- *  net.minecraft.class_1714
- *  net.minecraft.class_1792
+ *  net.minecraft.screen.CraftingScreenHandler
+ *  net.minecraft.item.Item
  */
 package com.github.mikumiku.addon;
 
@@ -25,8 +25,8 @@ import meteordevelopment.meteorclient.settings.ItemListSetting;
 import meteordevelopment.meteorclient.settings.Setting;
 import meteordevelopment.meteorclient.settings.SettingGroup;
 import meteordevelopment.orbit.EventHandler;
-import net.minecraft.class_1714;
-import net.minecraft.class_1792;
+import net.minecraft.screen.CraftingScreenHandler;
+import net.minecraft.item.Item;
 
 public class IiIIIIIiII
 extends iIiIiIIIii {

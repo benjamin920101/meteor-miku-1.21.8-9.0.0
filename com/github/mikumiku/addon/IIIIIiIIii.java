@@ -9,10 +9,10 @@
  *  meteordevelopment.meteorclient.settings.SettingGroup
  *  meteordevelopment.meteorclient.systems.modules.Category
  *  meteordevelopment.orbit.EventHandler
- *  net.minecraft.class_243
- *  net.minecraft.class_2596
- *  net.minecraft.class_2664
- *  net.minecraft.class_2743
+ *  net.minecraft.util.math.Vec3d
+ *  net.minecraft.network.packet.Packet
+ *  net.minecraft.network.packet.s2c.play.ExplosionS2CPacket
+ *  net.minecraft.network.packet.s2c.play.EntityVelocityUpdateS2CPacket
  */
 package com.github.mikumiku.addon;
 
@@ -28,10 +28,10 @@ import meteordevelopment.meteorclient.settings.Setting;
 import meteordevelopment.meteorclient.settings.SettingGroup;
 import meteordevelopment.meteorclient.systems.modules.Category;
 import meteordevelopment.orbit.EventHandler;
-import net.minecraft.class_243;
-import net.minecraft.class_2596;
-import net.minecraft.class_2664;
-import net.minecraft.class_2743;
+import net.minecraft.util.math.Vec3d;
+import net.minecraft.network.packet.Packet;
+import net.minecraft.network.packet.s2c.play.ExplosionS2CPacket;
+import net.minecraft.network.packet.s2c.play.EntityVelocityUpdateS2CPacket;
 
 public class IIIIIiIIii
 extends iIiIiIIIii {

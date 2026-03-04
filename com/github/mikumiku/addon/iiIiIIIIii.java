@@ -14,14 +14,14 @@
  *  meteordevelopment.meteorclient.utils.render.color.Color
  *  meteordevelopment.meteorclient.utils.render.color.SettingColor
  *  meteordevelopment.orbit.EventHandler
- *  net.minecraft.class_2246
- *  net.minecraft.class_2338
- *  net.minecraft.class_2350
- *  net.minecraft.class_2374
- *  net.minecraft.class_243
- *  net.minecraft.class_2708
- *  net.minecraft.class_310
- *  net.minecraft.class_3532
+ *  net.minecraft.block.Blocks
+ *  net.minecraft.util.math.BlockPos
+ *  net.minecraft.util.math.Direction
+ *  net.minecraft.util.math.Position
+ *  net.minecraft.util.math.Vec3d
+ *  net.minecraft.network.packet.s2c.play.PlayerPositionLookS2CPacket
+ *  net.minecraft.client.MinecraftClient
+ *  net.minecraft.util.math.MathHelper
  */
 package com.github.mikumiku.addon;
 
@@ -45,14 +45,14 @@ import meteordevelopment.meteorclient.settings.SettingGroup;
 import meteordevelopment.meteorclient.utils.render.color.Color;
 import meteordevelopment.meteorclient.utils.render.color.SettingColor;
 import meteordevelopment.orbit.EventHandler;
-import net.minecraft.class_2246;
-import net.minecraft.class_2338;
-import net.minecraft.class_2350;
-import net.minecraft.class_2374;
-import net.minecraft.class_243;
-import net.minecraft.class_2708;
-import net.minecraft.class_310;
-import net.minecraft.class_3532;
+import net.minecraft.block.Blocks;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
+import net.minecraft.util.math.Position;
+import net.minecraft.util.math.Vec3d;
+import net.minecraft.network.packet.s2c.play.PlayerPositionLookS2CPacket;
+import net.minecraft.client.MinecraftClient;
+import net.minecraft.util.math.MathHelper;
 
 public class iiIiIIIIii
 extends iIiIiIIIii {

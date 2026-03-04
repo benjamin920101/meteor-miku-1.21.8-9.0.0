@@ -9,13 +9,13 @@
  *  meteordevelopment.meteorclient.systems.modules.Category
  *  meteordevelopment.meteorclient.systems.modules.Module
  *  meteordevelopment.meteorclient.utils.player.ChatUtils
- *  net.minecraft.class_124
- *  net.minecraft.class_2561
- *  net.minecraft.class_2583
- *  net.minecraft.class_310
- *  net.minecraft.class_5250
- *  net.minecraft.class_7202
- *  net.minecraft.class_7204
+ *  net.minecraft.util.Formatting
+ *  net.minecraft.text.Text
+ *  net.minecraft.text.Style
+ *  net.minecraft.client.MinecraftClient
+ *  net.minecraft.text.MutableText
+ *  net.minecraft.client.network.PendingUpdateManager
+ *  net.minecraft.client.network.SequencedPacketCreator
  */
 package com.github.mikumiku.addon;
 
@@ -33,13 +33,13 @@ import meteordevelopment.meteorclient.pathing.PathManagers;
 import meteordevelopment.meteorclient.systems.modules.Category;
 import meteordevelopment.meteorclient.systems.modules.Module;
 import meteordevelopment.meteorclient.utils.player.ChatUtils;
-import net.minecraft.class_124;
-import net.minecraft.class_2561;
-import net.minecraft.class_2583;
-import net.minecraft.class_310;
-import net.minecraft.class_5250;
-import net.minecraft.class_7202;
-import net.minecraft.class_7204;
+import net.minecraft.util.Formatting;
+import net.minecraft.text.Text;
+import net.minecraft.text.Style;
+import net.minecraft.client.MinecraftClient;
+import net.minecraft.text.MutableText;
+import net.minecraft.client.network.PendingUpdateManager;
+import net.minecraft.client.network.SequencedPacketCreator;
 
 public abstract class iIiIiIIIii
 extends Module

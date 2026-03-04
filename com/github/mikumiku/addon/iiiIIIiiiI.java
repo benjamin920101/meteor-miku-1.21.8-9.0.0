@@ -2,8 +2,8 @@
  * Decompiled with CFR 0.152.
  * 
  * Could not load the following classes:
- *  net.minecraft.class_1707
- *  net.minecraft.class_1799
+ *  net.minecraft.screen.GenericContainerScreenHandler
+ *  net.minecraft.item.ItemStack
  */
 package com.github.mikumiku.addon;
 
@@ -13,8 +13,8 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
-import net.minecraft.class_1707;
-import net.minecraft.class_1799;
+import net.minecraft.screen.GenericContainerScreenHandler;
+import net.minecraft.item.ItemStack;
 
 /*
  * Duplicate member names - consider using --renamedupmembers true

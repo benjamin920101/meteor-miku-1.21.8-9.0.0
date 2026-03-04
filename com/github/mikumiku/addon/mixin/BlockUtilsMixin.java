@@ -4,13 +4,13 @@
  * Could not load the following classes:
  *  meteordevelopment.meteorclient.MeteorClient
  *  meteordevelopment.meteorclient.utils.world.BlockUtils
- *  net.minecraft.class_2248
- *  net.minecraft.class_2338
- *  net.minecraft.class_2350
- *  net.minecraft.class_243
- *  net.minecraft.class_2680
- *  net.minecraft.class_3545
- *  net.minecraft.class_3711
+ *  net.minecraft.block.Block
+ *  net.minecraft.util.math.BlockPos
+ *  net.minecraft.util.math.Direction
+ *  net.minecraft.util.math.Vec3d
+ *  net.minecraft.block.BlockState
+ *  net.minecraft.util.Pair
+ *  net.minecraft.block.CartographyTableBlock
  *  org.spongepowered.asm.mixin.Mixin
  *  org.spongepowered.asm.mixin.injection.At
  *  org.spongepowered.asm.mixin.injection.Inject
@@ -24,13 +24,13 @@ import java.util.Collections;
 import java.util.List;
 import meteordevelopment.meteorclient.MeteorClient;
 import meteordevelopment.meteorclient.utils.world.BlockUtils;
-import net.minecraft.class_2248;
-import net.minecraft.class_2338;
-import net.minecraft.class_2350;
-import net.minecraft.class_243;
-import net.minecraft.class_2680;
-import net.minecraft.class_3545;
-import net.minecraft.class_3711;
+import net.minecraft.block.Block;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
+import net.minecraft.util.math.Vec3d;
+import net.minecraft.block.BlockState;
+import net.minecraft.util.Pair;
+import net.minecraft.block.CartographyTableBlock;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;

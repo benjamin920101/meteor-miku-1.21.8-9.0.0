@@ -7,7 +7,7 @@
  *  com.mojang.brigadier.builder.LiteralArgumentBuilder
  *  com.mojang.brigadier.context.CommandContext
  *  meteordevelopment.meteorclient.commands.Command
- *  net.minecraft.class_2172
+ *  net.minecraft.command.CommandSource
  */
 package com.github.mikumiku.addon;
 
@@ -19,7 +19,7 @@ import com.mojang.brigadier.builder.LiteralArgumentBuilder;
 import com.mojang.brigadier.context.CommandContext;
 import java.util.Date;
 import meteordevelopment.meteorclient.commands.Command;
-import net.minecraft.class_2172;
+import net.minecraft.command.CommandSource;
 
 public class IIIiiiIiii
 extends Command {

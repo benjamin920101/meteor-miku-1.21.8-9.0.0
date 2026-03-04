@@ -2,10 +2,10 @@
  * Decompiled with CFR 0.152.
  * 
  * Could not load the following classes:
- *  net.minecraft.class_2487
- *  net.minecraft.class_2499
- *  net.minecraft.class_2507
- *  net.minecraft.class_2520
+ *  net.minecraft.nbt.NbtCompound
+ *  net.minecraft.nbt.NbtList
+ *  net.minecraft.nbt.NbtIo
+ *  net.minecraft.nbt.NbtElement
  */
 package com.github.mikumiku.addon;
 
@@ -20,10 +20,10 @@ import java.nio.file.Path;
 import java.util.Date;
 import java.util.List;
 import java.util.function.Consumer;
-import net.minecraft.class_2487;
-import net.minecraft.class_2499;
-import net.minecraft.class_2507;
-import net.minecraft.class_2520;
+import net.minecraft.nbt.NbtCompound;
+import net.minecraft.nbt.NbtList;
+import net.minecraft.nbt.NbtIo;
+import net.minecraft.nbt.NbtElement;
 
 public class iiIIIiIiII {
     public static String ALLATORIxDEMO(String string) {

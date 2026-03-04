@@ -4,8 +4,8 @@
  * Could not load the following classes:
  *  meteordevelopment.meteorclient.MeteorClient
  *  meteordevelopment.meteorclient.utils.player.Rotations
- *  net.minecraft.class_2596
- *  net.minecraft.class_310
+ *  net.minecraft.network.packet.Packet
+ *  net.minecraft.client.MinecraftClient
  */
 package com.github.mikumiku.addon;
 
@@ -15,8 +15,8 @@ import com.github.mikumiku.addon.iIiiiIIiIi;
 import java.util.Date;
 import meteordevelopment.meteorclient.MeteorClient;
 import meteordevelopment.meteorclient.utils.player.Rotations;
-import net.minecraft.class_2596;
-import net.minecraft.class_310;
+import net.minecraft.network.packet.Packet;
+import net.minecraft.client.MinecraftClient;
 
 /*
  * Duplicate member names - consider using --renamedupmembers true

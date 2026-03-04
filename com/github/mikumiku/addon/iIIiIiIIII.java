@@ -18,9 +18,9 @@
  *  meteordevelopment.meteorclient.utils.world.BlockUtils
  *  meteordevelopment.meteorclient.utils.world.Dimension
  *  meteordevelopment.orbit.EventHandler
- *  net.minecraft.class_2246
- *  net.minecraft.class_2248
- *  net.minecraft.class_2338
+ *  net.minecraft.block.Blocks
+ *  net.minecraft.block.Block
+ *  net.minecraft.util.math.BlockPos
  */
 package com.github.mikumiku.addon;
 
@@ -53,9 +53,9 @@ import meteordevelopment.meteorclient.utils.render.color.SettingColor;
 import meteordevelopment.meteorclient.utils.world.BlockUtils;
 import meteordevelopment.meteorclient.utils.world.Dimension;
 import meteordevelopment.orbit.EventHandler;
-import net.minecraft.class_2246;
-import net.minecraft.class_2248;
-import net.minecraft.class_2338;
+import net.minecraft.block.Blocks;
+import net.minecraft.block.Block;
+import net.minecraft.util.math.BlockPos;
 
 public class iIIiIiIIII
 extends iIiIiIIIii {

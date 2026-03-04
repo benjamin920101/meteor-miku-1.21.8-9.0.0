@@ -11,13 +11,13 @@
  *  meteordevelopment.meteorclient.systems.friends.Friends
  *  meteordevelopment.meteorclient.systems.modules.Category
  *  meteordevelopment.orbit.EventHandler
- *  net.minecraft.class_1268
- *  net.minecraft.class_1297
- *  net.minecraft.class_1657
- *  net.minecraft.class_1787
- *  net.minecraft.class_1799
- *  net.minecraft.class_2350
- *  net.minecraft.class_243
+ *  net.minecraft.util.Hand
+ *  net.minecraft.entity.Entity
+ *  net.minecraft.entity.player.PlayerEntity
+ *  net.minecraft.item.FishingRodItem
+ *  net.minecraft.item.ItemStack
+ *  net.minecraft.util.math.Direction
+ *  net.minecraft.util.math.Vec3d
  */
 package com.github.mikumiku.addon;
 
@@ -37,13 +37,13 @@ import meteordevelopment.meteorclient.settings.SettingGroup;
 import meteordevelopment.meteorclient.systems.friends.Friends;
 import meteordevelopment.meteorclient.systems.modules.Category;
 import meteordevelopment.orbit.EventHandler;
-import net.minecraft.class_1268;
-import net.minecraft.class_1297;
-import net.minecraft.class_1657;
-import net.minecraft.class_1787;
-import net.minecraft.class_1799;
-import net.minecraft.class_2350;
-import net.minecraft.class_243;
+import net.minecraft.util.Hand;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.FishingRodItem;
+import net.minecraft.item.ItemStack;
+import net.minecraft.util.math.Direction;
+import net.minecraft.util.math.Vec3d;
 
 public class IiIiIiiiii
 extends iIiIiIIIii {

@@ -2,7 +2,7 @@
  * Decompiled with CFR 0.152.
  * 
  * Could not load the following classes:
- *  net.minecraft.class_1802
+ *  net.minecraft.item.Items
  */
 package com.github.mikumiku.addon;
 
@@ -11,7 +11,7 @@ import com.github.mikumiku.addon.IiIiiiiIii;
 import com.github.mikumiku.addon.IiiiIIiiII;
 import com.github.mikumiku.addon.iIiIiIIIii;
 import java.util.Date;
-import net.minecraft.class_1802;
+import net.minecraft.item.Items;
 
 public class IiIiIiIIii
 extends iIiIiIIIii {

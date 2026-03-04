@@ -14,9 +14,9 @@
  *  meteordevelopment.meteorclient.systems.friends.Friends
  *  meteordevelopment.meteorclient.utils.player.ChatUtils
  *  meteordevelopment.orbit.EventHandler
- *  net.minecraft.class_1657
- *  net.minecraft.class_1937
- *  net.minecraft.class_2663
+ *  net.minecraft.entity.player.PlayerEntity
+ *  net.minecraft.world.World
+ *  net.minecraft.network.packet.s2c.play.EntityStatusS2CPacket
  */
 package com.github.mikumiku.addon;
 
@@ -41,9 +41,9 @@ import meteordevelopment.meteorclient.settings.StringListSetting;
 import meteordevelopment.meteorclient.systems.friends.Friends;
 import meteordevelopment.meteorclient.utils.player.ChatUtils;
 import meteordevelopment.orbit.EventHandler;
-import net.minecraft.class_1657;
-import net.minecraft.class_1937;
-import net.minecraft.class_2663;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.world.World;
+import net.minecraft.network.packet.s2c.play.EntityStatusS2CPacket;
 
 public class iiiiiIIIIi
 extends iIiIiIIIii {

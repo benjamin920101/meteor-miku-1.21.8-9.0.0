@@ -11,9 +11,9 @@
  *  meteordevelopment.meteorclient.settings.Setting
  *  meteordevelopment.meteorclient.settings.SettingGroup
  *  meteordevelopment.orbit.EventHandler
- *  net.minecraft.class_243
- *  net.minecraft.class_2960
- *  net.minecraft.class_3532
+ *  net.minecraft.util.math.Vec3d
+ *  net.minecraft.util.Identifier
+ *  net.minecraft.util.math.MathHelper
  */
 package com.github.mikumiku.addon;
 
@@ -34,9 +34,9 @@ import meteordevelopment.meteorclient.settings.EnumSetting;
 import meteordevelopment.meteorclient.settings.Setting;
 import meteordevelopment.meteorclient.settings.SettingGroup;
 import meteordevelopment.orbit.EventHandler;
-import net.minecraft.class_243;
-import net.minecraft.class_2960;
-import net.minecraft.class_3532;
+import net.minecraft.util.math.Vec3d;
+import net.minecraft.util.Identifier;
+import net.minecraft.util.math.MathHelper;
 
 public class IIiiIiIiiI
 extends iIiIiIIIii {

@@ -8,12 +8,12 @@
  *  meteordevelopment.meteorclient.settings.SettingGroup
  *  meteordevelopment.meteorclient.utils.player.InvUtils
  *  meteordevelopment.orbit.EventHandler
- *  net.minecraft.class_1268
- *  net.minecraft.class_1792
- *  net.minecraft.class_1802
- *  net.minecraft.class_2596
- *  net.minecraft.class_2815
- *  net.minecraft.class_2886
+ *  net.minecraft.util.Hand
+ *  net.minecraft.item.Item
+ *  net.minecraft.item.Items
+ *  net.minecraft.network.packet.Packet
+ *  net.minecraft.network.packet.c2s.play.CloseHandledScreenC2SPacket
+ *  net.minecraft.network.packet.c2s.play.PlayerInteractItemC2SPacket
  */
 package com.github.mikumiku.addon;
 
@@ -30,12 +30,12 @@ import meteordevelopment.meteorclient.settings.Setting;
 import meteordevelopment.meteorclient.settings.SettingGroup;
 import meteordevelopment.meteorclient.utils.player.InvUtils;
 import meteordevelopment.orbit.EventHandler;
-import net.minecraft.class_1268;
-import net.minecraft.class_1792;
-import net.minecraft.class_1802;
-import net.minecraft.class_2596;
-import net.minecraft.class_2815;
-import net.minecraft.class_2886;
+import net.minecraft.util.Hand;
+import net.minecraft.item.Item;
+import net.minecraft.item.Items;
+import net.minecraft.network.packet.Packet;
+import net.minecraft.network.packet.c2s.play.CloseHandledScreenC2SPacket;
+import net.minecraft.network.packet.c2s.play.PlayerInteractItemC2SPacket;
 
 public class iIiIiiiiII
 extends iIiIiIIIii {

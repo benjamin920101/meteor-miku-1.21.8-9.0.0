@@ -4,14 +4,14 @@
  * Could not load the following classes:
  *  meteordevelopment.meteorclient.settings.IVisible
  *  meteordevelopment.meteorclient.settings.Setting
- *  net.minecraft.class_2378
- *  net.minecraft.class_2487
- *  net.minecraft.class_2499
- *  net.minecraft.class_2519
- *  net.minecraft.class_2520
- *  net.minecraft.class_2960
- *  net.minecraft.class_3852
- *  net.minecraft.class_7923
+ *  net.minecraft.registry.Registry
+ *  net.minecraft.nbt.NbtCompound
+ *  net.minecraft.nbt.NbtList
+ *  net.minecraft.nbt.NbtString
+ *  net.minecraft.nbt.NbtElement
+ *  net.minecraft.util.Identifier
+ *  net.minecraft.village.VillagerProfession
+ *  net.minecraft.registry.Registries
  */
 package com.github.mikumiku.addon;
 
@@ -26,14 +26,14 @@ import java.util.function.Consumer;
 import java.util.function.Predicate;
 import meteordevelopment.meteorclient.settings.IVisible;
 import meteordevelopment.meteorclient.settings.Setting;
-import net.minecraft.class_2378;
-import net.minecraft.class_2487;
-import net.minecraft.class_2499;
-import net.minecraft.class_2519;
-import net.minecraft.class_2520;
-import net.minecraft.class_2960;
-import net.minecraft.class_3852;
-import net.minecraft.class_7923;
+import net.minecraft.registry.Registry;
+import net.minecraft.nbt.NbtCompound;
+import net.minecraft.nbt.NbtList;
+import net.minecraft.nbt.NbtString;
+import net.minecraft.nbt.NbtElement;
+import net.minecraft.util.Identifier;
+import net.minecraft.village.VillagerProfession;
+import net.minecraft.registry.Registries;
 
 public class iiIiiiiIII
 extends Setting<List<class_3852>> {

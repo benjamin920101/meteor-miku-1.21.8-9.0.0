@@ -19,18 +19,18 @@
  *  meteordevelopment.meteorclient.utils.render.color.Color
  *  meteordevelopment.meteorclient.utils.render.color.SettingColor
  *  meteordevelopment.orbit.EventHandler
- *  net.minecraft.class_1268
- *  net.minecraft.class_1299
- *  net.minecraft.class_1542
- *  net.minecraft.class_1747
- *  net.minecraft.class_1799
- *  net.minecraft.class_2246
- *  net.minecraft.class_2248
- *  net.minecraft.class_2338
- *  net.minecraft.class_2350
- *  net.minecraft.class_238
- *  net.minecraft.class_243
- *  net.minecraft.class_3341
+ *  net.minecraft.util.Hand
+ *  net.minecraft.entity.EntityType
+ *  net.minecraft.entity.ItemEntity
+ *  net.minecraft.item.BlockItem
+ *  net.minecraft.item.ItemStack
+ *  net.minecraft.block.Blocks
+ *  net.minecraft.block.Block
+ *  net.minecraft.util.math.BlockPos
+ *  net.minecraft.util.math.Direction
+ *  net.minecraft.util.math.Box
+ *  net.minecraft.util.math.Vec3d
+ *  net.minecraft.util.math.BlockBox
  */
 package com.github.mikumiku.addon;
 
@@ -68,18 +68,18 @@ import meteordevelopment.meteorclient.utils.player.InvUtils;
 import meteordevelopment.meteorclient.utils.render.color.Color;
 import meteordevelopment.meteorclient.utils.render.color.SettingColor;
 import meteordevelopment.orbit.EventHandler;
-import net.minecraft.class_1268;
-import net.minecraft.class_1299;
-import net.minecraft.class_1542;
-import net.minecraft.class_1747;
-import net.minecraft.class_1799;
-import net.minecraft.class_2246;
-import net.minecraft.class_2248;
-import net.minecraft.class_2338;
-import net.minecraft.class_2350;
-import net.minecraft.class_238;
-import net.minecraft.class_243;
-import net.minecraft.class_3341;
+import net.minecraft.util.Hand;
+import net.minecraft.entity.EntityType;
+import net.minecraft.entity.ItemEntity;
+import net.minecraft.item.BlockItem;
+import net.minecraft.item.ItemStack;
+import net.minecraft.block.Blocks;
+import net.minecraft.block.Block;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
+import net.minecraft.util.math.Box;
+import net.minecraft.util.math.Vec3d;
+import net.minecraft.util.math.BlockBox;
 
 public class IiIIiiIIII
 extends iIiIiIIIii {

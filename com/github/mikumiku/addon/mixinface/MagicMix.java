@@ -3,7 +3,7 @@
  * 
  * Could not load the following classes:
  *  meteordevelopment.meteorclient.systems.modules.Modules
- *  net.minecraft.class_2338
+ *  net.minecraft.util.math.BlockPos
  */
 package com.github.mikumiku.addon.mixinface;
 
@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import meteordevelopment.meteorclient.systems.modules.Modules;
-import net.minecraft.class_2338;
+import net.minecraft.util.math.BlockPos;
 
 public class MagicMix {
     public static double z;

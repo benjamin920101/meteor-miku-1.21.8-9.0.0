@@ -11,8 +11,8 @@
  *  meteordevelopment.meteorclient.settings.SettingGroup
  *  meteordevelopment.meteorclient.settings.StringSetting$Builder
  *  meteordevelopment.orbit.EventHandler
- *  net.minecraft.class_2724
- *  net.minecraft.class_418
+ *  net.minecraft.network.packet.s2c.play.PlayerRespawnS2CPacket
+ *  net.minecraft.client.gui.screen.DeathScreen
  */
 package com.github.mikumiku.addon;
 
@@ -29,8 +29,8 @@ import meteordevelopment.meteorclient.settings.Setting;
 import meteordevelopment.meteorclient.settings.SettingGroup;
 import meteordevelopment.meteorclient.settings.StringSetting;
 import meteordevelopment.orbit.EventHandler;
-import net.minecraft.class_2724;
-import net.minecraft.class_418;
+import net.minecraft.network.packet.s2c.play.PlayerRespawnS2CPacket;
+import net.minecraft.client.gui.screen.DeathScreen;
 
 public class IIIiiiIIII
 extends iIiIiIIIii {

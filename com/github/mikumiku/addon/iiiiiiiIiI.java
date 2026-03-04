@@ -11,11 +11,11 @@
  *  meteordevelopment.meteorclient.gui.widgets.input.WTextBox
  *  meteordevelopment.meteorclient.gui.widgets.pressable.WButton
  *  meteordevelopment.meteorclient.utils.misc.Names
- *  net.minecraft.class_1887
- *  net.minecraft.class_2378
- *  net.minecraft.class_2960
- *  net.minecraft.class_6880
- *  net.minecraft.class_9636
+ *  net.minecraft.enchantment.Enchantment
+ *  net.minecraft.registry.Registry
+ *  net.minecraft.util.Identifier
+ *  net.minecraft.registry.entry.RegistryEntry
+ *  net.minecraft.registry.tag.EnchantmentTags
  */
 package com.github.mikumiku.addon;
 
@@ -36,11 +36,11 @@ import meteordevelopment.meteorclient.gui.widgets.containers.WTable;
 import meteordevelopment.meteorclient.gui.widgets.input.WTextBox;
 import meteordevelopment.meteorclient.gui.widgets.pressable.WButton;
 import meteordevelopment.meteorclient.utils.misc.Names;
-import net.minecraft.class_1887;
-import net.minecraft.class_2378;
-import net.minecraft.class_2960;
-import net.minecraft.class_6880;
-import net.minecraft.class_9636;
+import net.minecraft.enchantment.Enchantment;
+import net.minecraft.registry.Registry;
+import net.minecraft.util.Identifier;
+import net.minecraft.registry.entry.RegistryEntry;
+import net.minecraft.registry.tag.EnchantmentTags;
 
 public class iiiiiiiIiI
 extends WindowScreen {

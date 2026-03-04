@@ -2,13 +2,13 @@
  * Decompiled with CFR 0.152.
  * 
  * Could not load the following classes:
- *  net.minecraft.class_1747
- *  net.minecraft.class_1792
- *  net.minecraft.class_1799
- *  net.minecraft.class_1802
- *  net.minecraft.class_2480
- *  net.minecraft.class_9288
- *  net.minecraft.class_9334
+ *  net.minecraft.item.BlockItem
+ *  net.minecraft.item.Item
+ *  net.minecraft.item.ItemStack
+ *  net.minecraft.item.Items
+ *  net.minecraft.block.ShulkerBoxBlock
+ *  net.minecraft.component.type.ContainerComponent
+ *  net.minecraft.component.DataComponentTypes
  */
 package com.github.mikumiku.addon;
 
@@ -20,13 +20,13 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
-import net.minecraft.class_1747;
-import net.minecraft.class_1792;
-import net.minecraft.class_1799;
-import net.minecraft.class_1802;
-import net.minecraft.class_2480;
-import net.minecraft.class_9288;
-import net.minecraft.class_9334;
+import net.minecraft.item.BlockItem;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
+import net.minecraft.block.ShulkerBoxBlock;
+import net.minecraft.component.type.ContainerComponent;
+import net.minecraft.component.DataComponentTypes;
 
 public class IiIiIiIiII {
     public Map<String, List<class_1792>> iIiIiIIIII;

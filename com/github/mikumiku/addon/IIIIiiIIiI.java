@@ -11,20 +11,20 @@
  *  meteordevelopment.meteorclient.utils.player.Rotations
  *  meteordevelopment.meteorclient.utils.world.BlockIterator
  *  meteordevelopment.orbit.EventHandler
- *  net.minecraft.class_1268
- *  net.minecraft.class_1291
- *  net.minecraft.class_1657
- *  net.minecraft.class_1792
- *  net.minecraft.class_1802
- *  net.minecraft.class_2246
- *  net.minecraft.class_2338
- *  net.minecraft.class_2350
- *  net.minecraft.class_2596
- *  net.minecraft.class_2680
- *  net.minecraft.class_2846
- *  net.minecraft.class_2846$class_2847
- *  net.minecraft.class_2960
- *  net.minecraft.class_7923
+ *  net.minecraft.util.Hand
+ *  net.minecraft.entity.effect.StatusEffect
+ *  net.minecraft.entity.player.PlayerEntity
+ *  net.minecraft.item.Item
+ *  net.minecraft.item.Items
+ *  net.minecraft.block.Blocks
+ *  net.minecraft.util.math.BlockPos
+ *  net.minecraft.util.math.Direction
+ *  net.minecraft.network.packet.Packet
+ *  net.minecraft.block.BlockState
+ *  net.minecraft.network.packet.c2s.play.PlayerActionC2SPacket
+ *  net.minecraft.network.packet.c2s.play.PlayerActionC2SPacket$Action
+ *  net.minecraft.util.Identifier
+ *  net.minecraft.registry.Registries
  */
 package com.github.mikumiku.addon;
 
@@ -45,19 +45,19 @@ import meteordevelopment.meteorclient.utils.player.PlayerUtils;
 import meteordevelopment.meteorclient.utils.player.Rotations;
 import meteordevelopment.meteorclient.utils.world.BlockIterator;
 import meteordevelopment.orbit.EventHandler;
-import net.minecraft.class_1268;
-import net.minecraft.class_1291;
-import net.minecraft.class_1657;
-import net.minecraft.class_1792;
-import net.minecraft.class_1802;
-import net.minecraft.class_2246;
-import net.minecraft.class_2338;
-import net.minecraft.class_2350;
-import net.minecraft.class_2596;
-import net.minecraft.class_2680;
-import net.minecraft.class_2846;
-import net.minecraft.class_2960;
-import net.minecraft.class_7923;
+import net.minecraft.util.Hand;
+import net.minecraft.entity.effect.StatusEffect;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.Item;
+import net.minecraft.item.Items;
+import net.minecraft.block.Blocks;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
+import net.minecraft.network.packet.Packet;
+import net.minecraft.block.BlockState;
+import net.minecraft.network.packet.c2s.play.PlayerActionC2SPacket;
+import net.minecraft.util.Identifier;
+import net.minecraft.registry.Registries;
 
 public class IIIIiiIIiI
 extends iIiIiIIIii {
@@ -192,7 +192,7 @@ lbl63:
         }
         if (((Boolean)v4.iIIiiIiIiI.get()).booleanValue()) {
             this = new AtomicInteger();
-            BlockIterator.register((int)((Integer)iIiIiIIIII.IiiIiIiiIi.get()), (int)((Integer)iIiIiIIIII.IIiiIIIIIi.get()), (BiConsumer<class_2338, class_2680>)LambdaMetafactory.metafactory(null, null, null, (Ljava/lang/Object;Ljava/lang/Object;)V, ALLATORIxDEMO(java.util.concurrent.atomic.AtomicInteger net.minecraft.class_2338 net.minecraft.class_2680 ), (Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;)V)((IIIIiiIIiI)iIiIiIIIII, (AtomicInteger)this));
+            BlockIterator.register((int)((Integer)iIiIiIIIII.IiiIiIiiIi.get()), (int)((Integer)iIiIiIIIII.IIiiIIIIIi.get()), (BiConsumer<class_2338, class_2680>)LambdaMetafactory.metafactory(null, null, null, (Ljava/lang/Object;Ljava/lang/Object;)V, ALLATORIxDEMO(java.util.concurrent.atomic.AtomicInteger net.minecraft.util.math.BlockPos net.minecraft.block.BlockState ), (Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;)V)((IIIIiiIIiI)iIiIiIIIII, (AtomicInteger)this));
         }
     }
 

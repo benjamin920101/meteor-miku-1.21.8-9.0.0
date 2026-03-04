@@ -2,7 +2,7 @@
  * Decompiled with CFR 0.152.
  * 
  * Could not load the following classes:
- *  net.minecraft.class_304
+ *  net.minecraft.client.option.KeyBinding
  *  org.spongepowered.asm.mixin.Final
  *  org.spongepowered.asm.mixin.Mixin
  *  org.spongepowered.asm.mixin.Shadow
@@ -13,7 +13,7 @@
 package com.github.mikumiku.addon.mixin;
 
 import com.github.mikumiku.addon.mixinface.MagicMix;
-import net.minecraft.class_304;
+import net.minecraft.client.option.KeyBinding;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;

@@ -16,15 +16,15 @@
  *  meteordevelopment.meteorclient.utils.render.color.SettingColor
  *  meteordevelopment.meteorclient.utils.world.BlockUtils
  *  meteordevelopment.orbit.EventHandler
- *  net.minecraft.class_1922
- *  net.minecraft.class_2241
- *  net.minecraft.class_2246
- *  net.minecraft.class_2248
- *  net.minecraft.class_2269
- *  net.minecraft.class_2338
- *  net.minecraft.class_2350$class_2351
- *  net.minecraft.class_2482
- *  net.minecraft.class_2533
+ *  net.minecraft.world.BlockView
+ *  net.minecraft.block.AbstractRailBlock
+ *  net.minecraft.block.Blocks
+ *  net.minecraft.block.Block
+ *  net.minecraft.block.ButtonBlock
+ *  net.minecraft.util.math.BlockPos
+ *  net.minecraft.util.math.Direction$Axis
+ *  net.minecraft.block.SlabBlock
+ *  net.minecraft.block.TrapdoorBlock
  */
 package com.github.mikumiku.addon;
 
@@ -53,15 +53,15 @@ import meteordevelopment.meteorclient.utils.render.color.Color;
 import meteordevelopment.meteorclient.utils.render.color.SettingColor;
 import meteordevelopment.meteorclient.utils.world.BlockUtils;
 import meteordevelopment.orbit.EventHandler;
-import net.minecraft.class_1922;
-import net.minecraft.class_2241;
-import net.minecraft.class_2246;
-import net.minecraft.class_2248;
-import net.minecraft.class_2269;
-import net.minecraft.class_2338;
-import net.minecraft.class_2350;
-import net.minecraft.class_2482;
-import net.minecraft.class_2533;
+import net.minecraft.world.BlockView;
+import net.minecraft.block.AbstractRailBlock;
+import net.minecraft.block.Blocks;
+import net.minecraft.block.Block;
+import net.minecraft.block.ButtonBlock;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
+import net.minecraft.block.SlabBlock;
+import net.minecraft.block.TrapdoorBlock;
 
 public class iIiIiIIIII
 extends iIiIiIIIii {

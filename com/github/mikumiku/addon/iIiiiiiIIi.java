@@ -15,20 +15,20 @@
  *  meteordevelopment.meteorclient.settings.StringSetting$Builder
  *  meteordevelopment.meteorclient.utils.player.InvUtils
  *  meteordevelopment.orbit.EventHandler
- *  net.minecraft.class_1268
- *  net.minecraft.class_1703
- *  net.minecraft.class_1707
- *  net.minecraft.class_1792
- *  net.minecraft.class_1799
- *  net.minecraft.class_2248
- *  net.minecraft.class_2281
- *  net.minecraft.class_2336
- *  net.minecraft.class_2338
- *  net.minecraft.class_2350
- *  net.minecraft.class_2382
- *  net.minecraft.class_2480
- *  net.minecraft.class_2531
- *  net.minecraft.class_3708
+ *  net.minecraft.util.Hand
+ *  net.minecraft.screen.ScreenHandler
+ *  net.minecraft.screen.GenericContainerScreenHandler
+ *  net.minecraft.item.Item
+ *  net.minecraft.item.ItemStack
+ *  net.minecraft.block.Block
+ *  net.minecraft.block.ChestBlock
+ *  net.minecraft.block.EnderChestBlock
+ *  net.minecraft.util.math.BlockPos
+ *  net.minecraft.util.math.Direction
+ *  net.minecraft.util.math.Vec3i
+ *  net.minecraft.block.ShulkerBoxBlock
+ *  net.minecraft.block.TrappedChestBlock
+ *  net.minecraft.block.BarrelBlock
  */
 package com.github.mikumiku.addon;
 
@@ -64,20 +64,20 @@ import meteordevelopment.meteorclient.settings.StringListSetting;
 import meteordevelopment.meteorclient.settings.StringSetting;
 import meteordevelopment.meteorclient.utils.player.InvUtils;
 import meteordevelopment.orbit.EventHandler;
-import net.minecraft.class_1268;
-import net.minecraft.class_1703;
-import net.minecraft.class_1707;
-import net.minecraft.class_1792;
-import net.minecraft.class_1799;
-import net.minecraft.class_2248;
-import net.minecraft.class_2281;
-import net.minecraft.class_2336;
-import net.minecraft.class_2338;
-import net.minecraft.class_2350;
-import net.minecraft.class_2382;
-import net.minecraft.class_2480;
-import net.minecraft.class_2531;
-import net.minecraft.class_3708;
+import net.minecraft.util.Hand;
+import net.minecraft.screen.ScreenHandler;
+import net.minecraft.screen.GenericContainerScreenHandler;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.block.Block;
+import net.minecraft.block.ChestBlock;
+import net.minecraft.block.EnderChestBlock;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
+import net.minecraft.util.math.Vec3i;
+import net.minecraft.block.ShulkerBoxBlock;
+import net.minecraft.block.TrappedChestBlock;
+import net.minecraft.block.BarrelBlock;
 
 public class iIiiiiiIIi
 extends iIiIiIIIii {

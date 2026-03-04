@@ -4,9 +4,9 @@
  * Could not load the following classes:
  *  com.github.mikumiku.addon.auth.AuthState
  *  com.github.mikumiku.addon.auth.LoginScreen
- *  net.minecraft.class_310
- *  net.minecraft.class_437
- *  net.minecraft.class_442
+ *  net.minecraft.client.MinecraftClient
+ *  net.minecraft.client.gui.screen.Screen
+ *  net.minecraft.client.gui.screen.TitleScreen
  *  org.spongepowered.asm.mixin.Mixin
  *  org.spongepowered.asm.mixin.injection.At
  *  org.spongepowered.asm.mixin.injection.Inject
@@ -16,9 +16,9 @@ package com.github.mikumiku.addon.mixin;
 
 import com.github.mikumiku.addon.auth.AuthState;
 import com.github.mikumiku.addon.auth.LoginScreen;
-import net.minecraft.class_310;
-import net.minecraft.class_437;
-import net.minecraft.class_442;
+import net.minecraft.client.MinecraftClient;
+import net.minecraft.client.gui.screen.Screen;
+import net.minecraft.client.gui.screen.TitleScreen;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;

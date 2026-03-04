@@ -14,7 +14,7 @@
  *  meteordevelopment.meteorclient.systems.modules.Module
  *  meteordevelopment.meteorclient.systems.modules.Modules
  *  meteordevelopment.meteorclient.utils.player.ChatUtils
- *  net.minecraft.class_310
+ *  net.minecraft.client.MinecraftClient
  *  org.slf4j.Logger
  *  org.slf4j.LoggerFactory
  */
@@ -127,7 +127,7 @@ import meteordevelopment.meteorclient.systems.modules.Category;
 import meteordevelopment.meteorclient.systems.modules.Module;
 import meteordevelopment.meteorclient.systems.modules.Modules;
 import meteordevelopment.meteorclient.utils.player.ChatUtils;
-import net.minecraft.class_310;
+import net.minecraft.client.MinecraftClient;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

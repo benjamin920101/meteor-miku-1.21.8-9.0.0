@@ -15,8 +15,8 @@
  *  meteordevelopment.meteorclient.utils.player.PlayerUtils
  *  meteordevelopment.meteorclient.utils.world.Dimension
  *  meteordevelopment.orbit.EventHandler
- *  net.minecraft.class_2338
- *  net.minecraft.class_243
+ *  net.minecraft.util.math.BlockPos
+ *  net.minecraft.util.math.Vec3d
  */
 package com.github.mikumiku.addon;
 
@@ -40,8 +40,8 @@ import meteordevelopment.meteorclient.utils.player.ChatUtils;
 import meteordevelopment.meteorclient.utils.player.PlayerUtils;
 import meteordevelopment.meteorclient.utils.world.Dimension;
 import meteordevelopment.orbit.EventHandler;
-import net.minecraft.class_2338;
-import net.minecraft.class_243;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Vec3d;
 
 /*
  * Duplicate member names - consider using --renamedupmembers true

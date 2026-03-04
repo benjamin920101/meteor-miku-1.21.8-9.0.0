@@ -6,9 +6,9 @@
  *  meteordevelopment.meteorclient.gui.screens.settings.base.CollectionListSettingScreen
  *  meteordevelopment.meteorclient.gui.widgets.WWidget
  *  meteordevelopment.meteorclient.settings.Setting
- *  net.minecraft.class_1074
- *  net.minecraft.class_3852
- *  net.minecraft.class_7923
+ *  net.minecraft.client.resource.language.I18n
+ *  net.minecraft.village.VillagerProfession
+ *  net.minecraft.registry.Registries
  */
 package com.github.mikumiku.addon;
 
@@ -21,9 +21,9 @@ import meteordevelopment.meteorclient.gui.GuiTheme;
 import meteordevelopment.meteorclient.gui.screens.settings.base.CollectionListSettingScreen;
 import meteordevelopment.meteorclient.gui.widgets.WWidget;
 import meteordevelopment.meteorclient.settings.Setting;
-import net.minecraft.class_1074;
-import net.minecraft.class_3852;
-import net.minecraft.class_7923;
+import net.minecraft.client.resource.language.I18n;
+import net.minecraft.village.VillagerProfession;
+import net.minecraft.registry.Registries;
 
 /*
  * Duplicate member names - consider using --renamedupmembers true

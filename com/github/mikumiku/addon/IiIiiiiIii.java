@@ -6,17 +6,17 @@
  *  meteordevelopment.meteorclient.mixininterface.IClientPlayerInteractionManager
  *  meteordevelopment.meteorclient.utils.player.FindItemResult
  *  meteordevelopment.meteorclient.utils.player.SlotUtils
- *  net.minecraft.class_1268
- *  net.minecraft.class_1657
- *  net.minecraft.class_1713
- *  net.minecraft.class_1747
- *  net.minecraft.class_1792
- *  net.minecraft.class_1799
- *  net.minecraft.class_2248
- *  net.minecraft.class_2596
- *  net.minecraft.class_2680
- *  net.minecraft.class_2815
- *  net.minecraft.class_2868
+ *  net.minecraft.util.Hand
+ *  net.minecraft.entity.player.PlayerEntity
+ *  net.minecraft.screen.slot.SlotActionType
+ *  net.minecraft.item.BlockItem
+ *  net.minecraft.item.Item
+ *  net.minecraft.item.ItemStack
+ *  net.minecraft.block.Block
+ *  net.minecraft.network.packet.Packet
+ *  net.minecraft.block.BlockState
+ *  net.minecraft.network.packet.c2s.play.CloseHandledScreenC2SPacket
+ *  net.minecraft.network.packet.c2s.play.UpdateSelectedSlotC2SPacket
  */
 package com.github.mikumiku.addon;
 
@@ -30,17 +30,17 @@ import meteordevelopment.meteorclient.MeteorClient;
 import meteordevelopment.meteorclient.mixininterface.IClientPlayerInteractionManager;
 import meteordevelopment.meteorclient.utils.player.FindItemResult;
 import meteordevelopment.meteorclient.utils.player.SlotUtils;
-import net.minecraft.class_1268;
-import net.minecraft.class_1657;
-import net.minecraft.class_1713;
-import net.minecraft.class_1747;
-import net.minecraft.class_1792;
-import net.minecraft.class_1799;
-import net.minecraft.class_2248;
-import net.minecraft.class_2596;
-import net.minecraft.class_2680;
-import net.minecraft.class_2815;
-import net.minecraft.class_2868;
+import net.minecraft.util.Hand;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.screen.slot.SlotActionType;
+import net.minecraft.item.BlockItem;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.block.Block;
+import net.minecraft.network.packet.Packet;
+import net.minecraft.block.BlockState;
+import net.minecraft.network.packet.c2s.play.CloseHandledScreenC2SPacket;
+import net.minecraft.network.packet.c2s.play.UpdateSelectedSlotC2SPacket;
 
 /*
  * Duplicate member names - consider using --renamedupmembers true

@@ -4,20 +4,20 @@
  * Could not load the following classes:
  *  com.google.gson.Gson
  *  fi.dy.masa.litematica.world.WorldSchematic
- *  net.minecraft.class_1937
- *  net.minecraft.class_2338
- *  net.minecraft.class_2350
- *  net.minecraft.class_2680
+ *  net.minecraft.world.World
+ *  net.minecraft.util.math.BlockPos
+ *  net.minecraft.util.math.Direction
+ *  net.minecraft.block.BlockState
  */
 package com.github.mikumiku.addon;
 
 import com.google.gson.Gson;
 import fi.dy.masa.litematica.world.WorldSchematic;
 import java.util.Date;
-import net.minecraft.class_1937;
-import net.minecraft.class_2338;
-import net.minecraft.class_2350;
-import net.minecraft.class_2680;
+import net.minecraft.world.World;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
+import net.minecraft.block.BlockState;
 
 public class IIiiIIIiiI {
     public final class_1937 iIIiiIiIiI;

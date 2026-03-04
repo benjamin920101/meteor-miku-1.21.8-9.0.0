@@ -7,30 +7,30 @@
  *  meteordevelopment.meteorclient.mixininterface.IRaycastContext
  *  meteordevelopment.meteorclient.utils.PreInit
  *  meteordevelopment.orbit.EventHandler
- *  net.minecraft.class_1267
- *  net.minecraft.class_1294
- *  net.minecraft.class_1297
- *  net.minecraft.class_1304
- *  net.minecraft.class_1309
- *  net.minecraft.class_1799
- *  net.minecraft.class_1893
- *  net.minecraft.class_1922
- *  net.minecraft.class_2246
- *  net.minecraft.class_2338
- *  net.minecraft.class_2350
- *  net.minecraft.class_2374
- *  net.minecraft.class_238
- *  net.minecraft.class_239$class_240
- *  net.minecraft.class_243
- *  net.minecraft.class_265
- *  net.minecraft.class_2680
- *  net.minecraft.class_3532
- *  net.minecraft.class_3959
- *  net.minecraft.class_3959$class_242
- *  net.minecraft.class_3959$class_3960
- *  net.minecraft.class_3965
- *  net.minecraft.class_6880
- *  net.minecraft.class_9304
+ *  net.minecraft.world.Difficulty
+ *  net.minecraft.entity.effect.StatusEffects
+ *  net.minecraft.entity.Entity
+ *  net.minecraft.entity.EquipmentSlot
+ *  net.minecraft.entity.LivingEntity
+ *  net.minecraft.item.ItemStack
+ *  net.minecraft.enchantment.Enchantments
+ *  net.minecraft.world.BlockView
+ *  net.minecraft.block.Blocks
+ *  net.minecraft.util.math.BlockPos
+ *  net.minecraft.util.math.Direction
+ *  net.minecraft.util.math.Position
+ *  net.minecraft.util.math.Box
+ *  net.minecraft.util.hit.HitResult$Type
+ *  net.minecraft.util.math.Vec3d
+ *  net.minecraft.util.shape.VoxelShape
+ *  net.minecraft.block.BlockState
+ *  net.minecraft.util.math.MathHelper
+ *  net.minecraft.world.RaycastContext
+ *  net.minecraft.world.RaycastContext$FluidHandling
+ *  net.minecraft.world.RaycastContext$ShapeType
+ *  net.minecraft.util.hit.BlockHitResult
+ *  net.minecraft.registry.entry.RegistryEntry
+ *  net.minecraft.component.type.ItemEnchantmentsComponent
  *  org.apache.commons.lang3.mutable.MutableInt
  */
 package com.github.mikumiku.addon;
@@ -43,28 +43,28 @@ import meteordevelopment.meteorclient.events.game.GameJoinedEvent;
 import meteordevelopment.meteorclient.mixininterface.IRaycastContext;
 import meteordevelopment.meteorclient.utils.PreInit;
 import meteordevelopment.orbit.EventHandler;
-import net.minecraft.class_1267;
-import net.minecraft.class_1294;
-import net.minecraft.class_1297;
-import net.minecraft.class_1304;
-import net.minecraft.class_1309;
-import net.minecraft.class_1799;
-import net.minecraft.class_1893;
-import net.minecraft.class_1922;
-import net.minecraft.class_2246;
-import net.minecraft.class_2338;
-import net.minecraft.class_2350;
-import net.minecraft.class_2374;
-import net.minecraft.class_238;
-import net.minecraft.class_239;
-import net.minecraft.class_243;
-import net.minecraft.class_265;
-import net.minecraft.class_2680;
-import net.minecraft.class_3532;
-import net.minecraft.class_3959;
-import net.minecraft.class_3965;
-import net.minecraft.class_6880;
-import net.minecraft.class_9304;
+import net.minecraft.world.Difficulty;
+import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.item.ItemStack;
+import net.minecraft.enchantment.Enchantments;
+import net.minecraft.world.BlockView;
+import net.minecraft.block.Blocks;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
+import net.minecraft.util.math.Position;
+import net.minecraft.util.math.Box;
+import net.minecraft.util.hit.HitResult;
+import net.minecraft.util.math.Vec3d;
+import net.minecraft.util.shape.VoxelShape;
+import net.minecraft.block.BlockState;
+import net.minecraft.util.math.MathHelper;
+import net.minecraft.world.RaycastContext;
+import net.minecraft.util.hit.BlockHitResult;
+import net.minecraft.registry.entry.RegistryEntry;
+import net.minecraft.component.type.ItemEnchantmentsComponent;
 import org.apache.commons.lang3.mutable.MutableInt;
 
 public class iIiiIiiIii {

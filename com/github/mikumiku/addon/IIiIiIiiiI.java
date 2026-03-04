@@ -8,12 +8,12 @@
  *  meteordevelopment.meteorclient.settings.Setting
  *  meteordevelopment.meteorclient.settings.SettingGroup
  *  meteordevelopment.orbit.EventHandler
- *  net.minecraft.class_1661
- *  net.minecraft.class_1703
- *  net.minecraft.class_1735
- *  net.minecraft.class_1799
- *  net.minecraft.class_310
- *  net.minecraft.class_465
+ *  net.minecraft.entity.player.PlayerInventory
+ *  net.minecraft.screen.ScreenHandler
+ *  net.minecraft.screen.slot.Slot
+ *  net.minecraft.item.ItemStack
+ *  net.minecraft.client.MinecraftClient
+ *  net.minecraft.client.gui.screen.ingame.HandledScreen
  */
 package com.github.mikumiku.addon;
 
@@ -28,12 +28,12 @@ import meteordevelopment.meteorclient.settings.EnumSetting;
 import meteordevelopment.meteorclient.settings.Setting;
 import meteordevelopment.meteorclient.settings.SettingGroup;
 import meteordevelopment.orbit.EventHandler;
-import net.minecraft.class_1661;
-import net.minecraft.class_1703;
-import net.minecraft.class_1735;
-import net.minecraft.class_1799;
-import net.minecraft.class_310;
-import net.minecraft.class_465;
+import net.minecraft.entity.player.PlayerInventory;
+import net.minecraft.screen.ScreenHandler;
+import net.minecraft.screen.slot.Slot;
+import net.minecraft.item.ItemStack;
+import net.minecraft.client.MinecraftClient;
+import net.minecraft.client.gui.screen.ingame.HandledScreen;
 
 public class IIiIiIiiiI
 extends iIiIiIIIii {

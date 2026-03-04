@@ -2,7 +2,7 @@
  * Decompiled with CFR 0.152.
  * 
  * Could not load the following classes:
- *  net.minecraft.class_1792
+ *  net.minecraft.item.Item
  */
 package com.github.mikumiku.addon;
 
@@ -10,7 +10,7 @@ import com.github.mikumiku.addon.IiIiIiIIiI;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
-import net.minecraft.class_1792;
+import net.minecraft.item.Item;
 
 public class IiIiiiIiiI {
     public static Map<String, List<class_1792>> ALLATORIxDEMO = new IiIiIiIIiI();

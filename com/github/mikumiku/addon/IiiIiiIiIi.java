@@ -26,41 +26,41 @@
  *  meteordevelopment.meteorclient.utils.render.color.Color
  *  meteordevelopment.meteorclient.utils.render.color.SettingColor
  *  meteordevelopment.orbit.EventHandler
- *  net.minecraft.class_1268
- *  net.minecraft.class_1294
- *  net.minecraft.class_1297
- *  net.minecraft.class_1299
- *  net.minecraft.class_1303
- *  net.minecraft.class_1304
- *  net.minecraft.class_1309
- *  net.minecraft.class_1511
- *  net.minecraft.class_1531
- *  net.minecraft.class_1542
- *  net.minecraft.class_1657
- *  net.minecraft.class_1743
- *  net.minecraft.class_1799
- *  net.minecraft.class_1802
- *  net.minecraft.class_1812
- *  net.minecraft.class_2246
- *  net.minecraft.class_2338
- *  net.minecraft.class_2350
- *  net.minecraft.class_238
- *  net.minecraft.class_2382
- *  net.minecraft.class_239$class_240
- *  net.minecraft.class_243
- *  net.minecraft.class_2596
- *  net.minecraft.class_2604
- *  net.minecraft.class_2716
- *  net.minecraft.class_2767
- *  net.minecraft.class_2824
- *  net.minecraft.class_2885
- *  net.minecraft.class_3417
- *  net.minecraft.class_3419
- *  net.minecraft.class_3959
- *  net.minecraft.class_3959$class_242
- *  net.minecraft.class_3959$class_3960
- *  net.minecraft.class_3965
- *  net.minecraft.class_9362
+ *  net.minecraft.util.Hand
+ *  net.minecraft.entity.effect.StatusEffects
+ *  net.minecraft.entity.Entity
+ *  net.minecraft.entity.EntityType
+ *  net.minecraft.entity.ExperienceOrbEntity
+ *  net.minecraft.entity.EquipmentSlot
+ *  net.minecraft.entity.LivingEntity
+ *  net.minecraft.entity.decoration.EndCrystalEntity
+ *  net.minecraft.entity.decoration.ArmorStandEntity
+ *  net.minecraft.entity.ItemEntity
+ *  net.minecraft.entity.player.PlayerEntity
+ *  net.minecraft.item.AxeItem
+ *  net.minecraft.item.ItemStack
+ *  net.minecraft.item.Items
+ *  net.minecraft.item.PotionItem
+ *  net.minecraft.block.Blocks
+ *  net.minecraft.util.math.BlockPos
+ *  net.minecraft.util.math.Direction
+ *  net.minecraft.util.math.Box
+ *  net.minecraft.util.math.Vec3i
+ *  net.minecraft.util.hit.HitResult$Type
+ *  net.minecraft.util.math.Vec3d
+ *  net.minecraft.network.packet.Packet
+ *  net.minecraft.network.packet.s2c.play.EntitySpawnS2CPacket
+ *  net.minecraft.network.packet.s2c.play.EntitiesDestroyS2CPacket
+ *  net.minecraft.network.packet.s2c.play.PlaySoundS2CPacket
+ *  net.minecraft.network.packet.c2s.play.PlayerInteractEntityC2SPacket
+ *  net.minecraft.network.packet.c2s.play.PlayerInteractBlockC2SPacket
+ *  net.minecraft.sound.SoundEvents
+ *  net.minecraft.sound.SoundCategory
+ *  net.minecraft.world.RaycastContext
+ *  net.minecraft.world.RaycastContext$FluidHandling
+ *  net.minecraft.world.RaycastContext$ShapeType
+ *  net.minecraft.util.hit.BlockHitResult
+ *  net.minecraft.item.MaceItem
  *  org.joml.Vector3d
  */
 package com.github.mikumiku.addon;
@@ -108,39 +108,39 @@ import meteordevelopment.meteorclient.utils.render.NametagUtils;
 import meteordevelopment.meteorclient.utils.render.color.Color;
 import meteordevelopment.meteorclient.utils.render.color.SettingColor;
 import meteordevelopment.orbit.EventHandler;
-import net.minecraft.class_1268;
-import net.minecraft.class_1294;
-import net.minecraft.class_1297;
-import net.minecraft.class_1299;
-import net.minecraft.class_1303;
-import net.minecraft.class_1304;
-import net.minecraft.class_1309;
-import net.minecraft.class_1511;
-import net.minecraft.class_1531;
-import net.minecraft.class_1542;
-import net.minecraft.class_1657;
-import net.minecraft.class_1743;
-import net.minecraft.class_1799;
-import net.minecraft.class_1802;
-import net.minecraft.class_1812;
-import net.minecraft.class_2246;
-import net.minecraft.class_2338;
-import net.minecraft.class_2350;
-import net.minecraft.class_238;
-import net.minecraft.class_2382;
-import net.minecraft.class_239;
-import net.minecraft.class_243;
-import net.minecraft.class_2596;
-import net.minecraft.class_2604;
-import net.minecraft.class_2716;
-import net.minecraft.class_2767;
-import net.minecraft.class_2824;
-import net.minecraft.class_2885;
-import net.minecraft.class_3417;
-import net.minecraft.class_3419;
-import net.minecraft.class_3959;
-import net.minecraft.class_3965;
-import net.minecraft.class_9362;
+import net.minecraft.util.Hand;
+import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityType;
+import net.minecraft.entity.ExperienceOrbEntity;
+import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.decoration.EndCrystalEntity;
+import net.minecraft.entity.decoration.ArmorStandEntity;
+import net.minecraft.entity.ItemEntity;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.AxeItem;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
+import net.minecraft.item.PotionItem;
+import net.minecraft.block.Blocks;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
+import net.minecraft.util.math.Box;
+import net.minecraft.util.math.Vec3i;
+import net.minecraft.util.hit.HitResult;
+import net.minecraft.util.math.Vec3d;
+import net.minecraft.network.packet.Packet;
+import net.minecraft.network.packet.s2c.play.EntitySpawnS2CPacket;
+import net.minecraft.network.packet.s2c.play.EntitiesDestroyS2CPacket;
+import net.minecraft.network.packet.s2c.play.PlaySoundS2CPacket;
+import net.minecraft.network.packet.c2s.play.PlayerInteractEntityC2SPacket;
+import net.minecraft.network.packet.c2s.play.PlayerInteractBlockC2SPacket;
+import net.minecraft.sound.SoundEvents;
+import net.minecraft.sound.SoundCategory;
+import net.minecraft.world.RaycastContext;
+import net.minecraft.util.hit.BlockHitResult;
+import net.minecraft.item.MaceItem;
 import org.joml.Vector3d;
 
 public class IiiIiiIiIi

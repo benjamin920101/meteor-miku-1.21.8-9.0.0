@@ -6,14 +6,14 @@
  *  meteordevelopment.meteorclient.utils.player.FindItemResult
  *  meteordevelopment.meteorclient.utils.player.InvUtils
  *  meteordevelopment.meteorclient.utils.player.Rotations
- *  net.minecraft.class_1268
- *  net.minecraft.class_2338
- *  net.minecraft.class_2350
- *  net.minecraft.class_2382
- *  net.minecraft.class_243
- *  net.minecraft.class_310
- *  net.minecraft.class_3532
- *  net.minecraft.class_3965
+ *  net.minecraft.util.Hand
+ *  net.minecraft.util.math.BlockPos
+ *  net.minecraft.util.math.Direction
+ *  net.minecraft.util.math.Vec3i
+ *  net.minecraft.util.math.Vec3d
+ *  net.minecraft.client.MinecraftClient
+ *  net.minecraft.util.math.MathHelper
+ *  net.minecraft.util.hit.BlockHitResult
  */
 package com.github.mikumiku.addon;
 
@@ -24,14 +24,14 @@ import meteordevelopment.meteorclient.MeteorClient;
 import meteordevelopment.meteorclient.utils.player.FindItemResult;
 import meteordevelopment.meteorclient.utils.player.InvUtils;
 import meteordevelopment.meteorclient.utils.player.Rotations;
-import net.minecraft.class_1268;
-import net.minecraft.class_2338;
-import net.minecraft.class_2350;
-import net.minecraft.class_2382;
-import net.minecraft.class_243;
-import net.minecraft.class_310;
-import net.minecraft.class_3532;
-import net.minecraft.class_3965;
+import net.minecraft.util.Hand;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
+import net.minecraft.util.math.Vec3i;
+import net.minecraft.util.math.Vec3d;
+import net.minecraft.client.MinecraftClient;
+import net.minecraft.util.math.MathHelper;
+import net.minecraft.util.hit.BlockHitResult;
 
 public class iiIIiiiIIi {
     public static double ALLATORIxDEMO(class_2338 class_23382, class_2338 class_23383) {

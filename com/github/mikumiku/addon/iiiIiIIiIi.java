@@ -32,39 +32,39 @@
  *  meteordevelopment.meteorclient.utils.misc.Names
  *  meteordevelopment.meteorclient.utils.world.BlockUtils
  *  meteordevelopment.orbit.EventHandler
- *  net.minecraft.class_1268
- *  net.minecraft.class_1297
- *  net.minecraft.class_1646
- *  net.minecraft.class_1657
- *  net.minecraft.class_1675
- *  net.minecraft.class_1799
- *  net.minecraft.class_1802
- *  net.minecraft.class_1887
- *  net.minecraft.class_1890
- *  net.minecraft.class_1916
- *  net.minecraft.class_2246
- *  net.minecraft.class_2248
- *  net.minecraft.class_2338
- *  net.minecraft.class_2350
- *  net.minecraft.class_2378
- *  net.minecraft.class_238
- *  net.minecraft.class_243
- *  net.minecraft.class_2487
- *  net.minecraft.class_2499
- *  net.minecraft.class_2520
- *  net.minecraft.class_2596
- *  net.minecraft.class_2846
- *  net.minecraft.class_2846$class_2847
- *  net.minecraft.class_3414
- *  net.minecraft.class_3417
- *  net.minecraft.class_3943
- *  net.minecraft.class_3966
- *  net.minecraft.class_437
- *  net.minecraft.class_5321
- *  net.minecraft.class_6880
- *  net.minecraft.class_6880$class_6883
- *  net.minecraft.class_7924
- *  net.minecraft.class_9636
+ *  net.minecraft.util.Hand
+ *  net.minecraft.entity.Entity
+ *  net.minecraft.entity.passive.VillagerEntity
+ *  net.minecraft.entity.player.PlayerEntity
+ *  net.minecraft.entity.projectile.ProjectileUtil
+ *  net.minecraft.item.ItemStack
+ *  net.minecraft.item.Items
+ *  net.minecraft.enchantment.Enchantment
+ *  net.minecraft.enchantment.EnchantmentHelper
+ *  net.minecraft.village.TradeOfferList
+ *  net.minecraft.block.Blocks
+ *  net.minecraft.block.Block
+ *  net.minecraft.util.math.BlockPos
+ *  net.minecraft.util.math.Direction
+ *  net.minecraft.registry.Registry
+ *  net.minecraft.util.math.Box
+ *  net.minecraft.util.math.Vec3d
+ *  net.minecraft.nbt.NbtCompound
+ *  net.minecraft.nbt.NbtList
+ *  net.minecraft.nbt.NbtElement
+ *  net.minecraft.network.packet.Packet
+ *  net.minecraft.network.packet.c2s.play.PlayerActionC2SPacket
+ *  net.minecraft.network.packet.c2s.play.PlayerActionC2SPacket$Action
+ *  net.minecraft.sound.SoundEvent
+ *  net.minecraft.sound.SoundEvents
+ *  net.minecraft.network.packet.s2c.play.SetTradeOffersS2CPacket
+ *  net.minecraft.util.hit.EntityHitResult
+ *  net.minecraft.client.gui.screen.Screen
+ *  net.minecraft.registry.RegistryKey
+ *  net.minecraft.registry.entry.RegistryEntry
+ *  net.minecraft.registry.entry.RegistryEntry$Reference
+ *  net.minecraft.registry.RegistryKeys
+ *  net.minecraft.registry.tag.EnchantmentTags
  *  org.apache.commons.io.FilenameUtils
  */
 package com.github.mikumiku.addon;
@@ -124,37 +124,37 @@ import meteordevelopment.meteorclient.systems.modules.Module;
 import meteordevelopment.meteorclient.utils.misc.Names;
 import meteordevelopment.meteorclient.utils.world.BlockUtils;
 import meteordevelopment.orbit.EventHandler;
-import net.minecraft.class_1268;
-import net.minecraft.class_1297;
-import net.minecraft.class_1646;
-import net.minecraft.class_1657;
-import net.minecraft.class_1675;
-import net.minecraft.class_1799;
-import net.minecraft.class_1802;
-import net.minecraft.class_1887;
-import net.minecraft.class_1890;
-import net.minecraft.class_1916;
-import net.minecraft.class_2246;
-import net.minecraft.class_2248;
-import net.minecraft.class_2338;
-import net.minecraft.class_2350;
-import net.minecraft.class_2378;
-import net.minecraft.class_238;
-import net.minecraft.class_243;
-import net.minecraft.class_2487;
-import net.minecraft.class_2499;
-import net.minecraft.class_2520;
-import net.minecraft.class_2596;
-import net.minecraft.class_2846;
-import net.minecraft.class_3414;
-import net.minecraft.class_3417;
-import net.minecraft.class_3943;
-import net.minecraft.class_3966;
-import net.minecraft.class_437;
-import net.minecraft.class_5321;
-import net.minecraft.class_6880;
-import net.minecraft.class_7924;
-import net.minecraft.class_9636;
+import net.minecraft.util.Hand;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.passive.VillagerEntity;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.projectile.ProjectileUtil;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
+import net.minecraft.enchantment.Enchantment;
+import net.minecraft.enchantment.EnchantmentHelper;
+import net.minecraft.village.TradeOfferList;
+import net.minecraft.block.Blocks;
+import net.minecraft.block.Block;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
+import net.minecraft.registry.Registry;
+import net.minecraft.util.math.Box;
+import net.minecraft.util.math.Vec3d;
+import net.minecraft.nbt.NbtCompound;
+import net.minecraft.nbt.NbtList;
+import net.minecraft.nbt.NbtElement;
+import net.minecraft.network.packet.Packet;
+import net.minecraft.network.packet.c2s.play.PlayerActionC2SPacket;
+import net.minecraft.sound.SoundEvent;
+import net.minecraft.sound.SoundEvents;
+import net.minecraft.network.packet.s2c.play.SetTradeOffersS2CPacket;
+import net.minecraft.util.hit.EntityHitResult;
+import net.minecraft.client.gui.screen.Screen;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.entry.RegistryEntry;
+import net.minecraft.registry.RegistryKeys;
+import net.minecraft.registry.tag.EnchantmentTags;
 import org.apache.commons.io.FilenameUtils;
 
 public class iiiIiIIiIi

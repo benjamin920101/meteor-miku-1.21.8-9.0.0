@@ -8,12 +8,12 @@
  *  meteordevelopment.meteorclient.settings.Setting
  *  meteordevelopment.meteorclient.settings.SettingGroup
  *  meteordevelopment.orbit.EventHandler
- *  net.minecraft.class_1268
- *  net.minecraft.class_1304
- *  net.minecraft.class_1779
- *  net.minecraft.class_1799
- *  net.minecraft.class_1893
- *  net.minecraft.class_2886
+ *  net.minecraft.util.Hand
+ *  net.minecraft.entity.EquipmentSlot
+ *  net.minecraft.item.ExperienceBottleItem
+ *  net.minecraft.item.ItemStack
+ *  net.minecraft.enchantment.Enchantments
+ *  net.minecraft.network.packet.c2s.play.PlayerInteractItemC2SPacket
  */
 package com.github.mikumiku.addon;
 
@@ -31,12 +31,12 @@ import meteordevelopment.meteorclient.settings.IntSetting;
 import meteordevelopment.meteorclient.settings.Setting;
 import meteordevelopment.meteorclient.settings.SettingGroup;
 import meteordevelopment.orbit.EventHandler;
-import net.minecraft.class_1268;
-import net.minecraft.class_1304;
-import net.minecraft.class_1779;
-import net.minecraft.class_1799;
-import net.minecraft.class_1893;
-import net.minecraft.class_2886;
+import net.minecraft.util.Hand;
+import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.item.ExperienceBottleItem;
+import net.minecraft.item.ItemStack;
+import net.minecraft.enchantment.Enchantments;
+import net.minecraft.network.packet.c2s.play.PlayerInteractItemC2SPacket;
 
 public class iIiiIIIIII
 extends iIiIiIIIii {

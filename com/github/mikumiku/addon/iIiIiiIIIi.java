@@ -6,51 +6,51 @@
  *  meteordevelopment.meteorclient.systems.modules.player.InstantRebreak
  *  meteordevelopment.meteorclient.utils.player.PlayerUtils
  *  meteordevelopment.meteorclient.utils.world.BlockUtils
- *  net.minecraft.class_1268
- *  net.minecraft.class_1269
- *  net.minecraft.class_1297
- *  net.minecraft.class_1303
- *  net.minecraft.class_1511
- *  net.minecraft.class_1531
- *  net.minecraft.class_1542
- *  net.minecraft.class_1667
- *  net.minecraft.class_1683
- *  net.minecraft.class_1792
- *  net.minecraft.class_2189
- *  net.minecraft.class_2244
- *  net.minecraft.class_2246
- *  net.minecraft.class_2248
- *  net.minecraft.class_2269
- *  net.minecraft.class_2323
- *  net.minecraft.class_2338
- *  net.minecraft.class_2338$class_2339
- *  net.minecraft.class_2350
- *  net.minecraft.class_2350$class_2353
- *  net.minecraft.class_238
- *  net.minecraft.class_2382
- *  net.minecraft.class_239$class_240
- *  net.minecraft.class_2404
- *  net.minecraft.class_243
- *  net.minecraft.class_2480
- *  net.minecraft.class_2482
- *  net.minecraft.class_2508
- *  net.minecraft.class_2533
- *  net.minecraft.class_2551
- *  net.minecraft.class_2596
- *  net.minecraft.class_2680
- *  net.minecraft.class_2741
- *  net.minecraft.class_2769
- *  net.minecraft.class_2771
- *  net.minecraft.class_2879
- *  net.minecraft.class_2885
- *  net.minecraft.class_310
- *  net.minecraft.class_3532
- *  net.minecraft.class_3959
- *  net.minecraft.class_3959$class_242
- *  net.minecraft.class_3959$class_3960
- *  net.minecraft.class_3965
- *  net.minecraft.class_4770
- *  net.minecraft.class_7713
+ *  net.minecraft.util.Hand
+ *  net.minecraft.util.ActionResult
+ *  net.minecraft.entity.Entity
+ *  net.minecraft.entity.ExperienceOrbEntity
+ *  net.minecraft.entity.decoration.EndCrystalEntity
+ *  net.minecraft.entity.decoration.ArmorStandEntity
+ *  net.minecraft.entity.ItemEntity
+ *  net.minecraft.entity.projectile.ArrowEntity
+ *  net.minecraft.entity.projectile.thrown.ExperienceBottleEntity
+ *  net.minecraft.item.Item
+ *  net.minecraft.block.AirBlock
+ *  net.minecraft.block.BedBlock
+ *  net.minecraft.block.Blocks
+ *  net.minecraft.block.Block
+ *  net.minecraft.block.ButtonBlock
+ *  net.minecraft.block.DoorBlock
+ *  net.minecraft.util.math.BlockPos
+ *  net.minecraft.util.math.BlockPos$Mutable
+ *  net.minecraft.util.math.Direction
+ *  net.minecraft.util.math.Direction$Type
+ *  net.minecraft.util.math.Box
+ *  net.minecraft.util.math.Vec3i
+ *  net.minecraft.util.hit.HitResult$Type
+ *  net.minecraft.block.FluidBlock
+ *  net.minecraft.util.math.Vec3d
+ *  net.minecraft.block.ShulkerBoxBlock
+ *  net.minecraft.block.SlabBlock
+ *  net.minecraft.block.SignBlock
+ *  net.minecraft.block.TrapdoorBlock
+ *  net.minecraft.block.WallSignBlock
+ *  net.minecraft.network.packet.Packet
+ *  net.minecraft.block.BlockState
+ *  net.minecraft.state.property.Properties
+ *  net.minecraft.state.property.Property
+ *  net.minecraft.block.enums.SlabType
+ *  net.minecraft.network.packet.c2s.play.HandSwingC2SPacket
+ *  net.minecraft.network.packet.c2s.play.PlayerInteractBlockC2SPacket
+ *  net.minecraft.client.MinecraftClient
+ *  net.minecraft.util.math.MathHelper
+ *  net.minecraft.world.RaycastContext
+ *  net.minecraft.world.RaycastContext$FluidHandling
+ *  net.minecraft.world.RaycastContext$ShapeType
+ *  net.minecraft.util.hit.BlockHitResult
+ *  net.minecraft.block.AbstractFireBlock
+ *  net.minecraft.block.HangingSignBlock
  */
 package com.github.mikumiku.addon;
 
@@ -73,47 +73,47 @@ import meteordevelopment.meteorclient.systems.modules.Modules;
 import meteordevelopment.meteorclient.systems.modules.player.InstantRebreak;
 import meteordevelopment.meteorclient.utils.player.PlayerUtils;
 import meteordevelopment.meteorclient.utils.world.BlockUtils;
-import net.minecraft.class_1268;
-import net.minecraft.class_1269;
-import net.minecraft.class_1297;
-import net.minecraft.class_1303;
-import net.minecraft.class_1511;
-import net.minecraft.class_1531;
-import net.minecraft.class_1542;
-import net.minecraft.class_1667;
-import net.minecraft.class_1683;
-import net.minecraft.class_1792;
-import net.minecraft.class_2189;
-import net.minecraft.class_2244;
-import net.minecraft.class_2246;
-import net.minecraft.class_2248;
-import net.minecraft.class_2269;
-import net.minecraft.class_2323;
-import net.minecraft.class_2338;
-import net.minecraft.class_2350;
-import net.minecraft.class_238;
-import net.minecraft.class_2382;
-import net.minecraft.class_239;
-import net.minecraft.class_2404;
-import net.minecraft.class_243;
-import net.minecraft.class_2480;
-import net.minecraft.class_2482;
-import net.minecraft.class_2508;
-import net.minecraft.class_2533;
-import net.minecraft.class_2551;
-import net.minecraft.class_2596;
-import net.minecraft.class_2680;
-import net.minecraft.class_2741;
-import net.minecraft.class_2769;
-import net.minecraft.class_2771;
-import net.minecraft.class_2879;
-import net.minecraft.class_2885;
-import net.minecraft.class_310;
-import net.minecraft.class_3532;
-import net.minecraft.class_3959;
-import net.minecraft.class_3965;
-import net.minecraft.class_4770;
-import net.minecraft.class_7713;
+import net.minecraft.util.Hand;
+import net.minecraft.util.ActionResult;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.ExperienceOrbEntity;
+import net.minecraft.entity.decoration.EndCrystalEntity;
+import net.minecraft.entity.decoration.ArmorStandEntity;
+import net.minecraft.entity.ItemEntity;
+import net.minecraft.entity.projectile.ArrowEntity;
+import net.minecraft.entity.projectile.thrown.ExperienceBottleEntity;
+import net.minecraft.item.Item;
+import net.minecraft.block.AirBlock;
+import net.minecraft.block.BedBlock;
+import net.minecraft.block.Blocks;
+import net.minecraft.block.Block;
+import net.minecraft.block.ButtonBlock;
+import net.minecraft.block.DoorBlock;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
+import net.minecraft.util.math.Box;
+import net.minecraft.util.math.Vec3i;
+import net.minecraft.util.hit.HitResult;
+import net.minecraft.block.FluidBlock;
+import net.minecraft.util.math.Vec3d;
+import net.minecraft.block.ShulkerBoxBlock;
+import net.minecraft.block.SlabBlock;
+import net.minecraft.block.SignBlock;
+import net.minecraft.block.TrapdoorBlock;
+import net.minecraft.block.WallSignBlock;
+import net.minecraft.network.packet.Packet;
+import net.minecraft.block.BlockState;
+import net.minecraft.state.property.Properties;
+import net.minecraft.state.property.Property;
+import net.minecraft.block.enums.SlabType;
+import net.minecraft.network.packet.c2s.play.HandSwingC2SPacket;
+import net.minecraft.network.packet.c2s.play.PlayerInteractBlockC2SPacket;
+import net.minecraft.client.MinecraftClient;
+import net.minecraft.util.math.MathHelper;
+import net.minecraft.world.RaycastContext;
+import net.minecraft.util.hit.BlockHitResult;
+import net.minecraft.block.AbstractFireBlock;
+import net.minecraft.block.HangingSignBlock;
 
 /*
  * Duplicate member names - consider using --renamedupmembers true

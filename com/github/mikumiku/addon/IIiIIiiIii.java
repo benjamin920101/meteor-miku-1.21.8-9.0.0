@@ -21,12 +21,12 @@
  *  meteordevelopment.meteorclient.utils.render.color.Color
  *  meteordevelopment.meteorclient.utils.render.color.SettingColor
  *  meteordevelopment.orbit.EventHandler
- *  net.minecraft.class_1297
- *  net.minecraft.class_1657
- *  net.minecraft.class_1802
- *  net.minecraft.class_1934
- *  net.minecraft.class_238
- *  net.minecraft.class_3532
+ *  net.minecraft.entity.Entity
+ *  net.minecraft.entity.player.PlayerEntity
+ *  net.minecraft.item.Items
+ *  net.minecraft.world.GameMode
+ *  net.minecraft.util.math.Box
+ *  net.minecraft.util.math.MathHelper
  */
 package com.github.mikumiku.addon;
 
@@ -56,12 +56,12 @@ import meteordevelopment.meteorclient.utils.player.Rotations;
 import meteordevelopment.meteorclient.utils.render.color.Color;
 import meteordevelopment.meteorclient.utils.render.color.SettingColor;
 import meteordevelopment.orbit.EventHandler;
-import net.minecraft.class_1297;
-import net.minecraft.class_1657;
-import net.minecraft.class_1802;
-import net.minecraft.class_1934;
-import net.minecraft.class_238;
-import net.minecraft.class_3532;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.Items;
+import net.minecraft.world.GameMode;
+import net.minecraft.util.math.Box;
+import net.minecraft.util.math.MathHelper;
 
 public class IIiIIiiIii
 extends iIiIiIIIii {

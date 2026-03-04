@@ -17,16 +17,16 @@
  *  meteordevelopment.meteorclient.utils.entity.DamageUtils
  *  meteordevelopment.meteorclient.utils.player.PlayerUtils
  *  meteordevelopment.orbit.EventHandler
- *  net.minecraft.class_124
- *  net.minecraft.class_1297
- *  net.minecraft.class_1299
- *  net.minecraft.class_1309
- *  net.minecraft.class_1657
- *  net.minecraft.class_1802
- *  net.minecraft.class_2561
- *  net.minecraft.class_2661
- *  net.minecraft.class_310
- *  net.minecraft.class_5250
+ *  net.minecraft.util.Formatting
+ *  net.minecraft.entity.Entity
+ *  net.minecraft.entity.EntityType
+ *  net.minecraft.entity.LivingEntity
+ *  net.minecraft.entity.player.PlayerEntity
+ *  net.minecraft.item.Items
+ *  net.minecraft.text.Text
+ *  net.minecraft.network.packet.s2c.common.DisconnectS2CPacket
+ *  net.minecraft.client.MinecraftClient
+ *  net.minecraft.text.MutableText
  */
 package com.github.mikumiku.addon;
 
@@ -54,16 +54,16 @@ import meteordevelopment.meteorclient.systems.modules.misc.AutoReconnect;
 import meteordevelopment.meteorclient.utils.entity.DamageUtils;
 import meteordevelopment.meteorclient.utils.player.PlayerUtils;
 import meteordevelopment.orbit.EventHandler;
-import net.minecraft.class_124;
-import net.minecraft.class_1297;
-import net.minecraft.class_1299;
-import net.minecraft.class_1309;
-import net.minecraft.class_1657;
-import net.minecraft.class_1802;
-import net.minecraft.class_2561;
-import net.minecraft.class_2661;
-import net.minecraft.class_310;
-import net.minecraft.class_5250;
+import net.minecraft.util.Formatting;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityType;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.Items;
+import net.minecraft.text.Text;
+import net.minecraft.network.packet.s2c.common.DisconnectS2CPacket;
+import net.minecraft.client.MinecraftClient;
+import net.minecraft.text.MutableText;
 
 public class IiiIIIiIII
 extends iIiIiIIIii {

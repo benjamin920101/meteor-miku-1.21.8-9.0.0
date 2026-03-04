@@ -13,16 +13,16 @@
  *  meteordevelopment.meteorclient.settings.StorageBlockListSetting$Builder
  *  meteordevelopment.meteorclient.utils.Utils
  *  meteordevelopment.orbit.EventHandler
- *  net.minecraft.class_1268
- *  net.minecraft.class_2281
- *  net.minecraft.class_2338
- *  net.minecraft.class_2350
- *  net.minecraft.class_2382
- *  net.minecraft.class_243
- *  net.minecraft.class_2586
- *  net.minecraft.class_2591
- *  net.minecraft.class_2745
- *  net.minecraft.class_2769
+ *  net.minecraft.util.Hand
+ *  net.minecraft.block.ChestBlock
+ *  net.minecraft.util.math.BlockPos
+ *  net.minecraft.util.math.Direction
+ *  net.minecraft.util.math.Vec3i
+ *  net.minecraft.util.math.Vec3d
+ *  net.minecraft.block.entity.BlockEntity
+ *  net.minecraft.block.entity.BlockEntityType
+ *  net.minecraft.block.enums.ChestType
+ *  net.minecraft.state.property.Property
  */
 package com.github.mikumiku.addon;
 
@@ -48,16 +48,16 @@ import meteordevelopment.meteorclient.settings.SettingGroup;
 import meteordevelopment.meteorclient.settings.StorageBlockListSetting;
 import meteordevelopment.meteorclient.utils.Utils;
 import meteordevelopment.orbit.EventHandler;
-import net.minecraft.class_1268;
-import net.minecraft.class_2281;
-import net.minecraft.class_2338;
-import net.minecraft.class_2350;
-import net.minecraft.class_2382;
-import net.minecraft.class_243;
-import net.minecraft.class_2586;
-import net.minecraft.class_2591;
-import net.minecraft.class_2745;
-import net.minecraft.class_2769;
+import net.minecraft.util.Hand;
+import net.minecraft.block.ChestBlock;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
+import net.minecraft.util.math.Vec3i;
+import net.minecraft.util.math.Vec3d;
+import net.minecraft.block.entity.BlockEntity;
+import net.minecraft.block.entity.BlockEntityType;
+import net.minecraft.block.enums.ChestType;
+import net.minecraft.state.property.Property;
 
 public class iIIiiiIiii
 extends iIiIiIIIii {

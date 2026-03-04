@@ -4,7 +4,7 @@
  * Could not load the following classes:
  *  meteordevelopment.meteorclient.events.world.TickEvent$Pre
  *  meteordevelopment.orbit.EventHandler
- *  net.minecraft.class_2596
+ *  net.minecraft.network.packet.Packet
  */
 package com.github.mikumiku.addon;
 
@@ -16,7 +16,7 @@ import com.github.mikumiku.addon.iiIiIiiiiI;
 import java.util.Date;
 import meteordevelopment.meteorclient.events.world.TickEvent;
 import meteordevelopment.orbit.EventHandler;
-import net.minecraft.class_2596;
+import net.minecraft.network.packet.Packet;
 
 public class IiIiiIIIII
 extends iIiIiIIIii {

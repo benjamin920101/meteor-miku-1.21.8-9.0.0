@@ -19,18 +19,18 @@
  *  meteordevelopment.meteorclient.utils.render.color.SettingColor
  *  meteordevelopment.meteorclient.utils.world.BlockUtils
  *  meteordevelopment.orbit.EventHandler
- *  net.minecraft.class_1297
- *  net.minecraft.class_1747
- *  net.minecraft.class_1799
- *  net.minecraft.class_1922
- *  net.minecraft.class_2248
- *  net.minecraft.class_2338
- *  net.minecraft.class_2338$class_2339
- *  net.minecraft.class_2346
- *  net.minecraft.class_2382
- *  net.minecraft.class_243
- *  net.minecraft.class_265
- *  net.minecraft.class_2680
+ *  net.minecraft.entity.Entity
+ *  net.minecraft.item.BlockItem
+ *  net.minecraft.item.ItemStack
+ *  net.minecraft.world.BlockView
+ *  net.minecraft.block.Block
+ *  net.minecraft.util.math.BlockPos
+ *  net.minecraft.util.math.BlockPos$Mutable
+ *  net.minecraft.block.FallingBlock
+ *  net.minecraft.util.math.Vec3i
+ *  net.minecraft.util.math.Vec3d
+ *  net.minecraft.util.shape.VoxelShape
+ *  net.minecraft.block.BlockState
  */
 package com.github.mikumiku.addon;
 
@@ -66,17 +66,17 @@ import meteordevelopment.meteorclient.utils.render.color.Color;
 import meteordevelopment.meteorclient.utils.render.color.SettingColor;
 import meteordevelopment.meteorclient.utils.world.BlockUtils;
 import meteordevelopment.orbit.EventHandler;
-import net.minecraft.class_1297;
-import net.minecraft.class_1747;
-import net.minecraft.class_1799;
-import net.minecraft.class_1922;
-import net.minecraft.class_2248;
-import net.minecraft.class_2338;
-import net.minecraft.class_2346;
-import net.minecraft.class_2382;
-import net.minecraft.class_243;
-import net.minecraft.class_265;
-import net.minecraft.class_2680;
+import net.minecraft.entity.Entity;
+import net.minecraft.item.BlockItem;
+import net.minecraft.item.ItemStack;
+import net.minecraft.world.BlockView;
+import net.minecraft.block.Block;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.block.FallingBlock;
+import net.minecraft.util.math.Vec3i;
+import net.minecraft.util.math.Vec3d;
+import net.minecraft.util.shape.VoxelShape;
+import net.minecraft.block.BlockState;
 
 public class iIIiiiiIIi
 extends iIiIiIIIii {
@@ -227,7 +227,7 @@ extends iIiIiIIIii {
                         if (var5_7.isEmpty()) {
                             return;
                         }
-                        var5_7.sort(Comparator.comparingDouble((ToDoubleFunction<class_2338>)LambdaMetafactory.metafactory(null, null, null, (Ljava/lang/Object;)D, ALLATORIxDEMO(net.minecraft.class_2338 net.minecraft.class_2338 ), (Lnet/minecraft/class_2338;)D)((class_2338)var4_5)));
+                        var5_7.sort(Comparator.comparingDouble((ToDoubleFunction<class_2338>)LambdaMetafactory.metafactory(null, null, null, (Ljava/lang/Object;)D, ALLATORIxDEMO(net.minecraft.util.math.BlockPos net.minecraft.util.math.BlockPos ), (Lnet/minecraft/class_2338;)D)((class_2338)var4_5)));
                         var3_4.iIiIiIIIII.method_10101((class_2382)var5_7.getFirst());
 lbl86:
                         // 2 sources
@@ -256,7 +256,7 @@ lbl86:
                 v15 = ++var5_8;
             }
             if (var2_6.isEmpty()) ** GOTO lbl126
-            var2_6.sort(Comparator.comparingDouble((ToDoubleFunction<class_2338>)LambdaMetafactory.metafactory(null, null, null, (Ljava/lang/Object;)D, squaredDistanceTo(net.minecraft.class_2338 ), (Lnet/minecraft/class_2338;)D)()));
+            var2_6.sort(Comparator.comparingDouble((ToDoubleFunction<class_2338>)LambdaMetafactory.metafactory(null, null, null, (Ljava/lang/Object;)D, squaredDistanceTo(net.minecraft.util.math.BlockPos ), (Lnet/minecraft/class_2338;)D)()));
             var5_8 = 3 >> 2;
             for (class_2338 var7_14 : var2_6) {
                 if (var3_4.ALLATORIxDEMO(var7_14)) {
@@ -273,7 +273,7 @@ lbl86:
 lbl126:
             // 5 sources
 
-            this = IiIiiiiIii.ALLATORIxDEMO((Predicate<class_1799>)LambdaMetafactory.metafactory(null, null, null, (Ljava/lang/Object;)Z, ALLATORIxDEMO(net.minecraft.class_1799 ), (Lnet/minecraft/class_1799;)Z)((iIIiiiiIIi)var3_4));
+            this = IiIiiiiIii.ALLATORIxDEMO((Predicate<class_1799>)LambdaMetafactory.metafactory(null, null, null, (Ljava/lang/Object;)Z, ALLATORIxDEMO(net.minecraft.item.ItemStack ), (Lnet/minecraft/class_1799;)Z)((iIIiiiiIIi)var3_4));
             if (((Boolean)var3_4.iIiIiiiiII.get()).booleanValue() && var3_4.iIIiiIiIiI.field_1690.field_1903.method_1434() && !var3_4.iIIiiIiIiI.field_1690.field_1832.method_1434()) {
                 if (this != -4 >> 2) {
                     v18 = var3_4;

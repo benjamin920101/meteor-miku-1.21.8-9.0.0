@@ -6,10 +6,10 @@
  *  meteordevelopment.meteorclient.MeteorClient
  *  meteordevelopment.meteorclient.mixininterface.IChatHud
  *  meteordevelopment.meteorclient.systems.config.Config
- *  net.minecraft.class_124
- *  net.minecraft.class_2561
- *  net.minecraft.class_2583
- *  net.minecraft.class_5250
+ *  net.minecraft.util.Formatting
+ *  net.minecraft.text.Text
+ *  net.minecraft.text.Style
+ *  net.minecraft.text.MutableText
  *  org.jetbrains.annotations.Nullable
  */
 package com.github.mikumiku.addon;
@@ -24,10 +24,10 @@ import java.util.Date;
 import meteordevelopment.meteorclient.MeteorClient;
 import meteordevelopment.meteorclient.mixininterface.IChatHud;
 import meteordevelopment.meteorclient.systems.config.Config;
-import net.minecraft.class_124;
-import net.minecraft.class_2561;
-import net.minecraft.class_2583;
-import net.minecraft.class_5250;
+import net.minecraft.util.Formatting;
+import net.minecraft.text.Text;
+import net.minecraft.text.Style;
+import net.minecraft.text.MutableText;
 import org.jetbrains.annotations.Nullable;
 
 public class IiIiIIiiii {

@@ -12,23 +12,23 @@
  *  meteordevelopment.meteorclient.utils.player.PlayerUtils
  *  meteordevelopment.meteorclient.utils.world.CardinalDirection
  *  meteordevelopment.orbit.EventHandler
- *  net.minecraft.class_1268
- *  net.minecraft.class_1752
- *  net.minecraft.class_2189
- *  net.minecraft.class_2246
- *  net.minecraft.class_2248
- *  net.minecraft.class_2261
- *  net.minecraft.class_2338
- *  net.minecraft.class_2350
- *  net.minecraft.class_2397
- *  net.minecraft.class_2465
- *  net.minecraft.class_2473
- *  net.minecraft.class_2541
- *  net.minecraft.class_304
- *  net.minecraft.class_310
- *  net.minecraft.class_3481
- *  net.minecraft.class_3532
- *  net.minecraft.class_4771
+ *  net.minecraft.util.Hand
+ *  net.minecraft.item.BoneMealItem
+ *  net.minecraft.block.AirBlock
+ *  net.minecraft.block.Blocks
+ *  net.minecraft.block.Block
+ *  net.minecraft.block.PlantBlock
+ *  net.minecraft.util.math.BlockPos
+ *  net.minecraft.util.math.Direction
+ *  net.minecraft.block.LeavesBlock
+ *  net.minecraft.block.PillarBlock
+ *  net.minecraft.block.SaplingBlock
+ *  net.minecraft.block.VineBlock
+ *  net.minecraft.client.option.KeyBinding
+ *  net.minecraft.client.MinecraftClient
+ *  net.minecraft.registry.tag.BlockTags
+ *  net.minecraft.util.math.MathHelper
+ *  net.minecraft.block.FungusBlock
  */
 package com.github.mikumiku.addon;
 
@@ -61,23 +61,23 @@ import meteordevelopment.meteorclient.utils.misc.input.Input;
 import meteordevelopment.meteorclient.utils.player.PlayerUtils;
 import meteordevelopment.meteorclient.utils.world.CardinalDirection;
 import meteordevelopment.orbit.EventHandler;
-import net.minecraft.class_1268;
-import net.minecraft.class_1752;
-import net.minecraft.class_2189;
-import net.minecraft.class_2246;
-import net.minecraft.class_2248;
-import net.minecraft.class_2261;
-import net.minecraft.class_2338;
-import net.minecraft.class_2350;
-import net.minecraft.class_2397;
-import net.minecraft.class_2465;
-import net.minecraft.class_2473;
-import net.minecraft.class_2541;
-import net.minecraft.class_304;
-import net.minecraft.class_310;
-import net.minecraft.class_3481;
-import net.minecraft.class_3532;
-import net.minecraft.class_4771;
+import net.minecraft.util.Hand;
+import net.minecraft.item.BoneMealItem;
+import net.minecraft.block.AirBlock;
+import net.minecraft.block.Blocks;
+import net.minecraft.block.Block;
+import net.minecraft.block.PlantBlock;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
+import net.minecraft.block.LeavesBlock;
+import net.minecraft.block.PillarBlock;
+import net.minecraft.block.SaplingBlock;
+import net.minecraft.block.VineBlock;
+import net.minecraft.client.option.KeyBinding;
+import net.minecraft.client.MinecraftClient;
+import net.minecraft.registry.tag.BlockTags;
+import net.minecraft.util.math.MathHelper;
+import net.minecraft.block.FungusBlock;
 
 public class IiiiiIiiiI
 extends iIiIiIIIii {

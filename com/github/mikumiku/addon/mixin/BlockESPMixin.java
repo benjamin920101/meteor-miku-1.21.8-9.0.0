@@ -5,16 +5,16 @@
  *  lombok.Generated
  *  meteordevelopment.meteorclient.MeteorClient
  *  meteordevelopment.meteorclient.systems.modules.render.blockesp.ESPChunk
- *  net.minecraft.class_2246
- *  net.minecraft.class_2248
- *  net.minecraft.class_2338
- *  net.minecraft.class_2338$class_2339
- *  net.minecraft.class_2382
- *  net.minecraft.class_2404
- *  net.minecraft.class_2680
- *  net.minecraft.class_2769
- *  net.minecraft.class_2791
- *  net.minecraft.class_2902$class_2903
+ *  net.minecraft.block.Blocks
+ *  net.minecraft.block.Block
+ *  net.minecraft.util.math.BlockPos
+ *  net.minecraft.util.math.BlockPos$Mutable
+ *  net.minecraft.util.math.Vec3i
+ *  net.minecraft.block.FluidBlock
+ *  net.minecraft.block.BlockState
+ *  net.minecraft.state.property.Property
+ *  net.minecraft.world.chunk.Chunk
+ *  net.minecraft.world.Heightmap$Type
  *  org.slf4j.Logger
  *  org.slf4j.LoggerFactory
  *  org.spongepowered.asm.mixin.Mixin
@@ -28,15 +28,15 @@ import java.util.List;
 import lombok.Generated;
 import meteordevelopment.meteorclient.MeteorClient;
 import meteordevelopment.meteorclient.systems.modules.render.blockesp.ESPChunk;
-import net.minecraft.class_2246;
-import net.minecraft.class_2248;
-import net.minecraft.class_2338;
-import net.minecraft.class_2382;
-import net.minecraft.class_2404;
-import net.minecraft.class_2680;
-import net.minecraft.class_2769;
-import net.minecraft.class_2791;
-import net.minecraft.class_2902;
+import net.minecraft.block.Blocks;
+import net.minecraft.block.Block;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Vec3i;
+import net.minecraft.block.FluidBlock;
+import net.minecraft.block.BlockState;
+import net.minecraft.state.property.Property;
+import net.minecraft.world.chunk.Chunk;
+import net.minecraft.world.Heightmap;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.spongepowered.asm.mixin.Mixin;

@@ -2,15 +2,15 @@
  * Decompiled with CFR 0.152.
  * 
  * Could not load the following classes:
- *  net.minecraft.class_6017
- *  net.minecraft.class_6793
+ *  net.minecraft.util.math.intprovider.IntProvider
+ *  net.minecraft.world.gen.placementmodifier.CountPlacementModifier
  *  org.spongepowered.asm.mixin.Mixin
  *  org.spongepowered.asm.mixin.gen.Accessor
  */
 package com.github.mikumiku.addon.mixin;
 
-import net.minecraft.class_6017;
-import net.minecraft.class_6793;
+import net.minecraft.util.math.intprovider.IntProvider;
+import net.minecraft.world.gen.placementmodifier.CountPlacementModifier;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.gen.Accessor;
 

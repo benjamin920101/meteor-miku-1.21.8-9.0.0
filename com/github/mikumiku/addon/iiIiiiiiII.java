@@ -12,7 +12,7 @@
  *  meteordevelopment.meteorclient.systems.friends.Friends
  *  meteordevelopment.meteorclient.utils.player.ChatUtils
  *  meteordevelopment.orbit.EventHandler
- *  net.minecraft.class_1657
+ *  net.minecraft.entity.player.PlayerEntity
  */
 package com.github.mikumiku.addon;
 
@@ -32,7 +32,7 @@ import meteordevelopment.meteorclient.settings.SettingGroup;
 import meteordevelopment.meteorclient.systems.friends.Friends;
 import meteordevelopment.meteorclient.utils.player.ChatUtils;
 import meteordevelopment.orbit.EventHandler;
-import net.minecraft.class_1657;
+import net.minecraft.entity.player.PlayerEntity;
 
 public class iiIiiiiiII
 extends iIiIiIIIii {

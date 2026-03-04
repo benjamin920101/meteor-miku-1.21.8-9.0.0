@@ -15,14 +15,14 @@
  *  meteordevelopment.meteorclient.systems.modules.Category
  *  meteordevelopment.meteorclient.utils.Utils
  *  meteordevelopment.orbit.EventHandler
- *  net.minecraft.class_1268
- *  net.minecraft.class_2338
- *  net.minecraft.class_2350
- *  net.minecraft.class_2382
- *  net.minecraft.class_2533
- *  net.minecraft.class_2561
- *  net.minecraft.class_2625
- *  net.minecraft.class_310
+ *  net.minecraft.util.Hand
+ *  net.minecraft.util.math.BlockPos
+ *  net.minecraft.util.math.Direction
+ *  net.minecraft.util.math.Vec3i
+ *  net.minecraft.block.TrapdoorBlock
+ *  net.minecraft.text.Text
+ *  net.minecraft.block.entity.SignBlockEntity
+ *  net.minecraft.client.MinecraftClient
  */
 package com.github.mikumiku.addon;
 
@@ -54,14 +54,14 @@ import meteordevelopment.meteorclient.settings.StringSetting;
 import meteordevelopment.meteorclient.systems.modules.Category;
 import meteordevelopment.meteorclient.utils.Utils;
 import meteordevelopment.orbit.EventHandler;
-import net.minecraft.class_1268;
-import net.minecraft.class_2338;
-import net.minecraft.class_2350;
-import net.minecraft.class_2382;
-import net.minecraft.class_2533;
-import net.minecraft.class_2561;
-import net.minecraft.class_2625;
-import net.minecraft.class_310;
+import net.minecraft.util.Hand;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
+import net.minecraft.util.math.Vec3i;
+import net.minecraft.block.TrapdoorBlock;
+import net.minecraft.text.Text;
+import net.minecraft.block.entity.SignBlockEntity;
+import net.minecraft.client.MinecraftClient;
 
 /*
  * Duplicate member names - consider using --renamedupmembers true

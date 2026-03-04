@@ -2,16 +2,16 @@
  * Decompiled with CFR 0.152.
  * 
  * Could not load the following classes:
- *  net.minecraft.class_2281
- *  net.minecraft.class_2315
- *  net.minecraft.class_2325
- *  net.minecraft.class_2336
- *  net.minecraft.class_2338
- *  net.minecraft.class_2377
- *  net.minecraft.class_2480
- *  net.minecraft.class_2680
- *  net.minecraft.class_310
- *  net.minecraft.class_3708
+ *  net.minecraft.block.ChestBlock
+ *  net.minecraft.block.DispenserBlock
+ *  net.minecraft.block.DropperBlock
+ *  net.minecraft.block.EnderChestBlock
+ *  net.minecraft.util.math.BlockPos
+ *  net.minecraft.block.HopperBlock
+ *  net.minecraft.block.ShulkerBoxBlock
+ *  net.minecraft.block.BlockState
+ *  net.minecraft.client.MinecraftClient
+ *  net.minecraft.block.BarrelBlock
  */
 package com.github.mikumiku.addon;
 
@@ -20,16 +20,16 @@ import com.github.mikumiku.addon.modules.sorter.ContainerSearcher;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-import net.minecraft.class_2281;
-import net.minecraft.class_2315;
-import net.minecraft.class_2325;
-import net.minecraft.class_2336;
-import net.minecraft.class_2338;
-import net.minecraft.class_2377;
-import net.minecraft.class_2480;
-import net.minecraft.class_2680;
-import net.minecraft.class_310;
-import net.minecraft.class_3708;
+import net.minecraft.block.ChestBlock;
+import net.minecraft.block.DispenserBlock;
+import net.minecraft.block.DropperBlock;
+import net.minecraft.block.EnderChestBlock;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.block.HopperBlock;
+import net.minecraft.block.ShulkerBoxBlock;
+import net.minecraft.block.BlockState;
+import net.minecraft.client.MinecraftClient;
+import net.minecraft.block.BarrelBlock;
 
 /*
  * Duplicate member names - consider using --renamedupmembers true

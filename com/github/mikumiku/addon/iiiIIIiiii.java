@@ -5,11 +5,11 @@
  *  meteordevelopment.meteorclient.systems.modules.Category
  *  meteordevelopment.meteorclient.systems.modules.Module
  *  meteordevelopment.meteorclient.utils.player.ChatUtils
- *  net.minecraft.class_124
- *  net.minecraft.class_2561
- *  net.minecraft.class_2583
- *  net.minecraft.class_310
- *  net.minecraft.class_5250
+ *  net.minecraft.util.Formatting
+ *  net.minecraft.text.Text
+ *  net.minecraft.text.Style
+ *  net.minecraft.client.MinecraftClient
+ *  net.minecraft.text.MutableText
  */
 package com.github.mikumiku.addon;
 
@@ -20,11 +20,11 @@ import java.util.Date;
 import meteordevelopment.meteorclient.systems.modules.Category;
 import meteordevelopment.meteorclient.systems.modules.Module;
 import meteordevelopment.meteorclient.utils.player.ChatUtils;
-import net.minecraft.class_124;
-import net.minecraft.class_2561;
-import net.minecraft.class_2583;
-import net.minecraft.class_310;
-import net.minecraft.class_5250;
+import net.minecraft.util.Formatting;
+import net.minecraft.text.Text;
+import net.minecraft.text.Style;
+import net.minecraft.client.MinecraftClient;
+import net.minecraft.text.MutableText;
 
 public class iiiIIIiiii
 extends Module {

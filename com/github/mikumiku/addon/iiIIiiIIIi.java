@@ -2,7 +2,7 @@
  * Decompiled with CFR 0.152.
  * 
  * Could not load the following classes:
- *  net.minecraft.class_2338
+ *  net.minecraft.util.math.BlockPos
  */
 package com.github.mikumiku.addon;
 
@@ -12,7 +12,7 @@ import java.util.Date;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
-import net.minecraft.class_2338;
+import net.minecraft.util.math.BlockPos;
 
 /*
  * Duplicate member names - consider using --renamedupmembers true

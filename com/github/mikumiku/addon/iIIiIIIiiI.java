@@ -11,10 +11,10 @@
  *  meteordevelopment.meteorclient.settings.StringSetting$Builder
  *  meteordevelopment.meteorclient.utils.player.SlotUtils
  *  meteordevelopment.orbit.EventHandler
- *  net.minecraft.class_1657
- *  net.minecraft.class_1713
- *  net.minecraft.class_1792
- *  net.minecraft.class_1802
+ *  net.minecraft.entity.player.PlayerEntity
+ *  net.minecraft.screen.slot.SlotActionType
+ *  net.minecraft.item.Item
+ *  net.minecraft.item.Items
  */
 package com.github.mikumiku.addon;
 
@@ -39,10 +39,10 @@ import meteordevelopment.meteorclient.settings.SettingGroup;
 import meteordevelopment.meteorclient.settings.StringSetting;
 import meteordevelopment.meteorclient.utils.player.SlotUtils;
 import meteordevelopment.orbit.EventHandler;
-import net.minecraft.class_1657;
-import net.minecraft.class_1713;
-import net.minecraft.class_1792;
-import net.minecraft.class_1802;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.screen.slot.SlotActionType;
+import net.minecraft.item.Item;
+import net.minecraft.item.Items;
 
 public class iIIiIIIiiI
 extends iIiIiIIIii {

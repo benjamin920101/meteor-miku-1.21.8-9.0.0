@@ -19,20 +19,20 @@
  *  meteordevelopment.meteorclient.utils.render.color.Color
  *  meteordevelopment.meteorclient.utils.render.color.SettingColor
  *  meteordevelopment.orbit.EventHandler
- *  net.minecraft.class_1802
- *  net.minecraft.class_2246
- *  net.minecraft.class_2248
- *  net.minecraft.class_2338
- *  net.minecraft.class_2350
- *  net.minecraft.class_2482
- *  net.minecraft.class_2510
- *  net.minecraft.class_2533
- *  net.minecraft.class_2680
- *  net.minecraft.class_2741
- *  net.minecraft.class_2760
- *  net.minecraft.class_2769
- *  net.minecraft.class_2771
- *  net.minecraft.class_4538
+ *  net.minecraft.item.Items
+ *  net.minecraft.block.Blocks
+ *  net.minecraft.block.Block
+ *  net.minecraft.util.math.BlockPos
+ *  net.minecraft.util.math.Direction
+ *  net.minecraft.block.SlabBlock
+ *  net.minecraft.block.StairsBlock
+ *  net.minecraft.block.TrapdoorBlock
+ *  net.minecraft.block.BlockState
+ *  net.minecraft.state.property.Properties
+ *  net.minecraft.block.enums.BlockHalf
+ *  net.minecraft.state.property.Property
+ *  net.minecraft.block.enums.SlabType
+ *  net.minecraft.world.WorldView
  */
 package com.github.mikumiku.addon;
 
@@ -70,20 +70,20 @@ import meteordevelopment.meteorclient.settings.SettingGroup;
 import meteordevelopment.meteorclient.utils.render.color.Color;
 import meteordevelopment.meteorclient.utils.render.color.SettingColor;
 import meteordevelopment.orbit.EventHandler;
-import net.minecraft.class_1802;
-import net.minecraft.class_2246;
-import net.minecraft.class_2248;
-import net.minecraft.class_2338;
-import net.minecraft.class_2350;
-import net.minecraft.class_2482;
-import net.minecraft.class_2510;
-import net.minecraft.class_2533;
-import net.minecraft.class_2680;
-import net.minecraft.class_2741;
-import net.minecraft.class_2760;
-import net.minecraft.class_2769;
-import net.minecraft.class_2771;
-import net.minecraft.class_4538;
+import net.minecraft.item.Items;
+import net.minecraft.block.Blocks;
+import net.minecraft.block.Block;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
+import net.minecraft.block.SlabBlock;
+import net.minecraft.block.StairsBlock;
+import net.minecraft.block.TrapdoorBlock;
+import net.minecraft.block.BlockState;
+import net.minecraft.state.property.Properties;
+import net.minecraft.block.enums.BlockHalf;
+import net.minecraft.state.property.Property;
+import net.minecraft.block.enums.SlabType;
+import net.minecraft.world.WorldView;
 
 public class IiiIIIiiiI
 extends iIiIiIIIii {

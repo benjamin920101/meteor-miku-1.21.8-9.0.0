@@ -13,14 +13,14 @@
  *  meteordevelopment.meteorclient.utils.misc.input.KeyAction
  *  meteordevelopment.meteorclient.utils.player.InvUtils
  *  meteordevelopment.orbit.EventHandler
- *  net.minecraft.class_1792
- *  net.minecraft.class_1799
- *  net.minecraft.class_1802
- *  net.minecraft.class_1887
- *  net.minecraft.class_1893
- *  net.minecraft.class_5321
- *  net.minecraft.class_6880
- *  net.minecraft.class_7923
+ *  net.minecraft.item.Item
+ *  net.minecraft.item.ItemStack
+ *  net.minecraft.item.Items
+ *  net.minecraft.enchantment.Enchantment
+ *  net.minecraft.enchantment.Enchantments
+ *  net.minecraft.registry.RegistryKey
+ *  net.minecraft.registry.entry.RegistryEntry
+ *  net.minecraft.registry.Registries
  */
 package com.github.mikumiku.addon;
 
@@ -44,14 +44,14 @@ import meteordevelopment.meteorclient.utils.Utils;
 import meteordevelopment.meteorclient.utils.misc.input.KeyAction;
 import meteordevelopment.meteorclient.utils.player.InvUtils;
 import meteordevelopment.orbit.EventHandler;
-import net.minecraft.class_1792;
-import net.minecraft.class_1799;
-import net.minecraft.class_1802;
-import net.minecraft.class_1887;
-import net.minecraft.class_1893;
-import net.minecraft.class_5321;
-import net.minecraft.class_6880;
-import net.minecraft.class_7923;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
+import net.minecraft.enchantment.Enchantment;
+import net.minecraft.enchantment.Enchantments;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.entry.RegistryEntry;
+import net.minecraft.registry.Registries;
 
 public class iiiIIiiiII
 extends iIiIiIIIii {

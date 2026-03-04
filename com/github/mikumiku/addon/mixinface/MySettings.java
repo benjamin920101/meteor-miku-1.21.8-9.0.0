@@ -14,7 +14,7 @@
  *  meteordevelopment.meteorclient.gui.widgets.containers.WTable
  *  meteordevelopment.meteorclient.gui.widgets.pressable.WButton
  *  meteordevelopment.meteorclient.settings.Setting
- *  net.minecraft.class_437
+ *  net.minecraft.client.gui.screen.Screen
  */
 package com.github.mikumiku.addon.mixinface;
 
@@ -39,7 +39,7 @@ import meteordevelopment.meteorclient.gui.widgets.containers.WHorizontalList;
 import meteordevelopment.meteorclient.gui.widgets.containers.WTable;
 import meteordevelopment.meteorclient.gui.widgets.pressable.WButton;
 import meteordevelopment.meteorclient.settings.Setting;
-import net.minecraft.class_437;
+import net.minecraft.client.gui.screen.Screen;
 
 public class MySettings {
     private final Map<Class<?>, SettingsWidgetFactory.Factory> factories;

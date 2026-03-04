@@ -10,16 +10,16 @@
  *  meteordevelopment.meteorclient.settings.SettingGroup
  *  meteordevelopment.meteorclient.utils.player.Rotations
  *  meteordevelopment.orbit.EventHandler
- *  net.minecraft.class_1268
- *  net.minecraft.class_1297
- *  net.minecraft.class_1511
- *  net.minecraft.class_1657
- *  net.minecraft.class_1922
- *  net.minecraft.class_2246
- *  net.minecraft.class_2338
- *  net.minecraft.class_2374
- *  net.minecraft.class_238
- *  net.minecraft.class_243
+ *  net.minecraft.util.Hand
+ *  net.minecraft.entity.Entity
+ *  net.minecraft.entity.decoration.EndCrystalEntity
+ *  net.minecraft.entity.player.PlayerEntity
+ *  net.minecraft.world.BlockView
+ *  net.minecraft.block.Blocks
+ *  net.minecraft.util.math.BlockPos
+ *  net.minecraft.util.math.Position
+ *  net.minecraft.util.math.Box
+ *  net.minecraft.util.math.Vec3d
  */
 package com.github.mikumiku.addon;
 
@@ -42,16 +42,16 @@ import meteordevelopment.meteorclient.settings.Setting;
 import meteordevelopment.meteorclient.settings.SettingGroup;
 import meteordevelopment.meteorclient.utils.player.Rotations;
 import meteordevelopment.orbit.EventHandler;
-import net.minecraft.class_1268;
-import net.minecraft.class_1297;
-import net.minecraft.class_1511;
-import net.minecraft.class_1657;
-import net.minecraft.class_1922;
-import net.minecraft.class_2246;
-import net.minecraft.class_2338;
-import net.minecraft.class_2374;
-import net.minecraft.class_238;
-import net.minecraft.class_243;
+import net.minecraft.util.Hand;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.decoration.EndCrystalEntity;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.world.BlockView;
+import net.minecraft.block.Blocks;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Position;
+import net.minecraft.util.math.Box;
+import net.minecraft.util.math.Vec3d;
 
 public class iIiiIiiiII
 extends iIiIiIIIii {

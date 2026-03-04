@@ -4,8 +4,8 @@
  * Could not load the following classes:
  *  baritone.api.utils.BlockOptionalMetaLookup
  *  baritone.pathing.movement.CalculationContext
- *  net.minecraft.class_2338
- *  net.minecraft.class_2680
+ *  net.minecraft.util.math.BlockPos
+ *  net.minecraft.block.BlockState
  *  org.spongepowered.asm.mixin.Mixin
  *  org.spongepowered.asm.mixin.Pseudo
  *  org.spongepowered.asm.mixin.Shadow
@@ -20,8 +20,8 @@ import baritone.api.utils.BlockOptionalMetaLookup;
 import baritone.pathing.movement.CalculationContext;
 import com.github.mikumiku.addon.mixinface.MagicMix;
 import java.util.List;
-import net.minecraft.class_2338;
-import net.minecraft.class_2680;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.block.BlockState;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Pseudo;
 import org.spongepowered.asm.mixin.Shadow;

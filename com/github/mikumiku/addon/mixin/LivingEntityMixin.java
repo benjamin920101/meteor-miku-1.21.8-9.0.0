@@ -2,12 +2,12 @@
  * Decompiled with CFR 0.152.
  * 
  * Could not load the following classes:
- *  net.minecraft.class_1297
- *  net.minecraft.class_1299
- *  net.minecraft.class_1309
- *  net.minecraft.class_1937
- *  net.minecraft.class_310
- *  net.minecraft.class_4095
+ *  net.minecraft.entity.Entity
+ *  net.minecraft.entity.EntityType
+ *  net.minecraft.entity.LivingEntity
+ *  net.minecraft.world.World
+ *  net.minecraft.client.MinecraftClient
+ *  net.minecraft.entity.ai.brain.Brain
  *  org.spongepowered.asm.mixin.Mixin
  *  org.spongepowered.asm.mixin.Shadow
  *  org.spongepowered.asm.mixin.injection.At
@@ -17,12 +17,12 @@
 package com.github.mikumiku.addon.mixin;
 
 import com.github.mikumiku.addon.mixinface.MagicMix;
-import net.minecraft.class_1297;
-import net.minecraft.class_1299;
-import net.minecraft.class_1309;
-import net.minecraft.class_1937;
-import net.minecraft.class_310;
-import net.minecraft.class_4095;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityType;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.world.World;
+import net.minecraft.client.MinecraftClient;
+import net.minecraft.entity.ai.brain.Brain;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;

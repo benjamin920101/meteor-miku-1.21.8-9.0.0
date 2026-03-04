@@ -3,7 +3,7 @@
  * 
  * Could not load the following classes:
  *  com.google.gson.Gson
- *  net.minecraft.class_2338
+ *  net.minecraft.util.math.BlockPos
  */
 package com.github.mikumiku.addon;
 
@@ -16,7 +16,7 @@ import java.io.Serializable;
 import java.util.Date;
 import java.util.Map;
 import java.util.Objects;
-import net.minecraft.class_2338;
+import net.minecraft.util.math.BlockPos;
 
 /*
  * Duplicate member names - consider using --renamedupmembers true

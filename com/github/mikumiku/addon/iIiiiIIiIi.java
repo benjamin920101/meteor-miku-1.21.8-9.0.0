@@ -6,44 +6,44 @@
  *  meteordevelopment.meteorclient.mixininterface.IRaycastContext
  *  meteordevelopment.meteorclient.mixininterface.IVec3d
  *  meteordevelopment.meteorclient.utils.player.Rotations
- *  net.minecraft.class_10185
- *  net.minecraft.class_1297
- *  net.minecraft.class_1309
- *  net.minecraft.class_1646
- *  net.minecraft.class_1657
- *  net.minecraft.class_1799
- *  net.minecraft.class_1887
- *  net.minecraft.class_1889
- *  net.minecraft.class_1890
- *  net.minecraft.class_1937
- *  net.minecraft.class_2338
- *  net.minecraft.class_2350
- *  net.minecraft.class_2378
- *  net.minecraft.class_243
- *  net.minecraft.class_2487
- *  net.minecraft.class_2499
- *  net.minecraft.class_2596
- *  net.minecraft.class_2649
- *  net.minecraft.class_2664
- *  net.minecraft.class_2828$class_2829
- *  net.minecraft.class_2828$class_2830
- *  net.minecraft.class_2828$class_2831
- *  net.minecraft.class_2828$class_5911
- *  net.minecraft.class_2851
- *  net.minecraft.class_2902$class_2903
- *  net.minecraft.class_2960
- *  net.minecraft.class_310
- *  net.minecraft.class_332
- *  net.minecraft.class_3850
- *  net.minecraft.class_3852
- *  net.minecraft.class_3959$class_242
- *  net.minecraft.class_3959$class_3960
- *  net.minecraft.class_5134
- *  net.minecraft.class_6880
- *  net.minecraft.class_6880$class_6883
- *  net.minecraft.class_744
- *  net.minecraft.class_746
- *  net.minecraft.class_7924
+ *  net.minecraft.util.PlayerInput
+ *  net.minecraft.entity.Entity
+ *  net.minecraft.entity.LivingEntity
+ *  net.minecraft.entity.passive.VillagerEntity
+ *  net.minecraft.entity.player.PlayerEntity
+ *  net.minecraft.item.ItemStack
+ *  net.minecraft.enchantment.Enchantment
+ *  net.minecraft.enchantment.EnchantmentLevelEntry
+ *  net.minecraft.enchantment.EnchantmentHelper
+ *  net.minecraft.world.World
+ *  net.minecraft.util.math.BlockPos
+ *  net.minecraft.util.math.Direction
+ *  net.minecraft.registry.Registry
+ *  net.minecraft.util.math.Vec3d
+ *  net.minecraft.nbt.NbtCompound
+ *  net.minecraft.nbt.NbtList
+ *  net.minecraft.network.packet.Packet
+ *  net.minecraft.network.packet.s2c.play.InventoryS2CPacket
+ *  net.minecraft.network.packet.s2c.play.ExplosionS2CPacket
+ *  net.minecraft.network.packet.c2s.play.PlayerMoveC2SPacket$PositionAndOnGround
+ *  net.minecraft.network.packet.c2s.play.PlayerMoveC2SPacket$Full
+ *  net.minecraft.network.packet.c2s.play.PlayerMoveC2SPacket$LookAndOnGround
+ *  net.minecraft.network.packet.c2s.play.PlayerMoveC2SPacket$OnGroundOnly
+ *  net.minecraft.network.packet.c2s.play.PlayerInputC2SPacket
+ *  net.minecraft.world.Heightmap$Type
+ *  net.minecraft.util.Identifier
+ *  net.minecraft.client.MinecraftClient
+ *  net.minecraft.client.gui.DrawContext
+ *  net.minecraft.village.VillagerData
+ *  net.minecraft.village.VillagerProfession
+ *  net.minecraft.world.RaycastContext$FluidHandling
+ *  net.minecraft.world.RaycastContext$ShapeType
+ *  net.minecraft.entity.attribute.EntityAttributes
+ *  net.minecraft.registry.entry.RegistryEntry
+ *  net.minecraft.registry.entry.RegistryEntry$Reference
+ *  net.minecraft.client.input.Input
+ *  net.minecraft.client.network.ClientPlayerEntity
+ *  net.minecraft.registry.RegistryKeys
  */
 package com.github.mikumiku.addon;
 
@@ -57,39 +57,39 @@ import meteordevelopment.meteorclient.MeteorClient;
 import meteordevelopment.meteorclient.mixininterface.IRaycastContext;
 import meteordevelopment.meteorclient.mixininterface.IVec3d;
 import meteordevelopment.meteorclient.utils.player.Rotations;
-import net.minecraft.class_10185;
-import net.minecraft.class_1297;
-import net.minecraft.class_1309;
-import net.minecraft.class_1646;
-import net.minecraft.class_1657;
-import net.minecraft.class_1799;
-import net.minecraft.class_1887;
-import net.minecraft.class_1889;
-import net.minecraft.class_1890;
-import net.minecraft.class_1937;
-import net.minecraft.class_2338;
-import net.minecraft.class_2350;
-import net.minecraft.class_2378;
-import net.minecraft.class_243;
-import net.minecraft.class_2487;
-import net.minecraft.class_2499;
-import net.minecraft.class_2596;
-import net.minecraft.class_2649;
-import net.minecraft.class_2664;
-import net.minecraft.class_2828;
-import net.minecraft.class_2851;
-import net.minecraft.class_2902;
-import net.minecraft.class_2960;
-import net.minecraft.class_310;
-import net.minecraft.class_332;
-import net.minecraft.class_3850;
-import net.minecraft.class_3852;
-import net.minecraft.class_3959;
-import net.minecraft.class_5134;
-import net.minecraft.class_6880;
-import net.minecraft.class_744;
-import net.minecraft.class_746;
-import net.minecraft.class_7924;
+import net.minecraft.util.PlayerInput;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.passive.VillagerEntity;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.ItemStack;
+import net.minecraft.enchantment.Enchantment;
+import net.minecraft.enchantment.EnchantmentLevelEntry;
+import net.minecraft.enchantment.EnchantmentHelper;
+import net.minecraft.world.World;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
+import net.minecraft.registry.Registry;
+import net.minecraft.util.math.Vec3d;
+import net.minecraft.nbt.NbtCompound;
+import net.minecraft.nbt.NbtList;
+import net.minecraft.network.packet.Packet;
+import net.minecraft.network.packet.s2c.play.InventoryS2CPacket;
+import net.minecraft.network.packet.s2c.play.ExplosionS2CPacket;
+import net.minecraft.network.packet.c2s.play.PlayerMoveC2SPacket;
+import net.minecraft.network.packet.c2s.play.PlayerInputC2SPacket;
+import net.minecraft.world.Heightmap;
+import net.minecraft.util.Identifier;
+import net.minecraft.client.MinecraftClient;
+import net.minecraft.client.gui.DrawContext;
+import net.minecraft.village.VillagerData;
+import net.minecraft.village.VillagerProfession;
+import net.minecraft.world.RaycastContext;
+import net.minecraft.entity.attribute.EntityAttributes;
+import net.minecraft.registry.entry.RegistryEntry;
+import net.minecraft.client.input.Input;
+import net.minecraft.client.network.ClientPlayerEntity;
+import net.minecraft.registry.RegistryKeys;
 
 /*
  * Duplicate member names - consider using --renamedupmembers true

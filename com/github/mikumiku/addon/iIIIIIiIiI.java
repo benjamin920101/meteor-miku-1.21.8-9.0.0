@@ -8,7 +8,7 @@
  *  meteordevelopment.meteorclient.settings.Setting
  *  meteordevelopment.meteorclient.settings.SettingGroup
  *  meteordevelopment.meteorclient.utils.player.ChatUtils
- *  net.minecraft.class_2338
+ *  net.minecraft.util.math.BlockPos
  */
 package com.github.mikumiku.addon;
 
@@ -30,7 +30,7 @@ import meteordevelopment.meteorclient.settings.IntSetting;
 import meteordevelopment.meteorclient.settings.Setting;
 import meteordevelopment.meteorclient.settings.SettingGroup;
 import meteordevelopment.meteorclient.utils.player.ChatUtils;
-import net.minecraft.class_2338;
+import net.minecraft.util.math.BlockPos;
 
 /*
  * Duplicate member names - consider using --renamedupmembers true

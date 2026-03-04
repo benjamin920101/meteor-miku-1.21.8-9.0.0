@@ -6,36 +6,36 @@
  *  meteordevelopment.meteorclient.settings.Setting
  *  meteordevelopment.meteorclient.utils.render.color.Color
  *  meteordevelopment.meteorclient.utils.world.Dimension
- *  net.minecraft.class_1959
- *  net.minecraft.class_2794
- *  net.minecraft.class_2975
- *  net.minecraft.class_3037
- *  net.minecraft.class_310
- *  net.minecraft.class_3124
- *  net.minecraft.class_5317
- *  net.minecraft.class_5321
- *  net.minecraft.class_5363
- *  net.minecraft.class_5539
- *  net.minecraft.class_5868
- *  net.minecraft.class_5875
- *  net.minecraft.class_6016
- *  net.minecraft.class_6017
- *  net.minecraft.class_6122
- *  net.minecraft.class_6793
- *  net.minecraft.class_6795
- *  net.minecraft.class_6796
- *  net.minecraft.class_6797
- *  net.minecraft.class_6799
- *  net.minecraft.class_6816
- *  net.minecraft.class_6880
- *  net.minecraft.class_6885
- *  net.minecraft.class_7145
- *  net.minecraft.class_7225$class_7226
- *  net.minecraft.class_7225$class_7874
- *  net.minecraft.class_7510
- *  net.minecraft.class_7510$class_6827
- *  net.minecraft.class_7887
- *  net.minecraft.class_7924
+ *  net.minecraft.world.biome.Biome
+ *  net.minecraft.world.gen.chunk.ChunkGenerator
+ *  net.minecraft.world.gen.feature.ConfiguredFeature
+ *  net.minecraft.world.gen.feature.FeatureConfig
+ *  net.minecraft.client.MinecraftClient
+ *  net.minecraft.world.gen.feature.OreFeatureConfig
+ *  net.minecraft.world.gen.WorldPresets
+ *  net.minecraft.registry.RegistryKey
+ *  net.minecraft.world.dimension.DimensionOptions
+ *  net.minecraft.world.HeightLimitView
+ *  net.minecraft.world.gen.HeightContext
+ *  net.minecraft.world.gen.feature.ScatteredOreFeature
+ *  net.minecraft.util.math.intprovider.ConstantIntProvider
+ *  net.minecraft.util.math.intprovider.IntProvider
+ *  net.minecraft.world.gen.heightprovider.HeightProvider
+ *  net.minecraft.world.gen.placementmodifier.CountPlacementModifier
+ *  net.minecraft.world.gen.placementmodifier.HeightRangePlacementModifier
+ *  net.minecraft.world.gen.feature.PlacedFeature
+ *  net.minecraft.world.gen.placementmodifier.PlacementModifier
+ *  net.minecraft.world.gen.placementmodifier.RarityFilterPlacementModifier
+ *  net.minecraft.world.gen.feature.OrePlacedFeatures
+ *  net.minecraft.registry.entry.RegistryEntry
+ *  net.minecraft.registry.entry.RegistryEntryList
+ *  net.minecraft.world.gen.WorldPreset
+ *  net.minecraft.registry.RegistryWrapper$Impl
+ *  net.minecraft.registry.RegistryWrapper$WrapperLookup
+ *  net.minecraft.world.gen.feature.util.PlacedFeatureIndexer
+ *  net.minecraft.world.gen.feature.util.PlacedFeatureIndexer$IndexedFeatures
+ *  net.minecraft.registry.BuiltinRegistries
+ *  net.minecraft.registry.RegistryKeys
  */
 package com.github.mikumiku.addon;
 
@@ -55,34 +55,34 @@ import meteordevelopment.meteorclient.settings.BoolSetting;
 import meteordevelopment.meteorclient.settings.Setting;
 import meteordevelopment.meteorclient.utils.render.color.Color;
 import meteordevelopment.meteorclient.utils.world.Dimension;
-import net.minecraft.class_1959;
-import net.minecraft.class_2794;
-import net.minecraft.class_2975;
-import net.minecraft.class_3037;
-import net.minecraft.class_310;
-import net.minecraft.class_3124;
-import net.minecraft.class_5317;
-import net.minecraft.class_5321;
-import net.minecraft.class_5363;
-import net.minecraft.class_5539;
-import net.minecraft.class_5868;
-import net.minecraft.class_5875;
-import net.minecraft.class_6016;
-import net.minecraft.class_6017;
-import net.minecraft.class_6122;
-import net.minecraft.class_6793;
-import net.minecraft.class_6795;
-import net.minecraft.class_6796;
-import net.minecraft.class_6797;
-import net.minecraft.class_6799;
-import net.minecraft.class_6816;
-import net.minecraft.class_6880;
-import net.minecraft.class_6885;
-import net.minecraft.class_7145;
-import net.minecraft.class_7225;
-import net.minecraft.class_7510;
-import net.minecraft.class_7887;
-import net.minecraft.class_7924;
+import net.minecraft.world.biome.Biome;
+import net.minecraft.world.gen.chunk.ChunkGenerator;
+import net.minecraft.world.gen.feature.ConfiguredFeature;
+import net.minecraft.world.gen.feature.FeatureConfig;
+import net.minecraft.client.MinecraftClient;
+import net.minecraft.world.gen.feature.OreFeatureConfig;
+import net.minecraft.world.gen.WorldPresets;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.world.dimension.DimensionOptions;
+import net.minecraft.world.HeightLimitView;
+import net.minecraft.world.gen.HeightContext;
+import net.minecraft.world.gen.feature.ScatteredOreFeature;
+import net.minecraft.util.math.intprovider.ConstantIntProvider;
+import net.minecraft.util.math.intprovider.IntProvider;
+import net.minecraft.world.gen.heightprovider.HeightProvider;
+import net.minecraft.world.gen.placementmodifier.CountPlacementModifier;
+import net.minecraft.world.gen.placementmodifier.HeightRangePlacementModifier;
+import net.minecraft.world.gen.feature.PlacedFeature;
+import net.minecraft.world.gen.placementmodifier.PlacementModifier;
+import net.minecraft.world.gen.placementmodifier.RarityFilterPlacementModifier;
+import net.minecraft.world.gen.feature.OrePlacedFeatures;
+import net.minecraft.registry.entry.RegistryEntry;
+import net.minecraft.registry.entry.RegistryEntryList;
+import net.minecraft.world.gen.WorldPreset;
+import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.world.gen.feature.util.PlacedFeatureIndexer;
+import net.minecraft.registry.BuiltinRegistries;
+import net.minecraft.registry.RegistryKeys;
 
 public class iIiIIiiIiI {
     public float iIiiiiIIII;
